@@ -1,0 +1,40 @@
+{
+    "campaign_id": "CMP-STORM-2657-001",
+    "campaign_name": "Storm-2657 Payroll pirate attacks targeting US universities",
+    "publisher": "Microsoft Threat Intelligence",
+    "publisher_type": "Vendor",
+    "publication_date": "2025-10-09",
+    "case_source_type": "Standalone campaign report",
+    "campaign_specificity": "Single campaign",
+    "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (AiTM)",
+    "targeting_evidence": "The threat actor targeted ar multiple US universities, tailoring phishing email content and subject lines based on the recipient's specific institution (e.g., using the specific univeersity name or university president's name).",
+    "outcome": "Successful (funds/data/credentials/access obtained)",
+    "target": "US-based organizations, particularly employees in sectors like higher education",
+    "channels": "Corporate email > HR SaaS platform (Workday)",
+    "channel_transition": "Multiple transitions",
+    "tactics": [
+        "Adversary-in-the-middle (AiTM)",
+        "Compromised legitimate account (ATO)",
+        "Mailbox rule manipulation"
+
+    ],
+    "roles": {
+        "role_attacker": "Storm-2657",
+        "role_impersonated": "University President, HR Department, or University Health Center",
+        "role_victim": "Employees is US universitires (higher education)"
+    },
+    "request": "Click a link (often Google Drive) to check illness exposure status, review faculty misconduct reports, or read compensation and benefits updates, leading to credential and MFA code theft.",
+    "pretext": "False notifications about a communicable illness outbreak on campus, faculty misconduct mentions, or official 2025 compensation and benefits updates from the university leadership.",
+    "persuasion_principles": [
+        "Authority",
+        "Urgency"
+    ],
+    "timing": "Not specified in the report",
+    "impact": "Financial harm caused by the authorized redirection of future salary payments to account(s) controlled by the attacker",
+    "information_website": "https://www.microsoft.com/en-us/security/blog/2025/10/09/investigating-targeted-payroll-pirate-attacks-affecting-us-universities/",
+    "coding_date": "2026-10-20T19:26:53Z",
+    "coder": "Human coded",
+    "license": "All rights reserved (research / fair-use citation only) - © Microsoft 2026",
+    "note_on_ambiguity": "The specific timing relative to a business to a business cycle (e.g., payroll cycle) was not mentioned, so 'Not specified in the report' was assigned to avoid inference. Licensing details were extracted from the footer of the Microsoft Threat Intelligence blog, which states © Microsoft 2026.",
+    "agreement_rate": "N/A"
+}

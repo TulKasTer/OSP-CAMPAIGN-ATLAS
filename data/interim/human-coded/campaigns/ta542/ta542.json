@@ -1,0 +1,116 @@
+{
+    "ta542_campaigns": [
+        {
+            "campaign_id": "CMP-TA542-001",
+            "campaign_name": "COVID-19 Vaccination Self Compliance Report O365 Credential Theft",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2021-08-24",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The message were tailored to the target entities by spoofing their specific HR divisions (e.g., HR@[organizationname.tld]).",
+            "outcome": "Not specified in the report",
+            "target": "Thousands of organizations globally",
+            "channels": "Corparate email > Fake login / credential-collection page",
+            "channel_transition": "Multiple transtitions",
+            "tactics": [
+                "Fake login / credential-collection page",
+                "Domain spoofing"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "HR Division",
+                "role_victim": "Employees of the targeted organizations"
+            },
+            "request": "Click a URL to view a secure file shared via Office 365, and enter credentials into a fake Microsoft authentication page.",
+            "pretext": "A mandatory COVID-19 Vacination Self Compliance Report has been shared with the employee by their HR department.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/delta-variant-spreads-covid-19-themes-make-resurgence-email-threats",
+            "coding_date": "2026-10-23T00:30:21Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+            "note_on_ambiguity": "The source document is a actor profile excluded under Rule #3. This specific campaign is presented as an illustrative case within the report because it contains sufficient details and targeting evidence to be coded under Decision Rule #8. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-TA542-001",
+            "campaign_name": "Formbook COVID-19 Employment Status campaign",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2021-08-24",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The emails were generic but explicitly customized to the intended organization, sent to hundreds of organizations.",
+            "outcome": "Not specified in the report",
+            "target": "Hundreds of organizations",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "Human Resources Manager",
+                "role_victim": "Employees of the targeted organizations"
+            },
+            "request": "Open a zipped file (e.g., Scan.Salary.zip) purportedly containing a 2 month salary receipt and cancellation of emplotment documents, which installs Formbook malware.",
+            "pretext": "The recipient's employment has been immediately terminaated due to the financial impact of COVID-19 epidemic on the company.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/delta-variant-spreads-covid-19-themes-make-resurgence-email-threats",
+            "coding_date": "2026-10-23T02:38:26Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+            "note_on_ambiguity": "The source document is a actor profile excluded under Rule #3. This specific campaign is presented as an illustrative case within the report because it contains sufficient details and targeting evidence to be coded under Decision Rule #8. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-TA542-001",
+            "campaign_name": "Ave Maria COVID-19 Preventative Measures campaign",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2021-08-24",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The campaign targeted dozens of customers, with more than 90% of the intended targets in the energy vetical. The emails contained email addresses unique to the target entity (e.g., healthcare@[targetcompany].com).",
+            "outcome": "Not specified in the report",
+            "target": "Energy and industrial organizations",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "HEALTH CARES",
+                "role_victim": "Employees in energy and industrial organizations"
+            },
+            "request": "Open an attached Excel file (covid-19_preventative measures.xlsx) which exploits Equation Editor vulnerabilities to install Ave Maria remote access trojan.",
+            "pretext": "Health advisories containing new COVID-19 preventative measures relating to the target compamy's policies, alongside global infection and vaccination statistics.",
+            "persuasion_principles": [
+                "Authority"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/delta-variant-spreads-covid-19-themes-make-resurgence-email-threats",
+            "coding_date": "2026-10-23T02:56:45Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+            "note_on_ambiguity": "The source document is a actor profile excluded under Rule #3. This specific campaign is presented as an illustrative case within the report because it contains sufficient details and targeting evidence to be coded under Decision Rule #8. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+            "agreement_rate": "N/A"
+        }
+    ]
+}

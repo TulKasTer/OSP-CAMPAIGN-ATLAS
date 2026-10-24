@@ -1,0 +1,36 @@
+{
+    "campaign_id": "CMP-TA4557-001",
+    "campaign_name": "",
+    "publisher": "Proofpoint",
+    "publisher_type": "Vendor",
+    "publication_date": "",
+    "case_source_type": "",
+    "campaign_specificity": "",
+    "attack_classification": "",
+    "targeting_evidence": "",
+    "outcome": "",
+    "target": "",
+    "channels": "",
+    "channel_transition": "",
+    "tactics": [
+        ""
+    ],
+    "roles": {
+        "role_attacker": "TA4557",
+        "role_impersonated": "",
+        "role_victim": ""
+    },
+    "request": "",
+    "pretext": "",
+    "persuasion_principles": [
+        ""
+    ],
+    "timing": "",
+    "impact": "",
+    "information_website": "https://www.proofpoint.com/us/blog/security-briefs/job-themed-email-threats-remain-preferred-theme-threat-actors",
+    "coding_date": "2026-10-22T24:42:00Z",
+    "coder": "Human coded",
+    "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+    "note_on_ambiguity": "",
+    "agreement_rate": "N/A"
+}

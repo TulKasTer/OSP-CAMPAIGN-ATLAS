@@ -1,0 +1,37 @@
+{
+    "campaign_id": "CMP-LUMMA-STEALER-001",
+    "campaign_name": "Email campaign targeting organizations in Canada to deliver Lumma Stealer",
+    "publisher": "Microsoft Threat Intelligence",
+    "publisher_type": "Vendor",
+    "publication_date": "2025-05-21",
+    "case_source_type": "Illustrative case within aggregate report",
+    "campaign_specificity": "Single campaign",
+    "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+    "targeting_evidence": "The report explicitly states the campaign was 'targeting organizations in Canada' and that 'emails' subject line were personalized to include recipient-specific details such as 'Invoice for [recipient email]'.",
+    "outcome": "Not specified in the report",
+    "target": "Organizations in Canada",
+    "channels": "Email > Prometheus TDS (Compromised website) > ClickFix landing page > Windows Run prompt (mshta/PowerShell)",
+    "channel_transition": "Multiple transtions",
+    "tactics": [
+        "Malicious link / redirect",
+        "Other (specify) - ClickFix / Fake CAPTCHA (Social engineering payload execution)"
+    ],
+    "roles": {
+        "role_attacker": "Lumma Stealer affiliate",
+        "role_impersonated": "Fitness plan provider (The Fitness Ladder) / Online education platform",
+        "role_victim": "Organizations in Canada"
+    },
+    "request": "Click a link to cancel a subscription, then solve a fake CAPTCHA (ClickFix) by pasting a malicious command into the Windows Run prompt.",
+    "pretext": "The recipent's free trial for a fitness plan (e.g., The Fitness Ladder) is ending shortly and they will be automatically billed for a premium subscription ($19.99/mouth) unless they take action to cancel.",
+    "persuasion_principles": [
+        "Urgency"
+    ],
+    "timing": "Not specified in the report",
+    "impact": "Not specified in the report",
+    "information_website": "https://www.microsoft.com/en-us/security/blog/2025/05/21/lumma-stealer-breaking-down-the-delivery-techniques-and-capabilities-of-a-prolific-infostealer/",
+    "coding_date": "2026-10-22T05:13:33Z",
+    "coder": "Human coded",
+    "license": "All rights reserved (research / fair-use citation only) - © Microsoft 2026",
+    "note_on_ambiguity": "The source document is a landscape report covering generalized Lumma Stealer trends, but this specific campaign is presented as an illustrative case within the report because it containes sufficient details and targeting evidence to be coded under Decision Rule #8. Licensing details were extracted from the footer of the Microsoft Threat Intelligence blog, which states © Microsoft 2026.",
+    "agreement_rate": "N/A"
+}

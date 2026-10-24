@@ -1,0 +1,36 @@
+{
+    "campaign_id": "CMP-TA2900-001",
+    "campaign_name": "TA2900 French Property Payment BEC",
+    "publisher": "Proofpoint",
+    "publisher_type": "Vendor",
+    "publication_date": "2025-04-28",
+    "case_source_type": "Illustrative case within aggregate report",
+    "campaign_specificity": "Single campaign",
+    "attack_classification": "",
+    "targeting_evidence": "",
+    "outcome": "Not specified in the report",
+    "target": "",
+    "channels": "",
+    "channel_transition": "None (single channel throughout)",
+    "tactics": [
+        ""
+    ],
+    "roles": {
+        "role_attacker": "TA2900",
+        "role_impersonated": "Rental company / Real estate management",
+        "role_victim": "Property renters / Tenants"
+    },
+    "request": "",
+    "pretext": "",
+    "persuasion_principles": [
+        ""
+    ],
+    "timing": "",
+    "impact": "",
+    "information_website": "https://www.proofpoint.com/us/blog/threat-insight/security-brief-french-bec-threat-actor-targets-property-payments",
+    "coding_date": "2026-10-22T08:20:59Z",
+    "coder": "Human coded",
+    "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+    "note_on_ambiguity": "",
+    "agreement_rate": "N/A"
+}

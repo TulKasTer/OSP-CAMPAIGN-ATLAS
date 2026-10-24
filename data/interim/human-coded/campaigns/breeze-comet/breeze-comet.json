@@ -1,0 +1,36 @@
+{
+    "campaign_id": "CMP-BREEZE-COMET-001",
+    "campaign_name": "",
+    "publisher": "Mandiant",
+    "publisher_type": "Vendor",
+    "publication_date": "",
+    "case_source_type": "",
+    "campaign_specificity": "",
+    "attack_classification": "",
+    "targeting_evidence": "",
+    "outcome": "",
+    "target": "",
+    "channels": "",
+    "channel_transition": "",
+    "tactics": [
+        ""
+    ],
+    "roles": {
+        "role_attacker": "Breeze Comet",
+        "role_impersonated": "",
+        "role_victim": ""
+    },
+    "request": "",
+    "pretext": "",
+    "persuasion_principles": [
+        ""
+    ],
+    "timing": "",
+    "impact": "",
+    "information_website": "https://cloud.google.com/blog/topics/threat-intelligence/financially-motivated-threat-actor-breeze-comet-targets-brazil",
+    "coding_date": "",
+    "coder": "Human coded",
+    "license": "",
+    "note_on_ambiguity": "",
+    "agreement_rate": "N/A"
+}

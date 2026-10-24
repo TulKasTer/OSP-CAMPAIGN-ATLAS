@@ -1,0 +1,164 @@
+{
+    "exclusion_log": [
+        {
+            "excluded_id": "EXC-0001",
+            "campaign_name": "Lumma Stealer: Breaking down the delivery techniques and capabilities of a prolific infostealer (General Trends)",
+            "publisher": "Microsoft Threat Intelligence",
+            "information_website": "https://www.microsoft.com/en-us/security/blog/2025/05/21/lumma-stealer-breaking-down-the-delivery-techniques-and-capabilities-of-a-prolific-infostealer/",
+            "rule_triggered": "Rule #3",
+            "exclusion_reason": "The report presents generalized trends of Lumma Stealer delivery techniques, infrastructure, and malware capabilities without sufficient detail to isolate a single, distinguishable organizational spear phishing incident with an identifiable sequence of events.",
+            "exclusion_date": "2026-10-22T05:35:00Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        },
+        {
+            "excluded_id": "EXC-0002",
+            "campaign_name": "Drive-by download campaign leveraging EtherHiding and ClickFix to deliver Lumma",
+            "publisher": "Microsoft Threat Intelligence",
+            "information_website": "https://www.microsoft.com/en-us/security/blog/2025/05/21/lumma-stealer-breaking-down-the-delivery-techniques-and-capabilities-of-a-prolific-infostealer/",
+            "rule_triggered": "Rule #1",
+            "exclusion_reason": "The campaign relies on opportunistic drive-by download via compromised websites and mass delivery of fake CAPTCHA lures, with no explicit evidence of deliberate target selection against a specific organization or role.",
+            "exclusion_date": "2026-10-22T07:23:56Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        },
+        {
+            "excluded_id": "EXC-0003",
+            "campaign_name": "TA2900 French Property Payment BEC",
+            "publisher": "Proofpoint",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/security-brief-french-bec-threat-actor-targets-property-payments",
+            "rule_triggered": "Rule #1",
+            "exclusion_reason": "The report describes generalized fraud campaigns targeting individual people (consumers/general public) with rent payment scams rather than targeting an organization.",
+            "exclusion_date": "2026-10-22T08:20:59Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        },
+        {
+            "excluded_id": "EXC-0004",
+            "campaign_name": "TA4903: Actor Spoofs U.S. Government, Small Businesses in Phishing BEC Bids (General Trends)",
+            "publisher": "Proofpoint",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/ta4903-actor-spoofs-us-government-small-businesses-phishing-bec-bids",
+            "rule_triggered": "Rule #3",
+            "exclusion_reason": "The report is a actor profile describing generalized trends of TA4903 and high-volume operations from 2021-2024, without a single distinguishable sequence of events of events for the macro report.",
+            "exclusion_date": "2026-10-22T09:12:52Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        },
+        {
+            "excluded_id": "EXC-0005",
+            "campaign_name": "Security Brief: Job-themed email threats remain a preferred theme for threat actors (General Trends)",
+            "publisher": "Proofpoint",
+            "information_website": "https://www.proofpoint.com/us/blog/security-briefs/job-themed-email-threats-remain-preferred-theme-threat-actors",
+            "rule_triggered": "Rule #3",
+            "exclusion_reason": "The source is a generalized landscape report describing trends of job-themed email threats, without a single distinguishable sequence of events, and without a specific organizational target or role.",
+            "exclusion_date": "2026-10-23T00:16:55Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        },
+        {
+            "excluded_id": "EXC-0006",
+            "campaign_name": "Commodity BEC work-from-home scams (Pradip Ghadage)",
+            "publisher": "Proofpoint",
+            "information_website": "https://www.proofpoint.com/us/blog/security-briefs/job-themed-email-threats-remain-preferred-theme-threat-actors",
+            "rule_triggered": "Rule #1",
+            "exclusion_reason": "The campaign relies on opportunistic mass delivery of work-from-home scams, with no explicit evidence of deliberate target selection against a specific organization or role.",
+            "exclusion_date": "2026-10-23T00:21:52Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        },
+        {
+            "excluded_id": "EXC-0007",
+            "campaign_name": "TA4557 More_eggs in March 2021",
+            "publisher": "Proofpoint",
+            "information_website": "https://www.proofpoint.com/us/blog/security-briefs/job-themed-email-threats-remain-preferred-theme-threat-actors",
+            "rule_triggered": "Rule #1",
+            "exclusion_reason": "The campaign relies on opportunistic mass delivery of job-themed scams, with no explicit evidence of deliberate target selection against a specific organization or role.",
+            "exclusion_date": "2026-10-23T00:26:48Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        },
+        {
+            "excluded_id": "EXC-0008",
+            "campaign_name": "As Delta Variant Spreads, COVID-19 Themes Make a Resurgence in Email Threats (General Trends)",
+            "publisher": "Proofpoint",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/delta-variant-spreads-covid-19-themes-make-resurgence-email-threats",
+            "rule_triggered": "Rule #3",
+            "exclusion_reason": "The report presents generalized trends of COVID-19 themed email threats, without a single distinguishable sequence of events, and without a specific organizational target or role.",
+            "exclusion_date": "2026-10-23T01:38:21Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        },
+        {
+            "excluded_id": "EXC-0009",
+            "campaign_name": "RustyBuer COVID-19 Vaccine mandate campaign",
+            "publisher": "Proofpoint",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/delta-variant-spreads-covid-19-themes-make-resurgence-email-threats",
+            "rule_triggered": "Rule #1",
+            "exclusion_reason": "The campaign relies on opportunistic mass delivery of COVID-19 vaccine mandate scams, with no explicit evidence of deliberate target selection against a specific organization or role.",
+            "exclusion_date": "2026-10-23T01:46:25Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        },
+        {
+            "excluded_id": "EXC-0010",
+            "campaign_name": "Look What You Made Me Do: TA453 Uses Multi-Persona Impersonation to Capitalize on FOMO (General Trends)",
+            "publisher": "Proofpoint",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/ta453-uses-multi-persona-impersonation-capitalize-fomo",
+            "rule_triggered": "Rule #3",
+            "exclusion_reason": "The report presents generalized trends of TA453 multi-persona impersonation campaigns, without a single distinguishable sequence of events, and without a specific organizational target or role.",
+            "exclusion_date": "2026-10-23T04:12:24Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        },
+        {
+            "excluded_id": "EXC-0011",
+            "campaign_name": "Account Compromise, Financial Theft, and Supply Chain Attacks: Analyzing the Small and Medium Business APT Phishing Landscape in 2023 (General Trends)",
+            "publisher": "Proofpoint",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/small-and-medium-business-APT-phishing-landscape-in-2023",
+            "rule_triggered": "Rule #3",
+            "exclusion_reason": "The source is a generalized landscape report discussing APT trends against SMBs from Q1 2022 to Q1 2023, without an isolable sequence of events for the macro document.",
+            "exclusion_date": "2026-10-23T06:33:04Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        },
+        {
+            "excluded_id": "EXC-0012",
+            "campaign_name": "TA473 Winter Vivern SMB compromise campaigns",
+            "publisher": "Proofpoint",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/small-and-medium-business-APT-phishing-landscape-in-2023",
+            "rule_triggered": "Rule #3",
+            "exclusion_reason": "The illustrative case lacks sufficient details for the pretext and specific roles involved in a single identifiable sequence of events, failing Decision Rule #8.",
+            "exclusion_date": "2026-10-23T06:43:57Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        },
+        {
+            "excluded_id": "EXC-0013",
+            "campaign_name": "TA422 (APT28) Saudi auto-manufacturing impersonation",
+            "publisher": "Proofpoint",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/small-and-medium-business-APT-phishing-landscape-in-2023",
+            "rule_triggered": "Rule #3",
+            "exclusion_reason": "The illustrative case describes infrastructure and broad targeting but completely lacks sufficient details for the social engineering pretext, failing Decision Rule #8.",
+            "exclusion_date": "2026-10-23T06:46:10Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        },
+        {
+            "excluded_id": "EXC-0014",
+            "campaign_name": "TA499 (Vovan and Lexus) Volodymyr Zelensky impersonation",
+            "publisher": "Proofpoint",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/small-and-medium-business-APT-phishing-landscape-in-2023",
+            "rule_triggered": "Rule #1",
+            "exclusion_reason": "The campaign's objective was merely to solicit a politically themed video conference call. It falls out of scope as it does not induce the victim to transfer funds, disclose credentials/data, or execute a payload (the strict definition of OSP).",
+            "exclusion_date": "2026-10-23T06:52:09Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        },
+        {
+            "excluded_id": "EXC-0015",
+            "campaign_name": "TA450 (Muddywater) Israeli regional MSPs targeting",
+            "publisher": "Proofpoint",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/small-and-medium-business-APT-phishing-landscape-in-2023",
+            "rule_triggered": "Rule #3",
+            "exclusion_reason": "The illustrative case mentions the payload (Syncro) and the target, but fails to provide any details regarding the email pretext used to manipulate the victim, failing Decision Rule #8.",
+            "exclusion_date": "2026-10-23T06:49:03Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        },
+        {
+            "excluded_id": "EXC-0016",
+            "campaign_name": "Financially Motivated Threat Actor BREEZE COMET Targets Brazil (General Trends)",
+            "publisher": "Mandiant",
+            "information_website": "https://cloud.google.com/blog/topics/threat-intelligence/financially-motivated-threat-actor-breeze-comet-targets-brazil",
+            "rule_triggered": "Rule #3",
+            "exclusion_reason": "The report provides a generalized landscape of BREEZE COMET's tactics, malware suite, and infrastructure across 2024-2026. It lacks a specific illustrative case with sufficient details (e.g., channel, role, pretext) to isolate a single organizational spear phishing incident.",
+            "exclusion_date": "2026-10-23T07:00:00Z",
+            "evaluator": "Jesús Felipe Bastidas Valenzuela"
+        }
+    ]
+}

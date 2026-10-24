@@ -1,0 +1,36 @@
+{
+    "campaign_id": "CMP-TA4903-001",
+    "campaign_name": "TA4903 Cyberattack themed BEC campaigns spoofing suppliers.",
+    "publisher": "Proofpoint",
+    "publisher_type": "Vendor",
+    "publication_date": "2024-03-06",
+    "case_source_type": "Illustrative case within aggregate report",
+    "campaign_specificity": "Single campaign",
+    "attack_classification": "Pure BEC (Impersonation + Fraud)",
+    "targeting_evidence": "The actor used information stolen from ",
+    "outcome": "Not specified in the report",
+    "target": "Business partners and financial institutions of compromised U.S. organizations",
+    "channels": "Corporate email",
+    "channel_transition": "None (single channel throughout)",
+    "tactics": [
+        "Typesquatting / lookalike domain"
+    ],
+    "roles": {
+        "role_attacker": "TA4903",
+        "role_impersonated": "Produce and manufacturing companies (Likely suppliers)",
+        "role_victim": "Business partners / Employees responsible for banking information"
+    },
+    "request": "Provide information on who is responsible for updating banking information within the organization in order to facilitate a change in banking details.",
+    "pretext": "The sender's company was recently the victim of a cyber attack resulting in compromised banking information, requiring an immediate update to ensure the safety of financial transactions.",
+    "persuasion_principles": [
+        "Urgency"
+    ],
+    "timing": "Not specified in the report",
+    "impact": "Not specified in the report",
+    "information_website": "https://www.proofpoint.com/us/blog/threat-insight/ta4903-actor-spoofs-us-government-small-businesses-phishing-bec-bids",
+    "coding_date": "2026-10-22T09:33:45Z",
+    "coder": "Human coded",
+    "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+    "note_on_ambiguity": "The source document is a actor profile excluded under Rule #3. This specific campaign is presented as an illustrative case within the report because it contains sufficient details and targeting evidence to be coded under Decision Rule #8. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.", 
+    "agreement_rate": "N/A"
+}

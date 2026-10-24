@@ -1,0 +1,119 @@
+{
+    "ta453_campaigns": [
+        {
+            "campaign_id": "CMP-TA453-001",
+            "campaign_name": "TA453 Aaron Stein Iraq's position in the Arab world campaign",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-09-13",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor sent a targeted email to a specific academic/researcher, impersonating a known contact and referencing a Middle East-related affair.",
+            "outcome": "Not specified in the report",
+            "target": "Unspecified academic/researcher",
+            "channels": "Email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Other (specify) - Multi-persona impersonation (MPI)"
+            ],
+            "roles": {
+                "role_attacker": "TA453",
+                "role_impersonated": "Aaron Stein (Director of Research at FPRI) and Richard Wike (Director of Global attitudes research at PEW Research Center)",
+                "role_victim": "Unspecified academic/researcher"
+            },
+            "request": "Answer intelligence questions regarding Iraq's position in the Arab world and the Abraham Accords, or agree to a Zoom meeting.",
+            "pretext": "The sender is allegedly working on an article about Iraq's position in the Arab world and is seeking expert comments to air to the public.",
+            "persuasion_principles": [
+                "Authority",
+                "Social Proof"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/ta453-uses-multi-persona-impersonation-capitalize-fomo",
+            "coding_date": "2026-10-23T04:02:45Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+            "note_on_ambiguity": "The campaign does not contain any malicious attachments or links. The attack action constitutes a request for information, which is not a malicious action. However, the campaign is coded as a spear phishing attack because it contains a targeted lure and impersonation of known contacts. Tactics are coded as 'Other' because the campaign uses multi-persona impersonation. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-TA453-002",
+            "campaign_name": "TA453 Harald Ott genome research campaingn",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-09-13",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The campaign deliberately selected a target specializing in genome research, and sent a targeted email impersonatinga known contact and referencing a organ engineering.",
+            "outcome": "Not specified in the report",
+            "target": "Target specializing in genome research (Medical researcher)",
+            "channels": "Email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Malicious Link / redirect",
+                "Other (specify) - Multi-persona impersonation (MPI)",
+                "Other (specify) - Remote Template Injection"
+            ],
+            "roles": {
+                "role_attacker": "TA453",
+                "role_impersonated": "Harald C. Ott (Cardiothoracic surgery at the Massachusetts General Hospital), Claire Parry (Assistant Director at the Centre for Universal Health), and Dr. Andrew Marshall (Cheif editor of Nature Biotechnology)",
+                "role_victim": "Medical researcher specializing in genome research"
+            },
+            "request": "Open a OneDrive link to download a document (Ott-Lab 371.docx) which utilizes remote template injection (Korg macros) to exfiltrate system data.",
+            "pretext": "Collaboration on a project regarding organ engineering, and regeneration as a theoretical alternative to transplantation.",
+            "persuasion_principles": [
+                "Authority",
+                "Social Proof"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/ta453-uses-multi-persona-impersonation-capitalize-fomo",
+            "coding_date": "2026-10-23T05:23:49Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+            "note_on_ambiguity": "Tactics are coded as 'Other' because the campaign uses multi-persona impersonation and remote template injection. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-TA453-003",
+            "campaign_name": "Ta453 Carroll Doherty US-Russia clash campaign",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-09-13",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor deliberately selected a target specializing in nuclear arms control, as well as a second target at the same university, and sent a targeted email impersonating known contacts and referencing a US-Russia clash.",
+            "outcome": "Not specified in the report",
+            "target": "Academics involved in nuclear arms control",
+            "channels": "Email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Malicious Link / redirect",
+                "Other (specify) - Multi-persona impersonation (MPI)",
+                "Other (specify) - Remote Template Injection"
+            ],
+            "roles": {
+                "role_attacker": "TA453",
+                "role_impersonated": "Carroll Doherty (Director of Political Research at Pew Research Center) and Aaron Stein (Director of Research at FPRI)",
+                "role_victim": "Prominent academic involved in nuclear arms control (and a colleague)"
+            },
+            "request": "Access a password-protected OneDrive link to read an article ('The possible US-Russia clash.docx') and make an outline, triggering a remote template injection.",
+            "pretext": "The sender is asking the target to read their article about a possible US-Russia clash and provide an outline/feedback.",
+            "persuasion_principles": [
+                "Authority",
+                "Social Proof"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/ta453-uses-multi-persona-impersonation-capitalize-fomo",
+            "coding_date": "2026-10-23T05:40:18Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+            "note_on_ambiguity": "Tactics are coded as 'Other' because the campaign uses multi-persona impersonation and remote template injection. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+            "agreement_rate": "N/A"
+        }
+    ]
+}

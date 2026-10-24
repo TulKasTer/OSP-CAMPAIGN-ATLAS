@@ -1,0 +1,418 @@
+{
+    "campaigns": [
+        {
+            "campaign_id": "CMP-0001",
+            "campaign_name": "Storm 2755 Payroll pirate attacks",
+            "publisher": "Microsoft Threat Intelligence",
+            "publisher_type": "Vendor",
+            "publication_date": "2026-04-09",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (SEO poisoning / malvertising, AiTM)",
+            "targeting_evidence": "The actor relied exclusively on geographic targeting of Canadian users, combined with socially engineering HR or finance staff members using consistent email subject lines across compromised users.",
+            "outcome": "Successful (funds/data/credentials/access obtained)",
+            "target": "Canadian employees",
+            "channels": "Search engine (SEO poisoning/malvertising) > Corporate email > HR SaaS platform (Workday)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Adversary-in-the-middle (AiTM)",
+                "Compromised legitimate account (ATO)",
+                "Mailbox rule manipulation",
+                "Other (specify) - SEO poisoning / malvertising"
+            ],
+            "roles": {
+                "role_attacker": "Storm-2755",
+                "role_impersonated": "Employee",
+                "role_victim": "HR or finance staff members"
+            },
+            "request": "Change direct deposit details to redirect a payroll check to an attacker-controlled bank account",
+            "pretext": "Setting up a new banking package and needing to update direct deposit instructions before the upcoming pay date",
+            "persuasion_principles": [
+                "Urgency"
+            ],
+            "timing": "Payroll cycle",
+            "impact": "Direct financial loss for affected individuals and organizations due to diverted salary payments",
+            "information_website": "https://www.microsoft.com/en-us/security/blog/2026/04/09/investigating-storm-2755-payroll-pirate-attacks-targeting-canadian-employees/",
+            "coding_date": "2026-10-20T08:28:00Z",
+            "coder": "Human Coded",
+            "license": "All rights reserved (research / fair-use citation only) - © Microsoft 2026",
+            "note_on_ambiguity": "Licensing details were extracted from the footer of the Microsoft Threat Intelligence blog, which states © Microsoft 2026.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0002",
+            "campaign_name": "Storm-2657 Payroll pirate attacks targeting US universities",
+            "publisher": "Microsoft Threat Intelligence",
+            "publisher_type": "Vendor",
+            "publication_date": "2025-10-09",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (AiTM)",
+            "targeting_evidence": "The threat actor targeted at multiple US universities, tailoring phishing email content and subject lines based on the recipient's specific institution (e.g., using the specific university name or university president's name).",
+            "outcome": "Successful (funds/data/credentials/access obtained)",
+            "target": "US-based organizations, particularly employees in sectors like higher education",
+            "channels": "Corporate email > HR SaaS platform (Workday)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Adversary-in-the-middle (AiTM)",
+                "Compromised legitimate account (ATO)",
+                "Mailbox rule manipulation"
+            ],
+            "roles": {
+                "role_attacker": "Storm-2657",
+                "role_impersonated": "University President, HR Department, or University Health Center",
+                "role_victim": "Employees in US universities (higher education)"
+            },
+            "request": "Click a link (often Google Drive) to check illness exposure status, review faculty misconduct reports, or read compensation and benefits updates, leading to credential and MFA code theft.",
+            "pretext": "False notifications about a communicable illness outbreak on campus, faculty misconduct mentions, or official 2025 compensation and benefits updates from the university leadership.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Financial harm caused by the authorized redirection of future salary payments to account(s) controlled by the attacker",
+            "information_website": "https://www.microsoft.com/en-us/security/blog/2025/10/09/investigating-targeted-payroll-pirate-attacks-affecting-us-universities/",
+            "coding_date": "2026-10-20T19:26:53Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © Microsoft 2026",
+            "note_on_ambiguity": "The specific timing relative to a business cycle (e.g., payroll cycle) was not mentioned, so 'Not specified in the report' was assigned to avoid inference. Licensing details were extracted from the footer of the Microsoft Threat Intelligence blog, which states © Microsoft 2026.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0003",
+            "campaign_name": "Email campaign targeting organizations in Canada to deliver Lumma Stealer",
+            "publisher": "Microsoft Threat Intelligence",
+            "publisher_type": "Vendor",
+            "publication_date": "2025-05-21",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The report explicitly states the campaign was 'targeting organizations in Canada' and that 'emails' subject lines were personalized to include recipient-specific details such as 'Invoice for [recipient email]'.",
+            "outcome": "Not specified in the report",
+            "target": "Organizations in Canada",
+            "channels": "Email > Prometheus TDS (Compromised website) > ClickFix landing page > Windows Run prompt (mshta/PowerShell)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Malicious link / redirect",
+                "Other (specify) - ClickFix / Fake CAPTCHA (Social engineering payload execution)"
+            ],
+            "roles": {
+                "role_attacker": "Lumma Stealer affiliate",
+                "role_impersonated": "Fitness plan provider (The Fitness Ladder) / Online education platform",
+                "role_victim": "Organizations in Canada"
+            },
+            "request": "Click a link to cancel a subscription, then solve a fake CAPTCHA (ClickFix) by pasting a malicious command into the Windows Run prompt.",
+            "pretext": "The recipient's free trial for a fitness plan (e.g., The Fitness Ladder) is ending shortly and they will be automatically billed for a premium subscription ($19.99/month) unless they take action to cancel.",
+            "persuasion_principles": [
+                "Urgency"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.microsoft.com/en-us/security/blog/2025/05/21/lumma-stealer-breaking-down-the-delivery-techniques-and-capabilities-of-a-prolific-infostealer/",
+            "coding_date": "2026-10-22T05:13:33Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © Microsoft 2026",
+            "note_on_ambiguity": "The source document is a landscape report covering generalized Lumma Stealer trends, but this specific campaign is presented as an illustrative case within the report because it contains sufficient details and targeting evidence to be coded under Decision Rule #8. Licensing details were extracted from the footer of the Microsoft Threat Intelligence blog, which states © Microsoft 2026.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0004",
+            "campaign_name": "TA4903 Cyberattack themed BEC campaigns spoofing suppliers.",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2024-03-06",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure BEC (Impersonation + Fraud)",
+            "targeting_evidence": "The actor used information stolen from ",
+            "outcome": "Not specified in the report",
+            "target": "Business partners and financial institutions of compromised U.S. organizations",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Typosquatting / lookalike domain"
+            ],
+            "roles": {
+                "role_attacker": "TA4903",
+                "role_impersonated": "Produce and manufacturing companies (Likely suppliers)",
+                "role_victim": "Business partners / Employees responsible for banking information"
+            },
+            "request": "Provide information on who is responsible for updating banking information within the organization in order to facilitate a change in banking details.",
+            "pretext": "The sender's company was recently the victim of a cyber attack resulting in compromised banking information, requiring an immediate update to ensure the safety of financial transactions.",
+            "persuasion_principles": [
+                "Urgency"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/ta4903-actor-spoofs-us-government-small-businesses-phishing-bec-bids",
+            "coding_date": "2026-10-22T09:33:45Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+            "note_on_ambiguity": "The source document is a actor profile excluded under Rule #3. This specific campaign is presented as an illustrative case within the report because it contains sufficient details and targeting evidence to be coded under Decision Rule #8. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0005",
+            "campaign_name": "COVID-19 Vaccination Self Compliance Report O365 Credential Theft",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2021-08-24",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The message were tailored to the target entities by spoofing their specific HR divisions (e.g., HR@[organizationname.tld]).",
+            "outcome": "Not specified in the report",
+            "target": "Thousands of organizations globally",
+            "channels": "Corporate email > Fake login / credential-collection page",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Fake login / credential-collection page",
+                "Domain spoofing"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "HR Division",
+                "role_victim": "Employees of the targeted organizations"
+            },
+            "request": "Click a URL to view a secure file shared via Office 365, and enter credentials into a fake Microsoft authentication page.",
+            "pretext": "A mandatory COVID-19 Vaccination Self Compliance Report has been shared with the employee by their HR department.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/delta-variant-spreads-covid-19-themes-make-resurgence-email-threats",
+            "coding_date": "2026-10-23T00:30:21Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+            "note_on_ambiguity": "The source document is a actor profile excluded under Rule #3. This specific campaign is presented as an illustrative case within the report because it contains sufficient details and targeting evidence to be coded under Decision Rule #8. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0006",
+            "campaign_name": "Formbook COVID-19 Employment Status campaign",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2021-08-24",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The emails were generic but explicitly customized to the intended organization, sent to hundreds of organizations.",
+            "outcome": "Not specified in the report",
+            "target": "Hundreds of organizations",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "Human Resources Manager",
+                "role_victim": "Employees of the targeted organizations"
+            },
+            "request": "Open a zipped file (e.g., Scan.Salary.zip) purportedly containing a 2 months salary receipt and cancellation of employment documents, which installs Formbook malware.",
+            "pretext": "The recipient's employment has been immediately terminated due to the financial impact of COVID-19 epidemic on the company.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/delta-variant-spreads-covid-19-themes-make-resurgence-email-threats",
+            "coding_date": "2026-10-23T02:38:26Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+            "note_on_ambiguity": "The source document is a actor profile excluded under Rule #3. This specific campaign is presented as an illustrative case within the report because it contains sufficient details and targeting evidence to be coded under Decision Rule #8. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0007",
+            "campaign_name": "Ave Maria COVID-19 Preventative Measures campaign",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2021-08-24",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The campaign targeted dozens of customers, with more than 90% of the intended targets in the energy vertical. The emails contained email addresses unique to the target entity (e.g., healthcare@[targetcompany].com).",
+            "outcome": "Not specified in the report",
+            "target": "Energy and industrial organizations",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "HEALTH CARES",
+                "role_victim": "Employees in energy and industrial organizations"
+            },
+            "request": "Open an attached Excel file (covid-19_preventative measures.xlsx) which exploits Equation Editor vulnerabilities to install Ave Maria remote access trojan.",
+            "pretext": "Health advisories containing new COVID-19 preventative measures relating to the target company's policies, alongside global infection and vaccination statistics.",
+            "persuasion_principles": [
+                "Authority"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/delta-variant-spreads-covid-19-themes-make-resurgence-email-threats",
+            "coding_date": "2026-10-23T02:56:45Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+            "note_on_ambiguity": "The source document is a actor profile excluded under Rule #3. This specific campaign is presented as an illustrative case within the report because it contains sufficient details and targeting evidence to be coded under Decision Rule #8. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0008",
+            "campaign_name": "TA453 Aaron Stein Iraq's position in the Arab world campaign",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-09-13",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor sent a targeted email to a specific academic/researcher, impersonating a known contact and referencing a Middle East-related affair.",
+            "outcome": "Not specified in the report",
+            "target": "Unspecified academic/researcher",
+            "channels": "Email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Other (specify) - Multi-persona impersonation (MPI)"
+            ],
+            "roles": {
+                "role_attacker": "TA453",
+                "role_impersonated": "Aaron Stein (Director of Research at FPRI) and Richard Wike (Director of Global attitudes research at PEW Research Center)",
+                "role_victim": "Unspecified academic/researcher"
+            },
+            "request": "Answer intelligence questions regarding Iraq's position in the Arab world and the Abraham Accords, or agree to a Zoom meeting.",
+            "pretext": "The sender is allegedly working on an article about Iraq's position in the Arab world and is seeking expert comments to air to the public.",
+            "persuasion_principles": [
+                "Authority",
+                "Social Proof"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/ta453-uses-multi-persona-impersonation-capitalize-fomo",
+            "coding_date": "2026-10-23T04:02:45Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+            "note_on_ambiguity": "The source document is a actor profile excluded under Rule #3. This specific campaign is presented as an illustrative case within the report because it contains sufficient details and targeting evidence to be coded under Decision Rule #8. The campaign does not contain any malicious attachments or links. The attack action constitutes a request for information, which is not a malicious action. However, the campaign is coded as a spear phishing attack because it contains a targeted lure and impersonation of known contacts. Tactics are coded as 'Other' because the campaign uses multi-persona impersonation. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0009",
+            "campaign_name": "TA453 Harald Ott genome research campaign",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-09-13",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The campaign deliberately selected a target specializing in genome research, and sent a targeted email impersonating a known contact and referencing an organ engineering.",
+            "outcome": "Not specified in the report",
+            "target": "Target specializing in genome research (Medical researcher)",
+            "channels": "Email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Malicious Link / redirect",
+                "Other (specify) - Multi-persona impersonation (MPI)",
+                "Other (specify) - Remote Template Injection"
+            ],
+            "roles": {
+                "role_attacker": "TA453",
+                "role_impersonated": "Harald C. Ott (Cardiothoracic surgery at the Massachusetts General Hospital), Claire Parry (Assistant Director at the Centre for Universal Health), and Dr. Andrew Marshall (Chief editor of Nature Biotechnology)",
+                "role_victim": "Medical researcher specializing in genome research"
+            },
+            "request": "Open a OneDrive link to download a document (Ott-Lab 371.docx) which utilizes remote template injection (Korg macros) to exfiltrate system data.",
+            "pretext": "Collaboration on a project regarding organ engineering, and regeneration as a theoretical alternative to transplantation.",
+            "persuasion_principles": [
+                "Authority",
+                "Social Proof"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/ta453-uses-multi-persona-impersonation-capitalize-fomo",
+            "coding_date": "2026-10-23T05:23:49Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+            "note_on_ambiguity": "The source document is a actor profile excluded under Rule #3. This specific campaign is presented as an illustrative case within the report because it contains sufficient details and targeting evidence to be coded under Decision Rule #8. Tactics are coded as 'Other' because the campaign uses multi-persona impersonation and remote template injection. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0010",
+            "campaign_name": "Ta453 Carroll Doherty US-Russia clash campaign",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-09-13",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor deliberately selected a target specializing in nuclear arms control, as well as a second target at the same university, and sent a targeted email impersonating known contacts and referencing a US-Russia clash.",
+            "outcome": "Not specified in the report",
+            "target": "Academics involved in nuclear arms control",
+            "channels": "Email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Malicious Link / redirect",
+                "Other (specify) - Multi-persona impersonation (MPI)",
+                "Other (specify) - Remote Template Injection"
+            ],
+            "roles": {
+                "role_attacker": "TA453",
+                "role_impersonated": "Carroll Doherty (Director of Political Research at Pew Research Center) and Aaron Stein (Director of Research at FPRI)",
+                "role_victim": "Prominent academic involved in nuclear arms control (and a colleague)"
+            },
+            "request": "Access a password-protected OneDrive link to read an article ('The possible US-Russia clash.docx') and make an outline, triggering a remote template injection.",
+            "pretext": "The sender is asking the target to read their article about a possible US-Russia clash and provide an outline/feedback.",
+            "persuasion_principles": [
+                "Authority",
+                "Social Proof"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/ta453-uses-multi-persona-impersonation-capitalize-fomo",
+            "coding_date": "2026-10-23T05:40:18Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+            "note_on_ambiguity": "The source document is a actor profile excluded under Rule #3. This specific campaign is presented as an illustrative case within the report because it contains sufficient details and targeting evidence to be coded under Decision Rule #8. Tactics are coded as 'Other' because the campaign uses multi-persona impersonation and remote template injection. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0011",
+            "campaign_name": "TA444 Salary Adjustments campaign targeting US digital banking",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2026-05-24",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor deliberately targeted a medium-sized digital banking institution in the Unites States using a tailored lure.",
+            "outcome": "Not specified in the report",
+            "target": "Medium-sized digital banking insitution in the United States",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Display - name spoofing",
+                "Malicious link / redirect"
+            ],
+            "roles": {
+                "role_attacker": "TA444 (North Korea-aligned)",
+                "role_impersonated": "ABF Capital / Kevin McDonnell",
+                "role_victim": "Employees at a medium-sized digital banking institution"
+            },
+            "request": "Click a malicious URL masquerading as a shared PDF document ('Salary Adjustments 202202101019.pdf) to trigger an infection chain delivering the CageyChameleon malware.",
+            "pretext": "The victim receives a notification that a document regarding 'Salary Adjustments' has been shared with them.",
+            "persuasion_principles": [
+                "Not specified in the report"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/small-and-medium-business-APT-phishing-landscape-in-2023",
+            "coding_date": "2026-10-23T05:55:44Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+            "note_on_ambiguity": "The source document is a actor profile excluded under Rule #3. This specific campaign is presented as an illustrative case within the report because it contains sufficient details and targeting evidence to be coded under Decision Rule #8. Display-name spoofing was coded because the screenshot shows the sender pretending to be Kevin McDonnell but using a freemail address (kmcdonnell61@gmail.com) rather than a spoofed corporate domain. Persuasion principles were marked as 'Not specified in the report' to reflect that the report does not provide sufficient information to determine which persuasion principles were used in this campaign. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+            "agreement_rate": "N/A"
+        }
+    ]
+}

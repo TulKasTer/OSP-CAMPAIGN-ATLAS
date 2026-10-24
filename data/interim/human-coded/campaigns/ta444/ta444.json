@@ -1,0 +1,37 @@
+{
+    "campaign_id": "CMP-TA444-001",
+    "campaign_name": "TA444 Salary Adjustments campaign targeting US digital banking",
+    "publisher": "Proofpoint",
+    "publisher_type": "Vendor",
+    "publication_date": "2026-05-24",
+    "case_source_type": "Illustrative case within aggregate report",
+    "campaign_specificity": "Single campaign",
+    "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+    "targeting_evidence": "The threat actor deliberately targeted a medium-sized digital banking institution in the Unites States using a tailored lure.",
+    "outcome": "Not specified in the report",
+    "target": "Medium-sized digital banking insitution in the United States",
+    "channels": "Corporate email",
+    "channel_transition": "None (single channel throughout)",
+    "tactics": [
+        "Display - name spoofing",
+        "Malicious link / redirect"
+    ],
+    "roles": {
+        "role_attacker": "TA444 (North Korea-aligned)",
+        "role_impersonated": "ABF Capital / Kevin McDonnell",
+        "role_victim": "Employees at a medium-sized digital banking institution"
+    },
+    "request": "Click a malicious URL masquerading as a shared PDF document ('Salary Adjustments 202202101019.pdf) to trigger an infection chain delivering the CageyChameleon malware.",
+    "pretext": "The victim receives a notification that a document regarding 'Salary Adjustments' has been shared with them.",
+    "persuasion_principles": [
+        "Not specified in the report"
+    ],
+    "timing": "Not specified in the report",
+    "impact": "Not specified in the report",
+    "information_website": "https://www.proofpoint.com/us/blog/threat-insight/small-and-medium-business-APT-phishing-landscape-in-2023",
+    "coding_date": "2026-10-23T05:55:44Z",
+    "coder": "Human coded",
+    "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
+    "note_on_ambiguity": "The source document is a actor profile excluded under Rule #3. This specific campaign is presented as an illustrative case within the report because it contains sufficient details and targeting evidence to be coded under Decision Rule #8. Display-name spoofing was coded because the screenshot shows the sender pretending to be Kevin McDonnell but using a freemail address (kmcdonnell61@gmail.com) rather than a spoofed corporate domain. Persuasion principles were marked as 'Not specified in the report' to reflect that the report does not provide sufficient information to determine which persuasion principles were used in this campaign. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+    "agreement_rate": "N/A"
+}

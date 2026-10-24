@@ -1,0 +1,39 @@
+{
+    "campaign_id": "CMP-STORM-2755-001",
+    "campaign_name": "Storm 2755 Payroll pirate attacks",
+    "publisher": "Microsoft Threat Intelligence",
+    "publisher_type": "Vendor",
+    "publication_date": "2026-04-09",
+    "case_source_type": "Standalone campaign report",
+    "campaign_specificity": "Single campaign",
+    "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (SEO poisoning / malvertising, AiTM)",
+    "targeting_evidence": "The actor relied exclusively on geographic targeting of Canadian users, combined with socially engineering HR or finance staff members using consistent email subject lines across compromised users.",
+    "outcome": "Successful (funds/data/credentials/access obtained)",
+    "target": "Canadian employees",
+    "channels": "Search engine (SEO poisoning/malvertising) > Corporate email > HR SaaS platform (Workday)",
+    "channel_transition": "Multiple transitions",
+    "tactics": [
+        "Adversary-in-the-middle (AiTM)",
+        "Compromised legitimate account (ATO)",
+        "Mailbox rule manipulation",
+        "Other (specify) - SEO poisoning / malvertising"
+    ],
+    "roles": {
+        "role_attacker": "Storm-2755",
+        "role_impersonated": "Employee",
+        "role_victim": "HR or finance staff members"
+    },
+    "request": "Change direct deposit details to redirect a payroll check to an attacker-controlled bank account",
+    "pretext": "Setting up a new banking package and needing to update direct deposit instructions before the upcoming pay date",
+    "persuasion_principles": [
+        "Urgency"
+    ],
+    "timing": "Payroll cycle",
+    "impact": "Direct financial loss for affected individuals and organizations due to diverted salary payments",
+    "information_website": "https://www.microsoft.com/en-us/security/blog/2026/04/09/investigating-storm-2755-payroll-pirate-attacks-targeting-canadian-employees/",
+    "coding_date": "2026-10-20T08:28:00Z",
+    "coder": "Human Coded",
+    "license": "All rights reserved (research / fair-use citation only) - © Microsoft 2026",
+    "note_on_ambiguity": "Licensing details were extracted from the footer of the Microsoft Threat Intelligence blog, which states © Microsoft 2026.",
+    "agreement_rate": "N/A"
+}

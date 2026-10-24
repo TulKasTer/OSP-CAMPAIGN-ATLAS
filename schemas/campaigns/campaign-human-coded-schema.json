@@ -1,0 +1,37 @@
+{
+    "campaign_id": "",
+    "campaign_name": "",
+    "publisher": "",
+    "publisher_type": "",
+    "publication_date": "",
+    "case_source_type": "",
+    "campaign_specificity": "",
+    "attack_classification": "",
+    "targeting_evidence": "",
+    "outcome": "",
+    "target": "",
+    "channels": "",
+    "channel_transition": "",
+    "tactics" : [
+        ""
+    ],
+    "roles": {
+        "role_attacker": "",
+        "role_impersonated": "",
+        "role_victim": ""
+    },
+    "request": "",
+    "pretext": "",
+    "persuasion_principles": [
+        ""
+    ],
+    "timing": "",
+    "impact": "",
+    "information_website": "",
+    "coding_date": "",
+    "coder": "Human coded",
+    "license": "",
+    "note_on_ambiguity": "",
+    "agreement_rate": "N/A"
+    
+}
