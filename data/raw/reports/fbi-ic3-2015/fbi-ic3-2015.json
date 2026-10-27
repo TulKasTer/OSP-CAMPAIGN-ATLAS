@@ -1,0 +1,19 @@
+{
+    "report_id": "REP-0001",
+    "report_name": "2015 Internet Crime Report",
+    "report_type": "Annual",
+    "period_report": "Annual",
+    "report_year": "2015",
+    "geographic_scope": "Global",
+    "publisher": "FBI IC3",
+    "publisher_type": "Government",
+    "data_source": "Self-reported victims",
+    "incident_counts": "Conflicting (see notes)",
+    "financial_loss": "Conflicting (see notes)",
+    "information_website": "https://www.ic3.gov/AnnualReport/Reports/2015_IC3Report.pdf",
+    "coding_date": "2026-10-25T10:31:15Z",
+    "coder": "Human coded",
+    "license": "Public domain / government work",
+    "note_on_ambiguity": "Unresolvable conflict between narrative and statistical tables. The narrative 'Hot Topics' section reports 7,838 BEC complaints with losses of over $263 million. However, the '2015 Crime Types' table later in the report lists Business Email Compromise with different totals (approx. $246 million). Both data points are documented here as per the ambiguity rules.",
+    "agreement_rate": "N/A"
+}

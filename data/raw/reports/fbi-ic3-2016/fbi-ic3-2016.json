@@ -1,0 +1,19 @@
+{
+    "report_id": "REP-0002",
+    "report_name": "2016 Internet Crime Report",
+    "report_type": "Annual",
+    "period_report": "Annual",
+    "report_year": "2016",
+    "geographic_scope": "Global",
+    "publisher": "FBI IC3",
+    "publisher_type": "Government",
+    "data_source": "Self-reported victims",
+    "incident_counts": "12,005",
+    "financial_loss": "USD 360,513,961",
+    "information_website": "https://www.ic3.gov/AnnualReport/Reports/2016_IC3Report.pdf",
+    "coding_date": "2016-10-25T10:50:41Z",
+    "coder": "Human coder",
+    "license": "Public domain / government work",
+    "note_on_ambiguity": "The report groups Business Email Compromise (BEC) and Email Account Compromise (EAC) into a single combined category ('BEC/EAC') throughout both the narrative ('Hot Topics') and the statistical tables ('2016 Crime Types'). It is not possible to isolate the exact incident counts or financial loss corresponding exclusively to Organizational Spear Phishing (BEC).",
+    "agreement_rate": "N/A"
+}

@@ -1,0 +1,94 @@
+{
+    "campaign_sources": [
+        {
+            "url": "https://cloud.google.com/blog/topics/threat-intelligence/financially-motivated-threat-actor-breeze-comet-targets-brazil",
+            "title": "Financially Motivated Threat Actor BREEZE COMET Targets Brazil | Google Cloud Blog",
+            "publisher": "Google Cloud Blog",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-10-23T09:06:04.873734+00:00",
+            "sha256_hash": "ae14111b8209e227a3f94a7874bdc41cbd08e839ac598685bf2a61dd55c5a686"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2025/05/21/lumma-stealer-breaking-down-the-delivery-techniques-and-capabilities-of-a-prolific-infostealer/",
+            "title": "Lumma Stealer: Breaking down the delivery techniques and capabilities of a prolific infostealer | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence, Microsoft Digital Crimes Unit, Microsoft Defender Experts",
+            "published_date": "2025-05-21T16:00:00+00:00",
+            "retrieved_at_utc": "2026-10-23T09:10:02.746473+00:00",
+            "sha256_hash": "902065ad9729b5b8a18b79073fa4a7cf347935c5bcbb8d820f55a911d5c7f8fe"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2025/10/09/investigating-targeted-payroll-pirate-attacks-affecting-us-universities/",
+            "title": "Investigating targeted “payroll pirate” attacks affecting US universities | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence",
+            "published_date": "2025-10-09T15:00:00+00:00",
+            "retrieved_at_utc": "2026-10-24T06:36:24.995983+00:00",
+            "sha256_hash": "ac61e02eec042a8083efe2d8d23e51a674f655f8a773affb2e69a12121b5f435"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2026/04/09/investigating-storm-2755-payroll-pirate-attacks-targeting-canadian-employees/",
+            "title": "Investigating Storm-2755: “Payroll pirate” attacks targeting Canadian employees | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Defender Experts Cybersecurity Incident Response",
+            "published_date": "2026-04-09T15:00:00+00:00",
+            "retrieved_at_utc": "2026-10-24T06:37:30.384653+00:00",
+            "sha256_hash": "3798a5786cf918f7f904572a7b71d62cedcc9e3ef4f1e68d9905a7a57978d2ce"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/small-and-medium-business-APT-phishing-landscape-in-2023",
+            "title": "SMBs Phishing Prevention, Analysis, &amp; More | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2023-05-19T07:04:41-07:00",
+            "retrieved_at_utc": "2026-10-24T06:38:51.411442+00:00",
+            "sha256_hash": "a923336f036c5643e987f8f064ce25ed845ed11f76613e37e237013c86369669"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/ta453-uses-multi-persona-impersonation-capitalize-fomo",
+            "title": "TA453 Uses Impersonation to Capitalize on FOMO | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2022-09-11T14:52:28-07:00",
+            "retrieved_at_utc": "2026-10-24T06:39:46.121555+00:00",
+            "sha256_hash": "a1a310782335b9fc0a085acd4f0c3b7be3f4f3431ba221c3c5af1e574284d314"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/delta-variant-spreads-covid-19-themes-make-resurgence-email-threats",
+            "title": "As Delta Variant Spreads, COVID-19 Themes Make Resurgence In Email Threats | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2021-08-16T14:34:09-07:00",
+            "retrieved_at_utc": "2026-10-24T06:40:38.545914+00:00",
+            "sha256_hash": "ed5f35cf30007fe2c5dba6220c6e228df2989209162b9cdaa81650164c45cdd9"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/security-brief-french-bec-threat-actor-targets-property-payments",
+            "title": "Security Brief: French BEC Threat Actor Targets Property Payments | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2025-04-23T11:03:18-07:00",
+            "retrieved_at_utc": "2026-10-24T06:41:58.579026+00:00",
+            "sha256_hash": "8d9b4af60c0bdd8c5da8105b6054cf8e15abd938e5d77d8967d85e091d1d78f3"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/security-briefs/job-themed-email-threats-remain-preferred-theme-threat-actors",
+            "title": "Security Brief: Job-themed email threats remain a preferred theme for threat actors | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2021-05-03T14:40:44-07:00",
+            "retrieved_at_utc": "2026-10-24T06:43:04.360083+00:00",
+            "sha256_hash": "5ed0581752d3ffcce73ebe273e3f0e1327b6a396dccf7757a09e21216241916b"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/ta4903-actor-spoofs-us-government-small-businesses-phishing-bec-bids",
+            "title": "TA4903: Actor Spoofs U.S. Government, Small Businesses in Phishing, BEC Bids | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2024-02-21T13:55:16-08:00",
+            "retrieved_at_utc": "2026-10-24T06:43:48.770238+00:00",
+            "sha256_hash": "3b4d168469f4d50d08bf96f97734d7ee4d0d82e4b1f79f6dff483ae5db69c884"
+        }
+    ]
+}

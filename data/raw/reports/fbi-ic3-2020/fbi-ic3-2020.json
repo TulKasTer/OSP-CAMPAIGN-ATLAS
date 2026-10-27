@@ -1,0 +1,19 @@
+{
+    "report_id": "REP-0006",
+    "report_name": "2020 Internet Crime Report",
+    "report_type": "Annual",
+    "period_report": "Annual",
+    "report_year": "2020",
+    "geographic_scope": "Global",
+    "publisher": "FBI IC3",
+    "publisher_type": "Government",
+    "data_source": "Self-reported victims",
+    "incident_counts": "19,369",
+    "financial_loss": "USD 1,866,642,107",
+    "information_website": "https://www.ic3.gov/AnnualReport/Reports/2020_IC3Report.pdf",
+    "coding_date": "2026-10-25T11:10:15Z",
+    "coder": "Human coder",
+    "license": "Public domain / government work",
+    "note_on_ambiguity": "The report's narrative indicates 19,369 complaints and an adjusted loss of approximately $1.8 billion for BEC/EAC. It continues the trend of grouping Business Email Compromise (BEC) and Email Account Compromise (EAC) into a single combined category, preventing the isolation of figures corresponding exclusively to Organizational Spear Phishing (BEC).",
+    "agreement_rate": "N/A"
+}

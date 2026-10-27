@@ -1,0 +1,19 @@
+{
+    "report_id": "REP-0008",
+    "report_name": "2022 Internet Crime Report",
+    "report_type": "Annual",
+    "period_report": "Annual",
+    "report_year": "2022",
+    "geographic_scope": "Global",
+    "publisher": "FBI IC3",
+    "publisher_type": "Government",
+    "data_source": "Self-reported victims",
+    "incident_counts": "21,832",
+    "financial_loss": "USD 2,742,354,049",
+    "information_website": "https://www.ic3.gov/AnnualReport/Reports/2022_IC3Report.pdf",
+    "coding_date": "2026-10-25T11:21:39Z",
+    "coder": "Human coder",
+    "license": "Public domain / government work",
+    "note_on_ambiguity": "Starting in 2022, the IC3 renamed the combined 'BEC/EAC' category to simply 'Business Email Compromise' (BEC). However, this broad category still functionally encompasses both organizational and personal email compromises. The report cites 21,832 complaints and over $2.7 billion in adjusted losses. It is still not possible to isolate the figures corresponding exclusively to Organizational Spear Phishing.",
+    "agreement_rate": "N/A"
+}

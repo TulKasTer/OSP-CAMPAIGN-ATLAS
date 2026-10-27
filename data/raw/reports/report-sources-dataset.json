@@ -1,0 +1,103 @@
+{
+    "report_sources": [
+        {
+            "url": "https://www.ic3.gov/AnnualReport/Reports/2015_IC3Report.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-10-25T09:48:28.147739+00:00",
+            "sha256_hash": "b16b6e74ffb070b928d66ab691999e18db95a751614ed45139006b8cd505cc4e"
+        },
+        {
+            "url": "https://www.ic3.gov/AnnualReport/Reports/2016_IC3Report.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-10-25T09:49:11.266018+00:00",
+            "sha256_hash": "87c36da0b065ef7a631f5562417733b189668dcf5f7f52527ee91bb523c3290f"
+        },
+        {
+            "url": "https://www.ic3.gov/AnnualReport/Reports/2017_IC3Report.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-10-25T09:49:37.319784+00:00",
+            "sha256_hash": "6d3c2acb352d9af26c49e9067ce204b81efea597cfe91219bef14912c951fe73"
+        },
+        {
+            "url": "https://www.ic3.gov/AnnualReport/Reports/2018_IC3Report.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-10-25T09:50:03.553037+00:00",
+            "sha256_hash": "eb863e38e87fd9cd987cf7574045610a796edd3ad552c9266001ad7e5359b5c5"
+        },
+        {
+            "url": "https://www.ic3.gov/AnnualReport/Reports/2019_IC3Report.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-10-25T09:50:23.912269+00:00",
+            "sha256_hash": "02bdd347f5613f91e41c4e02ebf28d1e5b7c188c16dde6ec44264f8c38807f48"
+        },
+        {
+            "url": "https://www.ic3.gov/AnnualReport/Reports/2020_IC3Report.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-10-25T09:50:55.814287+00:00",
+            "sha256_hash": "cad0b75505847a4792a67bb33ece21ec9c7bd21395ca6b158095d92772e01637"
+        },
+        {
+            "url": "https://www.ic3.gov/AnnualReport/Reports/2021_IC3Report.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-10-25T09:51:17.796996+00:00",
+            "sha256_hash": "4f88a1777463b20a299c4383cae71982a88f75719bb999b5b0ca0d1ff966c8f7"
+        },
+        {
+            "url": "https://www.ic3.gov/AnnualReport/Reports/2022_IC3Report.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-10-25T09:51:51.079926+00:00",
+            "sha256_hash": "15e3f13fe1419e94f60a44ba018f6f02f96219a0583c724554c9e79cacef96a4"
+        },
+        {
+            "url": "https://www.ic3.gov/AnnualReport/Reports/2023_IC3Report.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-10-25T09:52:12.210363+00:00",
+            "sha256_hash": "59ecd914a72db57e57838ac67224dfe43e73b24765910339d75d010b63972301"
+        },
+        {
+            "url": "https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-10-25T09:52:33.757088+00:00",
+            "sha256_hash": "ba494b0a1bd991c722cf65619eb518329175b898fb508e8c84fc7dd12e07cac0"
+        },
+        {
+            "url": "https://www.ic3.gov/AnnualReport/Reports/2025_IC3Report.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-10-25T09:52:59.564220+00:00",
+            "sha256_hash": "7d1fe453237654d2edcf89b0dd6b8b4b2e633fc1d5d5cfbd7dad5f7c1604a0a2"
+        }
+    ]
+}

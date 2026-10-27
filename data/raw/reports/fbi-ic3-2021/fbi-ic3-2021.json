@@ -1,0 +1,19 @@
+{
+    "report_id": "REP-0007",
+    "report_name": "2021 Internet Crime Report",
+    "report_type": "Annual",
+    "period_report": "Annual",
+    "report_year": "2021",
+    "geographic_scope": "Global",
+    "publisher": "FBI IC3",
+    "publisher_type": "Government",
+    "data_source": "Self-reported victims",
+    "incident_counts": "19,954",
+    "financial_loss": "USD 2,400,000,000",
+    "information_website": "https://www.ic3.gov/AnnualReport/Reports/2021_IC3Report.pdf",
+    "coding_date": "2026-10-25T11:16:18Z",
+    "coder": "Human coder",
+    "license": "Public domain / government work",
+    "note_on_ambiguity": "The report's narrative states there were 19,954 complaints and adjusted losses of nearly $2.4 billion for the combined category of BEC/EAC. The exact figure exclusively for Organizational Spear Phishing (BEC) cannot be isolated because of this grouping.",
+    "agreement_rate": "N/A"
+}
