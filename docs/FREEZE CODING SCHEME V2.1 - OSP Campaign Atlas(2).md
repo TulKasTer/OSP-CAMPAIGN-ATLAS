@@ -42,7 +42,7 @@ A separate sheet, outside the dataset tables, with one row per candidate exclude
 | Rule Triggered | Rule under which the campaign was excluded | Rule \#1 Rule \#2 Rule \#3 | Rule \#1 |
 | Exclusion Reason | Concrete sentence that justifies the exclusion against the written definition | Open response | The campaign relies on opportunistic drive-by download via compromised websites and mass delivery of fake CAPTCHA lures, with no explicit evidence of deliberate target selection against a specific organization or role. |
 | Exclusion Date | The date and time at which the exclusion was decided | ISO 8601 \- Coordinated Universal Time “Zulu” (YYYY-MM-DDThh:mm:ssZ) | 2026-10-22T07:23:56Z |
-| Evaluator | Person who made the exclusion decision | Open response (name or initials) | Jesús Felipe Bastidas Valenzuela |
+| Evaluator | Person who made the exclusion decision | Open response (name or initials) | JFBV |
 
 **Decision Rules for Ambiguous Cases.**
 
