@@ -4,7 +4,7 @@
 **Coding schema reference:** FREEZE CODING SCHEMA V2.1 (2026-10-26).\
 **Dataset schema reference:** DATASET SCHEMA V2.1 (2026-10-26).
 
-El proyecto tiene schemas bases para la codificacion de las tablas de `Campaign` & `Report`, los cuales se encuentran ubicados en la carpeta de `schemas/`, esta tiene el siguiente organización:
+The project has base schemas for coding the `Campaign` and `Report` tables. They are located in the `schemas/` folder, which has the following organization:
 
 ```
 schemas/
@@ -22,9 +22,9 @@ schemas/
     └── reports-dataset-schema.json
 ```
 
-## Campaigns schemas
+## Campaign schemas
 
-Los schemas de campañas sirven para codificar las campañas extraidas de los informes recopilados en formato JSON, con el objetivo de poder utilizar despues dicha codificacion para el Atlas en la tabla de `Campaign`, para esto existen los siguientes schemas:
+The campaign schemas are used to code campaigns extracted from collected reports in JSON format. The resulting coding can then be used in the Atlas `Campaign` table. The following schemas are available:
 
 - Campaign human coded schema
 - Campaign schema
@@ -33,18 +33,18 @@ Los schemas de campañas sirven para codificar las campañas extraidas de los in
 - Exclusion log schema
 
 ### Campaign human coded schema
-El `Campaign human coded schema` es un esquema de codificacion que permite que los codificadores humanos llenar la fila de codificacion de una campaña extraido de un informe.
+The `Campaign human coded schema` is a coding schema that allows human coders to complete the coding row for a campaign extracted from a report.
 
-- [ ] Obligatorio de usar
-- [x] El codificador humano puede usarlo
-- [x] Es un schema que puede desaparecer en un futuro.
-- [x] Es sustituible.
+- [ ] Required
+- [x] Can be used by a human coder
+- [x] May be removed in the future
+- [x] Replaceable
 
-Se usa en la fase de codificacion manual por un investigación humano.
+It is used during the manual coding phase by a human researcher.
 
-Ubicacion en el proyecto: `schemas\campaigns\campaign-human-coded-schema.json`
+Project location: `schemas\campaigns\campaign-human-coded-schema.json`
 
-Estructura del schema:
+Schema structure:
 ```
 {
     "campaign_id": "REP-0000",
@@ -86,21 +86,21 @@ Estructura del schema:
 ```
 
 > [!NOTE]
-> Este schema se creo para agilizar el proceso de codificación manual del primer dataset, este puede sustituir al ´campaign-schema.json´ en casos de codificacion por humanos y en un futuro puede desaparecer una vez se determine la architectura definitiva del proyecto.
+> This schema was created to streamline the manual coding process for the first dataset. It can replace `campaign-schema.json` when coding is performed by humans and may be removed in the future once the project's final architecture is determined.
 
 ### Campaign schema
-El `Campaign schema` es un esquema de codificacion que permite que los codificadores humanos y/o LMMs llenar la fila de codificacion de una campaña extraido de un informe.
+The `Campaign schema` is a coding schema that allows human coders and/or LMMs to complete the coding row for a campaign extracted from a report.
 
-- [x] Obligatorio de usar
-- [x] El codificador humano puede usarlo
-- [ ] Es un schema que puede desaparecer en un futuro.
-- [x] Es sustituible.
+- [x] Required
+- [x] Can be used by a human coder
+- [ ] May be removed in the future
+- [x] Replaceable
 
-Se usa en la fase de codificacion manual por un investigación humano y por parte de LLMs.
+It is used during the manual coding phase by a human researcher and by LLMs.
 
-Ubicacion en el proyecto: `schemas\campaigns\campaign-schema.json`
+Project location: `schemas\campaigns\campaign-schema.json`
 
-Estructura del schema:
+Schema structure:
 ```
 {
     "campaign_id": "",
@@ -142,18 +142,18 @@ Estructura del schema:
 ```
 
 ### Campaign sources dataset schema
-El `Campaign sources dataset schema` es un esquema de codificacion que permite que los codificadores humanos y/o LMMs declaron los metadatos de las paginas web donde se encuentran los informes.
+The `Campaign sources dataset schema` is a coding schema that allows human coders and/or LMMs to record the metadata of the web pages where the reports are located.
 
-- [x] Obligatorio de usar
-- [x] El codificador humano puede usarlo
-- [ ] Es un schema que puede desaparecer en un futuro.
-- [ ] Es sustituible.
+- [x] Required
+- [x] Can be used by a human coder
+- [ ] May be removed in the future
+- [ ] Replaceable
 
-Se usa en la fase de codificacion manual por un investigación humano y por parte de LLMs.
+It is used during the manual coding phase by a human researcher and by LLMs.
 
-Ubicacion en el proyecto: `schemas\campaigns\campaign-sources-dataset-schema.json`
+Project location: `schemas\campaigns\campaign-sources-dataset-schema.json`
 
-Estructura del schema:
+Schema structure:
 ```
 {
     "campaign_sources": [
@@ -171,21 +171,21 @@ Estructura del schema:
 ```
 
 > [!NOTE]
-> Este schema se creo para declara los metadatos de las fuentes de donde se obtuvieron los reportes, en caso de ya ver sido codificada por el coder principal, los proximos codificadores no deben de codificar esos datos.
+> This schema was created to record the metadata of the sources from which the reports were obtained. If these data have already been coded by the primary coder, subsequent coders should not code them again.
 
 ### Campaigns dataset schema
-El `Campaigns dataset schema` es un esquema de codificacion que permite que los codificadores humanos y/o LMMs, juntar las codificaciones individuales de cada campaña en un solo archivo, de manera que pueda crearse un dataset.
+The `Campaigns dataset schema` is a coding schema that allows human coders and/or LMMs to combine the individual codings for each campaign into a single file, creating a dataset.
 
-- [x] Obligatorio de usar
-- [x] El codificador humano puede usarlo
-- [ ] Es un schema que puede desaparecer en un futuro.
-- [ ] Es sustituible.
+- [x] Required
+- [x] Can be used by a human coder
+- [ ] May be removed in the future
+- [ ] Replaceable
 
-Se usa en la fase de codificacion manual por un investigación humano y por parte de LLMs.
+It is used during the manual coding phase by a human researcher and by LLMs.
 
-Ubicacion en el proyecto: `schemas\campaigns\campaigns-dataset-schema.json`
+Project location: `schemas\campaigns\campaigns-dataset-schema.json`
 
-Estructura del schema:
+Schema structure:
 ```
 {
     "campaigns": [
@@ -230,18 +230,18 @@ Estructura del schema:
 ```
 
 ### Exclusion log schema
-El `Exclusion log schema` es un esquema de codificacion que permite que los codificadores humanos y/o LMMs, aqui se codifican aquellas campañas o informes que fueron excluidos con el motivo de su exclusión.
+The `Exclusion log schema` is a coding schema that allows human coders and/or LMMs to record campaigns or reports that were excluded, together with the reason for their exclusion.
 
-- [x] Obligatorio de usar
-- [x] El codificador humano puede usarlo
-- [ ] Es un schema que puede desaparecer en un futuro.
-- [ ] Es sustituible.
+- [x] Required
+- [x] Can be used by a human coder
+- [ ] May be removed in the future
+- [ ] Replaceable
 
-Se usa en la fase de codificacion manual por un investigación humano y por parte de LLMs.
+It is used during the manual coding phase by a human researcher and by LLMs.
 
-Ubicacion en el proyecto: `schemas\campaigns\exclusion-log-schema.json`
+Project location: `schemas\campaigns\exclusion-log-schema.json`
 
-Estructura del schema:
+Schema structure:
 ```
 {
     "exclusion_log": [
@@ -259,28 +259,26 @@ Estructura del schema:
 }
 ```
 
-## Reports schemas
+## Report schemas
 
-Los schemas de reportes sirven para codificar las datos de los reportes extraidos de los informes recopilados en formato JSON, con el objetivo de poder utilizar despues dicha codificacion para el Atlas en la tabla de `Report`, para esto existen los siguientes schemas:
+The report schemas are used to code report data extracted from collected reports in JSON format. The resulting coding can then be used in the Atlas `Report` table. The following schemas are available:
 
 - Report human coded schema
 - Report schema
 - Report source dataset schema
 - Report dataset schema
 
-### Report human coded shema
-El `Report human coded schema` es un esquema de codificacion que permite que los codificadores humanos llenar la fila de codificacion de una campaña extraido de un informe.
+### Report human coded schema
+The `Report human coded schema` is a coding schema that allows human coders to complete the coding row for a report extracted from a source.
 
-- [ ] Obligatorio de usar
-- [x] El codificador humano puede usarlo
-- [x] Es un schema que puede desaparecer en un futuro.
-- [x] Es sustituible.
+- [ ] Required
+- [x] Can be used by a human coder
+- [x] May be removed in the future
+- [x] Replaceable
 
+Project location: `schemas\reports\report-human-coded-schema.json`
 
-
-Ubicacion en el proyecto: `schemas\reports\report-human-coded-schema.json`
-
-Estructura del schema:
+Schema structure:
 ```
 {
     "report_id": "",
@@ -303,21 +301,21 @@ Estructura del schema:
 }
 ```
 > [!NOTE]
-> Este schema se creo para agilizar el proceso de codificación manual del primer dataset. No sustituye al `report-schema.json`; es una plantilla con valores predeterminados para la codificación humana.
+> This schema was created to streamline the manual coding process for the first dataset. It does not replace `report-schema.json`; it is a template with default values for human coding.
 
 ### Report schema
-El `Report schema` es el esquema general para codificar los datos de un reporte. Puede ser utilizado por codificadores humanos y/o LMMs.
+The `Report schema` is the general schema for coding report data. It can be used by human coders and/or LMMs.
 
-- [x] Obligatorio de usar
-- [x] El codificador humano puede usarlo
-- [ ] Es un schema que puede desaparecer en un futuro.
-- [ ] Es sustituible.
+- [x] Required
+- [x] Can be used by a human coder
+- [ ] May be removed in the future
+- [ ] Replaceable
 
-Se usa en la fase de codificación manual por un investigador humano y por parte de LLMs.
+It is used during the manual coding phase by a human researcher and by LLMs.
 
-Ubicacion en el proyecto: `schemas\reports\report-schema.json`
+Project location: `schemas\reports\report-schema.json`
 
-Estructura del schema:
+Schema structure:
 ```
 {
     "report_id": "",
@@ -341,16 +339,16 @@ Estructura del schema:
 ```
 
 ### Report source dataset schema
-El `Report source dataset schema` permite registrar los metadatos de las fuentes utilizadas para los reportes.
+The `Report source dataset schema` is used to record the metadata of the sources used for the reports.
 
-- [x] Obligatorio de usar
-- [x] El codificador humano puede usarlo
-- [ ] Es un schema que puede desaparecer en un futuro.
-- [ ] Es sustituible.
+- [x] Required
+- [x] Can be used by a human coder
+- [ ] May be removed in the future
+- [ ] Replaceable
 
-Ubicacion en el proyecto: `schemas\reports\report-sources-dataset-schema.json`
+Project location: `schemas\reports\report-sources-dataset-schema.json`
 
-Estructura del schema:
+Schema structure:
 ```
 {
     "report_sources": [
@@ -368,16 +366,16 @@ Estructura del schema:
 ```
 
 ### Report dataset schema
-El `Report dataset schema` permite reunir las codificaciones individuales de los reportes en un solo archivo para crear el dataset.
+The `Report dataset schema` allows the individual codings for reports to be combined into a single file to create the dataset.
 
-- [x] Obligatorio de usar
-- [x] El codificador humano puede usarlo
-- [ ] Es un schema que puede desaparecer en un futuro.
-- [ ] Es sustituible.
+- [x] Required
+- [x] Can be used by a human coder
+- [ ] May be removed in the future
+- [ ] Replaceable
 
-Ubicacion en el proyecto: `schemas\reports\reports-dataset-schema.json`
+Project location: `schemas\reports\reports-dataset-schema.json`
 
-Estructura del schema:
+Schema structure:
 ```
 {
     "reports": [
@@ -404,17 +402,17 @@ Estructura del schema:
 }
 ```
 
-## Extra schemas
-El repositorio tiene schemas extra los cuales estan hecho para proporcionar algun model de partes no cubiertas por los schemas anteriormente mencionados. En este apartado existen:
+## Additional schemas
+The repository includes additional schemas that provide models for parts not covered by the schemas described above. This section contains:
 
 - Metadata schema
 
 ### Metadata schema
-El `Metadata schema` permite registrar los metadatos de una fuente individual. Sus campos son reutilizados por los schemas de fuentes de campañas y reportes.
+The `Metadata schema` allows the metadata of an individual source to be recorded. Its fields are reused by the campaign and report source schemas.
 
-Ubicacion en el proyecto: `schemas\metadata-schema.json`
+Project location: `schemas\metadata-schema.json`
 
-Estructura del schema:
+Schema structure:
 ```
 {
     "url": "",
