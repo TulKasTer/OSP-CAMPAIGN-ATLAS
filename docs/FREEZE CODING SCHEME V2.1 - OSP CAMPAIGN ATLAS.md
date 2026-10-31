@@ -1,7 +1,7 @@
 **FREEZE CODING SCHEMA V2.1 \- OSP CAMPAIGN ATLAS**  
 **Version:** 2.1  
 **Date:** 2026-10-26  
-**Supersedes:** FREEZE CODING SCHEMA V2 (2026-10-15). Empty fields in the table were completed, and the definition of “*Pure Spear Phishing (Targeted lure \+ Impersonation)*” was corrected.
+**Coding schema reference:** FREEZE CODING SCHEMA V2 (2026-10-15). Empty fields in the table were completed, and the definition of “*Pure Spear Phishing (Targeted lure \+ Impersonation)*” was corrected.
 
 **Definition of Unit of Analysis**  
 In the case of the campaigns table, each row represents an individual, publicly reported campaign. On the other hand, in the reports table, each row represents an individual report that compiles information about Organizational Spear Phishing (including BEC) over a specific time period.
