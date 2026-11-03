@@ -98,6 +98,78 @@
             "published_date": "Not specified",
             "retrieved_at_utc": "2026-10-25T09:52:59.564220+00:00",
             "sha256_hash": "7d1fe453237654d2edcf89b0dd6b8b4b2e633fc1d5d5cfbd7dad5f7c1604a0a2"
+        },
+        {
+            "url": "https://www.ic3.gov/PSA/2024/PSA240911",
+            "title": "Internet Crime Complaint Center (IC3) | Business Email Compromise: The $55 Billion Scam",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T14:11:02.362052+00:00",
+            "sha256_hash": "b08e92662e59811a4106683201d70ad09ff4001f879674835064392c54ba99bd"
+        },
+        {
+            "url": "https://docs.apwg.org/reports/apwg_trends_report_q1_2025.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T14:12:40.704008+00:00",
+            "sha256_hash": "ce6fa109ef5745d778856b91f6379e78ff71b5852024d1c4f55e5052e50fd03b"
+        },
+        {
+            "url": "https://docs.apwg.org/reports/apwg_trends_report_q2_2025.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T14:13:41.249628+00:00",
+            "sha256_hash": "b860b07d6e9c4dbcda527dc32298ff5a076feae15c84c68cf646c89da0246fee"
+        },
+        {
+            "url": "https://docs.apwg.org/reports/apwg_trends_report_q3_2025.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T14:14:43.276909+00:00",
+            "sha256_hash": "b4de473f197d902077ff3a882365cfcfc91a36d1beebc8ba646086781e015e3f"
+        },
+        {
+            "url": "https://docs.apwg.org/reports/apwg_trends_report_q4_2025.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T14:15:41.752102+00:00",
+            "sha256_hash": "7e34d4b70806b2369b386d34e3881794359477fb50bb5718b38eebcea7ce52b3"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2026/04/30/email-threat-landscape-q1-2026-trends-and-insights/",
+            "title": "Email threat landscape: Q1 2026 trends and insights | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence, Microsoft Defender Security Research Team",
+            "published_date": "2026-04-30T15:00:00+00:00",
+            "retrieved_at_utc": "2026-11-03T14:16:41.083435+00:00",
+            "sha256_hash": "e56509221e57c52d6a21b48cef33b48cf8c8e64d80ea0fc85ab5d49685fdc5ba"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2026/07/23/email-threat-landscape-q2-2026-trends-and-insights/",
+            "title": "Email threat landscape: Q2 2026 trends and insights | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence, Microsoft Defender Security Research Team",
+            "published_date": "2026-07-23T15:00:00+00:00",
+            "retrieved_at_utc": "2026-11-03T14:17:31.586711+00:00",
+            "sha256_hash": "6475ce3bd7fd4d2fc1a2529caab94966d006212905e18d408a8d3661a43dedca"
+        },
+        {
+            "url": "https://abnormal.ai/blog/bec-vec-attacks",
+            "title": "Threat Report: BEC and VEC Attacks Show No Signs of Slowing | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T14:22:26.676900+00:00",
+            "sha256_hash": "0fb1aa1d8c247a1d4a91f19f9d3574838430b0c19aff7a013727895997b2a938"
         }
     ]
 }
