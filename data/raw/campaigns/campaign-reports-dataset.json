@@ -89,6 +89,645 @@
             "published_date": "2024-02-21T13:55:16-08:00",
             "retrieved_at_utc": "2026-10-24T06:43:48.770238+00:00",
             "sha256_hash": "3b4d168469f4d50d08bf96f97734d7ee4d0d82e4b1f79f6dff483ae5db69c884"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2026/01/21/multistage-aitm-phishing-bec-campaign-abusing-sharepoint/",
+            "title": "Resurgence of a multi‑stage AiTM phishing and BEC campaign abusing SharePoint  | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Defender Security Research Team",
+            "published_date": "2026-01-22T05:14:14+00:00",
+            "retrieved_at_utc": "2026-11-03T05:06:56.247605+00:00",
+            "sha256_hash": "e78c053dea012e4e201466f9e7b59f95d96cade693802cdcc3d98f4c54afe12c"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2021/05/06/business-email-compromise-campaign-targets-wide-range-of-orgs-with-gift-card-scam/",
+            "title": "Business email compromise campaign targets wide range of orgs with gift card scam | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence",
+            "published_date": "2021-05-06T16:00:15+00:00",
+            "retrieved_at_utc": "2026-11-03T05:13:55.588160+00:00",
+            "sha256_hash": "071b73991819af3328ecf6d61fd6991d6de4f89eb06cd4b6309a7a30951dd248"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2025/02/13/storm-2372-conducts-device-code-phishing-campaign/",
+            "title": "Storm-2372 conducts device code phishing campaign | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence",
+            "published_date": "2025-02-14T01:00:00+00:00",
+            "retrieved_at_utc": "2026-11-03T05:17:20.970298+00:00",
+            "sha256_hash": "4aea73dfb13fc4ff880792955730b8a4cf6251a477f5f4f5e0795ac780933034"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2024/05/15/threat-actors-misusing-quick-assist-in-social-engineering-attacks-leading-to-ransomware/",
+            "title": "Threat actors misusing Quick Assist in social engineering attacks leading to ransomware | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence",
+            "published_date": "2024-05-15T16:00:00+00:00",
+            "retrieved_at_utc": "2026-11-03T05:18:50.374377+00:00",
+            "sha256_hash": "f437fc1d89a76855a5285530a3d8c209c3f2633a1297f05f90112c3c719649c4"
+        },
+        {
+            "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Cyber_Signals_Issue_7_May_2024.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T05:26:59.086854+00:00",
+            "sha256_hash": "c04efc238fc3bfd327b79bcb8a8f7f28d94d7e3a4fb77070d9ec4097910afe68"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2023/06/08/detecting-and-mitigating-a-multi-stage-aitm-phishing-and-bec-campaign/",
+            "title": "Detecting and mitigating a multi-stage AiTM phishing and BEC campaign | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence",
+            "published_date": "2023-06-08T16:00:00+00:00",
+            "retrieved_at_utc": "2026-11-03T05:28:26.168802+00:00",
+            "sha256_hash": "21ac76bc084663269ffaee41c2eef1b8d9b894378adf3f7e5af829ddfa239a88"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2026/07/23/email-threat-landscape-q2-2026-trends-and-insights/",
+            "title": "Email threat landscape: Q2 2026 trends and insights | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence, Microsoft Defender Security Research Team",
+            "published_date": "2026-07-23T15:00:00+00:00",
+            "retrieved_at_utc": "2026-11-03T05:30:00.354211+00:00",
+            "sha256_hash": "3a1609980cc9d16c4b9ddb2d1f78ab83c5d5a8efc6de0a0584c1e1dcb9d081f2"
+        },
+        {
+            "url": "https://arcticwolf.com/resources/blog/payroll-pirates-strange-new-tides-in-business-email-compromise/",
+            "title": "Payroll Pirates: Strange New Tides in Business Email Compromise - Arctic Wolf",
+            "publisher": "Arctic Wolf",
+            "author": "Arctic Wolf Labs",
+            "published_date": "2026-08-06T23:15:55+00:00",
+            "retrieved_at_utc": "2026-11-03T05:31:18.022975+00:00",
+            "sha256_hash": "be7d77f4d3af3412d49ed40d860d07d90ef27d5188fc38ad1f30a844b7f294b8"
+        },
+        {
+            "url": "https://abnormal.ai/blog/hybrid-executive-vendor-impersonation-invoice-fraud",
+            "title": "Hybrid Executive and Vendor Impersonation Attack Uses Fake Email Chain and Fake Invoices | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T05:32:52.156257+00:00",
+            "sha256_hash": "2c0f0a44228fc6077103441098e50d0180dc6d3a9362759a8e027b6ec3ae368c"
+        },
+        {
+            "url": "https://abnormal.ai/es/blog/36-million-vendor-fraud",
+            "title": "Stopping Vendor Email Compromise in Action: How Abnormal Detected a $36M Attack | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T05:35:05.736539+00:00",
+            "sha256_hash": "76f382c218b8dd98c07a0f44fa432e6060130fa52e15c159e6b2704e6144983c"
+        },
+        {
+            "url": "https://abnormal.ai/newsroom/press-releases/enhanced-detection-business-email-compromise-cloud-security",
+            "title": "Abnormal Security Enhances Detection of Business Email Compromise (BEC) Attacks in Cloud Email Security Platform | Newsroom | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T05:36:58.884714+00:00",
+            "sha256_hash": "b224d7c49ff8014d83b6c77e9bf7b3b57bfcc7c9e4bc0e2d280d0bfd79c2f939"
+        },
+        {
+            "url": "https://abnormal.ai/blog/vendor-email-compromise-attack-case-study",
+            "title": "Thread Hijacked: Breaking Down a Real Vendor Email Compromise Attack | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T05:40:03.637021+00:00",
+            "sha256_hash": "8435f2549da81a46acbcf90f28cfc2738ebc604ddd5960e4e6bbfc7738367790"
+        },
+        {
+            "url": "https://abnormal.ai/blog/most-interesting-email-attacks",
+            "title": "The Most Interesting Email Attacks We&#x27;ve Caught in 2024 (So Far) | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T05:43:51.672259+00:00",
+            "sha256_hash": "55d8bbf32cec68e4a65f7325af572ee00f09e5c3e93451ccbc3423996fad30ac"
+        },
+        {
+            "url": "https://abnormal.ai/es/threat-intelligence/digest/vendor-impersonator-uses-fake-invoice-notification-in-credential-theft-attempt",
+            "title": "Vendor Impersonator Uses Fake Invoice Notification In Credential Theft Attempt | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T05:51:48.204224+00:00",
+            "sha256_hash": "36fbb58c80a0c9f77442c41ec95b543d64ddbddd222abe33d03a9c9ab8e8f753"
+        },
+        {
+            "url": "https://abnormal.ai/blog/vendor-email-compromise-attack-case-study",
+            "title": "Thread Hijacked: Breaking Down a Real Vendor Email Compromise Attack | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T05:53:52.219647+00:00",
+            "sha256_hash": "31197b9a72933791f6910c93a63fff3ce52e6b627a68458173fbcaa45c82140c"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/attacker-uses-compromised-vendor-account-to-hijack-conversation-and-attempt-payment-fraud",
+            "title": "Attacker Uses Compromised Vendor Account to Hijack Conversation and Attempt Payment Fraud | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T06:00:07.470619+00:00",
+            "sha256_hash": "8e9d05c44153ae2498bebad6bb7893762e79e92a2f824809951cfa585216dda0"
+        },
+        {
+            "url": "https://abnormal.ai/blog/security-superlatives-2025-2",
+            "title": "Security Superlatives: 2025’s Phishiest Attacks and Boldest Offenders | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T06:01:28.387802+00:00",
+            "sha256_hash": "b41a7d03fe5a18d98f55b2058969a36fbebb797455a887b700abcf8488313595"
+        },
+        {
+            "url": "https://abnormal.ai/blog/emerging-email-threats",
+            "title": "2025 Cyberattack Forecast: Top Email Threats to Watch for | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T06:03:08.912500+00:00",
+            "sha256_hash": "7b20c1e694e3e4265f86fc0056962393dd062dc6504caa254dbd5969c7b088eb"
+        },
+        {
+            "url": "https://abnormal.ai/blog/threat-forecast-top-cyberattacks",
+            "title": "2026 Threat Forecast: Top Attacks Set to Increase Enterprise Exposure | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T06:04:36.098695+00:00",
+            "sha256_hash": "221aacacb917411fb1f9c2e2ecc655e4167729dc266e5e5c51a56afa7e5bf5e0"
+        },
+        {
+            "url": "https://abnormal.ai/resources/demos/use-case-bec-executive-impersonation",
+            "title": "Use Case: BEC - Executive Impersonation | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T06:10:03.455366+00:00",
+            "sha256_hash": "3c2afa7fc0b6cb0ec60b5c73b5f8b966cccb0c48ff18fd705790115efa0fc9c7"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/security-brief-french-bec-threat-actor-targets-property-payments",
+            "title": "Security Brief: French BEC Threat Actor Targets Property Payments | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2025-04-23T11:03:18-07:00",
+            "retrieved_at_utc": "2026-11-03T06:11:24.386649+00:00",
+            "sha256_hash": "f5c756cd5886aa0e3e7e69001e3f1e81fd7518ee5933f468a56a3f2251845712"
+        },
+        {
+            "url": "https://www.proofpoint.com/uk/blog/security-awareness-training/us-federal-psat-threat-intel-case-study",
+            "title": "PSAT Use Case: How One Trained User Helped Stop a Massive BEC Campaign Targeting U.S. Government Agencies | Proofpoint UK",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2023-12-01T10:00:15-08:00",
+            "retrieved_at_utc": "2026-11-03T06:12:41.630602+00:00",
+            "sha256_hash": "699407360b126ee9b9e1129388e0256b9c1c9f5de7d846a90a9a15dbacd18a77"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access",
+            "title": "Can’t stop, won’t stop: TA584 innovates initial access | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2026-01-26T07:38:07-08:00",
+            "retrieved_at_utc": "2026-11-03T06:15:47.290350+00:00",
+            "sha256_hash": "0e245ab2c85aaa77ca409bade12321fc31f7b2921134a88fdb5789a17254f05e"
+        },
+        {
+            "url": "https://www.ic3.gov/PSA/2024/PSA240911",
+            "title": "Internet Crime Complaint Center (IC3) | Business Email Compromise: The $55 Billion Scam",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T06:16:50.402752+00:00",
+            "sha256_hash": "952ed1f594a74aff900bb01887f2f4ca72955e3cdc475818ff33dc2f8da3ccf1"
+        },
+        {
+            "url": "https://abnormal.ai/blog/midnight-hedgehog-mandarin-capybara-multilingual-executive-impersonation",
+            "title": "BEC Groups Wage Multilingual Executive Impersonation Attacks Targeting Companies Worldwide | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T06:24:27.918312+00:00",
+            "sha256_hash": "75acd7b041cdea0d624bf02f74748bc30b1495fd981a9cdd62b36e638c2081e8"
+        },
+        {
+            "url": "https://abnormal.ai/blog/firebrick-ostrich-third-party-reconnaissance-attacks",
+            "title": "BEC Group Incorporates Secondary Impersonated Personas and Lookalike Domains in Convincing Third-Party Reconnaissance Attacks | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T06:28:38.081175+00:00",
+            "sha256_hash": "ef3c75bc4e2e16efeab7569324ebd2c48ddee21446852b3c5b0d7d61a7f4e15f"
+        },
+        {
+            "url": "https://abnormal.ai/blog/lilac-wolverine-gift-card-attacks",
+            "title": "BEC Group Compromises Personal Accounts and Pulls Heartstringsto Launch Mass Gift Card Attacks | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T12:24:43.665731+00:00",
+            "sha256_hash": "a35b3d60d6220300e0da941a48c478b9435014db7984cf6d17496b0629fffed5"
+        },
+        {
+            "url": "https://abnormal.ai/blog/crimson-kingsnake-bec-group-attacks",
+            "title": "Crimson Kingsnake: BEC Group Impersonates International Law Firms in Blind Third-Party Impersonation Attacks | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T12:26:07.214613+00:00",
+            "sha256_hash": "83820dd4516b23554bfc65810f651ccbfd966a37a1ba4738281ed04d885184b5"
+        },
+        {
+            "url": "https://abnormal.ai/blog/cobalt-terrapin-invoice-fraud",
+            "title": "BEC Group Uses Manufactured Email Threads and Brand Impersonation to Facilitate Invoice Fraud | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T12:27:36.590349+00:00",
+            "sha256_hash": "3723f2f896688373e40d0ec7bdbb8067c30791a659d0d6f5c1ad3bf78e83559b"
+        },
+        {
+            "url": "https://abnormal.ai/blog/bec-group-targets-teachers-payroll-diversion-attacks",
+            "title": "Back to School: BEC Group Targets Teachers with Payroll Diversion Attacks | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T12:29:26.810643+00:00",
+            "sha256_hash": "5cd1f2773500e0d8a4d2cfc7d20f607e177c62114854775a7bfae64de64245f5"
+        },
+        {
+            "url": "https://abnormal.ai/blog/vendor-email-compromise-attack-case-study",
+            "title": "Thread Hijacked: Breaking Down a Real Vendor Email Compromise Attack | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T12:40:13.528924+00:00",
+            "sha256_hash": "b3db14665a744918baf945ca65e184b0d456285e9c995314bbd420b0a03dfddd"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/hallucinating-credibility-china-aligned-ta419-impersonates-its-way-us-ai-policy",
+            "title": "Hallucinating Credibility: China-Aligned TA419 Impersonates its Way into US AI Policy Circles | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2026-09-30T04:17:28-07:00",
+            "retrieved_at_utc": "2026-11-03T12:42:19.299697+00:00",
+            "sha256_hash": "27ada2ce537f78c4b246acd63116cfc8a6b4aa5f4d002c2d9578e9bbf79e1a05"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/dont-fear-repo-unkdeaddrop-phishing-campaign-targets-developers-steal",
+            "title": "Don&#039;t Fear the Repo: UNK_DeadDrop Phishing Campaign Targets Developers to Steal Cryptocurrency | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2026-06-05T08:11:53-07:00",
+            "retrieved_at_utc": "2026-11-03T12:43:43.270273+00:00",
+            "sha256_hash": "2752185b1c9e530af7755a4df25973bc0831c3ca16cdabfc1ecbeddfafea2f8f"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/microsoft-oauth-app-impersonation-campaign-leads-mfa-phishing",
+            "title": "Microsoft OAuth App Impersonation Campaign Leads to MFA Phishing | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2025-07-29T08:14:43-07:00",
+            "retrieved_at_utc": "2026-11-03T12:45:35.450657+00:00",
+            "sha256_hash": "66b8e108926111d0fe823b42d68b0c61b20025acb5cc368149dd0ab5c5d128f8"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/ta422s-dedicated-exploitation-loop-same-week-after-week",
+            "title": "TA422’s Dedicated Exploitation Loop—the Same Week After Week | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2023-11-30T07:50:40-08:00",
+            "retrieved_at_utc": "2026-11-03T12:47:57.011844+00:00",
+            "sha256_hash": "9fc41bf8bc40c150aa46676a5dc74fc9dfdcd6ecc617fc779eafd72272bf8dc8"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/more-cves-same-playbook-2026-vulnerability-exploitation-wild",
+            "title": "More CVEs, Same Playbook: 2026 Vulnerability Exploitation in the Wild | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2026-05-26T12:14:54-07:00",
+            "retrieved_at_utc": "2026-11-03T12:48:41.845411+00:00",
+            "sha256_hash": "e491a8739e72d6cbb7549922861c9a5660c8d5c03fac17c2d157b811ce95b14c"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/device-code-phishing-evolution-identity-takeover",
+            "title": "Device Code Phishing is an Evolution in Identity Takeover | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2026-05-11T17:05:09-07:00",
+            "retrieved_at_utc": "2026-11-03T12:50:07.983728+00:00",
+            "sha256_hash": "1b13ffb193c08b30b89f75e7b001e841e1e4cbae65a2174e3489bcc0d248741b"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2025/01/16/new-star-blizzard-spear-phishing-campaign-targets-whatsapp-accounts/",
+            "title": "New Star Blizzard spear-phishing campaign targets WhatsApp accounts | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence",
+            "published_date": "2025-01-16T17:00:00+00:00",
+            "retrieved_at_utc": "2026-11-03T12:51:41.211090+00:00",
+            "sha256_hash": "24e3aef0ba1e3180eb20029464c6fd9839c1b76e485371975f0bcc431f152710"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2026/09/29/star-blizzard-refines-phishing-and-malware-delivery-with-the-redflick-technique/",
+            "title": "Star Blizzard refines phishing and malware delivery with the RedFlick technique | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence",
+            "published_date": "2026-09-29T15:00:00+00:00",
+            "retrieved_at_utc": "2026-11-03T12:53:21.509764+00:00",
+            "sha256_hash": "1a90f3c3132fa40956fdb9dc6b4e6f66dd3226f73d1c2004ee5b8bd84aa27028"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2024/10/29/midnight-blizzard-conducts-large-scale-spear-phishing-campaign-using-rdp-files/",
+            "title": "Midnight Blizzard conducts large-scale spear-phishing campaign using RDP files | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence",
+            "published_date": "2024-10-29T19:00:00+00:00",
+            "retrieved_at_utc": "2026-11-03T13:00:08.283419+00:00",
+            "sha256_hash": "7b4ed4a6c7ba14653eaaba0e638e5555a4f33b90c699728632625b3c65da2658"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2025/05/27/new-russia-affiliated-actor-void-blizzard-targets-critical-sectors-for-espionage/",
+            "title": "New Russia-affiliated actor Void Blizzard targets critical sectors for espionage | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence",
+            "published_date": "2025-05-27T09:45:00+00:00",
+            "retrieved_at_utc": "2026-11-03T13:03:26.901336+00:00",
+            "sha256_hash": "202c5dbfd0630683990085b2a3dc4ac3844e94462356621bc977356b87bb9848"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
+            "title": "CaptiveCrunch: Midnight Blizzard targets travelers worldwide for malware delivery and credential theft | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence",
+            "published_date": "2026-07-31T21:01:37+00:00",
+            "retrieved_at_utc": "2026-11-03T13:04:50.424061+00:00",
+            "sha256_hash": "82fc0ecdee26f00eceeec633d4ab1ba953a77b3bb0c80aec272c7b362fe9beed"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2026/09/02/impersonating-it-support-threat-actors-turn-remote-session-into-enterprise-wide-access/",
+            "title": "Impersonating IT support: how threat actors turn a remote session into enterprise-wide access | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Security Research, Sagar Patil, Arlette Umuhire Sangwa, Jesse Birch, Ravikant Tiwari",
+            "published_date": "2026-09-02T22:51:18+00:00",
+            "retrieved_at_utc": "2026-11-03T13:07:19.137092+00:00",
+            "sha256_hash": "6ec9b8f2059ca11c19d8f7c1ed1124e35217588ccd307144bab7570a50d1502a"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2026/03/03/signed-malware-impersonating-workplace-apps-deploys-rmm-backdoors/",
+            "title": "Signed malware impersonating workplace apps deploys RMM backdoors | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Defender Security Research Team",
+            "published_date": "2026-03-03T21:11:03+00:00",
+            "retrieved_at_utc": "2026-11-03T13:08:27.996133+00:00",
+            "sha256_hash": "d54ece0218184325d73c3dd484c37ab0cb4d52b700f2b387197876a63b123351"
+        },
+        {
+            "url": "https://cloud.google.com/blog/topics/threat-intelligence/targeted-campaign-us-law-firms",
+            "title": "Ongoing Targeted Campaign Against US Law Firms | Google Cloud Blog",
+            "publisher": "Google Cloud Blog",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T13:09:59.698126+00:00",
+            "sha256_hash": "a55f7a3ce38424a20250085a4d3093a7f2a92f0aaf57b669c71ab9e4a09e0744"
+        },
+        {
+            "url": "https://cloud.google.com/blog/topics/threat-intelligence/distinct-clusters-target-individuals-of-interest-to-russia",
+            "title": "Distinct Clusters Target Individuals of Interest to Russia | Google Cloud Blog",
+            "publisher": "Google Cloud Blog",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T13:11:03.289197+00:00",
+            "sha256_hash": "7e4995c23dfcac1ac893fa47b04f32f86dc48366c7f10cb893285d6d112c6bee"
+        },
+        {
+            "url": "https://cloud.google.com/blog/topics/threat-intelligence/threats-to-defense-industrial-base",
+            "title": "Threats to the Defense Industrial Base | Google Cloud Blog",
+            "publisher": "Google Cloud Blog",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T13:12:07.736693+00:00",
+            "sha256_hash": "7052912f99ed389a9ecb0106eff43d3e74b7e41343757231179db486f94d82ca"
+        },
+        {
+            "url": "https://cloud.google.com/blog/topics/threat-intelligence/voice-phishing-data-extortion",
+            "title": "The Cost of a Call: From Voice Phishing to Data Extortion | Google Cloud Blog",
+            "publisher": "Google Cloud Blog",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T13:16:17.720332+00:00",
+            "sha256_hash": "71f75b746a214ec017cc6b85e8b1a56df7e054df6b4919e45b9f7daad9fc055a"
+        },
+        {
+            "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc3944-sms-phishing-sim-swapping-ransomware",
+            "title": "Why Are You Texting Me? UNC3944 Leverages SMS Phishing Campaigns for SIM Swapping, Ransomware, Extortion, and Notoriety | Google Cloud Blog",
+            "publisher": "Google Cloud Blog",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T13:17:28.601840+00:00",
+            "sha256_hash": "929ee1c35cf079b5710c8fdd2753a78c8081ffcf5b5c5b275d4d0ad84209e2d0"
+        },
+        {
+            "url": "https://www.ic3.gov/CSA/2026/260108.pdf",
+            "title": "Not specified",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T13:19:01.374561+00:00",
+            "sha256_hash": "469e24ad1476ac490265dc6e7208b9c96f7b24be3e7c3c19ab197c1c0f14dc6a"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/ta4922-suspected-chinese-crime-group-going-global",
+            "title": "TA4922: The Suspected Chinese Crime Group is Going Global | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2026-06-01T10:06:32-07:00",
+            "retrieved_at_utc": "2026-11-03T13:20:45.389714+00:00",
+            "sha256_hash": "3d505faefd8e7bcdf632da475e7f8b3e0d32611d5220ea84d26afa3aba8299db"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/badblood-ta453-targets-us-and-israeli-medical-research-personnel-credential",
+            "title": "BadBlood: TA453 Targets US &amp; Israel in Credential Phishing | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2021-03-30T11:10:20-07:00",
+            "retrieved_at_utc": "2026-11-03T13:22:17.630456+00:00",
+            "sha256_hash": "887202ddf4ce403bc5a257e2763b2dcc29972f16025cad485763e913309b6279"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/best-laid-plans-ta453-targets-religious-figure-fake-podcast-invite-delivering",
+            "title": "How a Fake Podcast Invite Delivers BlackSmith Malware | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2024-08-15T13:53:25-07:00",
+            "retrieved_at_utc": "2026-11-03T13:25:16.495588+00:00",
+            "sha256_hash": "30c33a325639b0db8b3b087906abf771cd3e0a0c35328d17f17ee364e94ebcc8"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/security-brief-ta450-uses-embedded-links-pdf-attachments-latest-campaign",
+            "title": "TA450 Uses Scam Emails with PDF Attachments to Phish | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2024-03-21T07:53:21-07:00",
+            "retrieved_at_utc": "2026-11-03T13:28:55.891039+00:00",
+            "sha256_hash": "9d2b65d37fa753a4109c47557c6147472d800e1cc954adeb3c768cba85bcf93c"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/hidden-plain-sight-ta397s-new-attack-chain-delivers-espionage-rats",
+            "title": "Hidden in Plain Sight: TA397’s New Attack Chain Delivers Espionage RATs | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2024-12-11T08:31:31-08:00",
+            "retrieved_at_utc": "2026-11-03T13:30:02.153223+00:00",
+            "sha256_hash": "9dffc3ee4da3f57e411df330c71e04359d6d35047df139779b0aebc361663fbc"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/bitter-end-unraveling-eight-years-espionage-antics-part-one",
+            "title": "The Bitter End: Unraveling Eight Years of Espionage Antics—Part One | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2025-06-03T03:37:57-07:00",
+            "retrieved_at_utc": "2026-11-03T13:31:25.654342+00:00",
+            "sha256_hash": "d2f9053624bb92bda3149a08b60d971824659cda59bcdae7d33b5b5a85732e6e"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/around-world-90-days-state-sponsored-actors-try-clickfix",
+            "title": "Around the World in 90 Days: State-Sponsored Actors Try ClickFix | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2025-04-16T10:31:16-07:00",
+            "retrieved_at_utc": "2026-11-03T13:33:58.225263+00:00",
+            "sha256_hash": "35b6c4fdbac87659bd4cc2aa1f7737dc6616f0807b572d00b3d765bf124acc85"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/above-fold-and-your-inbox-tracing-state-aligned-activity-targeting-journalists",
+            "title": "APTs Targeting Journalists &amp; Media Organizations | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2022-07-11T13:14:44-07:00",
+            "retrieved_at_utc": "2026-11-03T13:35:18.354617+00:00",
+            "sha256_hash": "ea5fd50e643d3c123a6f3145f2890c0edc66e49af329b0ce418eccc193a088a2"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/oauth-client-id-spoofing-why-fake-client-ids-are-gaining-traction-stealthy",
+            "title": "OAuth Client ID Spoofing: Why Fake Client IDs Are Gaining Traction for Stealthy Enumeration | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2026-07-10T00:01:21-07:00",
+            "retrieved_at_utc": "2026-11-03T13:37:30.993566+00:00",
+            "sha256_hash": "b753a0667286b50fd47329b7574afa4718c2a47445bc2b1e491d3ea0c1bdedd9"
+        },
+        {
+            "url": "https://www.proofpoint.com/us/blog/threat-insight/security-brief-tax-scams-aim-steal-funds-taxpayers",
+            "title": "Security brief: tax scams aim to steal funds from taxpayers | Proofpoint US",
+            "publisher": "Proofpoint",
+            "author": "Not specified",
+            "published_date": "2026-03-24T09:20:22-07:00",
+            "retrieved_at_utc": "2026-11-03T13:42:01.937318+00:00",
+            "sha256_hash": "f0ca188056fa4a229a9db94a34058521ca9a77402d231f316ef2f5e3e9a32c9d"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2025/03/13/phishing-campaign-impersonates-booking-com-delivers-a-suite-of-credential-stealing-malware/",
+            "title": "Phishing campaign impersonates Booking .com, delivers a suite of credential-stealing malware | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence, Microsoft Defender Experts",
+            "published_date": "2025-03-13T15:00:00+00:00",
+            "retrieved_at_utc": "2026-11-03T13:43:02.477682+00:00",
+            "sha256_hash": "c4613c05dce3813c3f07f9ed456dfddba1ddecdcb68b4170783886225e8cde7a"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2026/03/12/storm-2561-uses-seo-poisoning-to-distribute-fake-vpn-clients-for-credential-theft/",
+            "title": "Storm-2561 uses SEO poisoning to distribute fake VPN clients for credential theft | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence, Microsoft Defender Experts",
+            "published_date": "2026-03-12T17:00:00+00:00",
+            "retrieved_at_utc": "2026-11-03T13:45:59.228394+00:00",
+            "sha256_hash": "c8319ad84c2388db9d9b86e1b8082df5e32d48a4b8b0bf19f0b4e9750f581d58"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2023/07/11/storm-0978-attacks-reveal-financial-and-espionage-motives/",
+            "title": "Storm-0978 attacks reveal financial and espionage motives | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence",
+            "published_date": "2023-07-11T17:30:00+00:00",
+            "retrieved_at_utc": "2026-11-03T13:48:22.802773+00:00",
+            "sha256_hash": "f81e442c28b1853295c79a88c834d919e16414b5bfc9db8862db0dae17e1afff"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2023/12/12/threat-actors-misuse-oauth-applications-to-automate-financially-driven-attacks/",
+            "title": "Threat actors misuse OAuth applications to automate financially driven attacks | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence",
+            "published_date": "2023-12-12T18:00:00+00:00",
+            "retrieved_at_utc": "2026-11-03T13:49:55.981293+00:00",
+            "sha256_hash": "3ed59e3ee456c5c2ac114bc29e8544106d8a5575740b26fcfc206621c8c0cea8"
+        },
+        {
+            "url": "https://www.microsoft.com/en-us/security/blog/2025/04/03/threat-actors-leverage-tax-season-to-deploy-tax-themed-phishing-campaigns/",
+            "title": "Threat actors leverage tax season to deploy tax-themed phishing campaigns | Microsoft Security Blog",
+            "publisher": "Microsoft Security Blog",
+            "author": "Microsoft Threat Intelligence",
+            "published_date": "2025-04-03T16:00:00+00:00",
+            "retrieved_at_utc": "2026-11-03T13:51:00.141552+00:00",
+            "sha256_hash": "1b4c05f3a387b491f73cc7203c2da414aab8422f6cb470f7bad9bb9a14d2de51"
+        },
+        {
+            "url": "https://cloud.google.com/blog/topics/threat-intelligence/apt42-charms-cons-compromises",
+            "title": "APT42: Crooked Charms, Cons, and Compromises | Google Cloud Blog",
+            "publisher": "Google Cloud Blog",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T13:51:55.947454+00:00",
+            "sha256_hash": "967a4784104a31760d9d39005feb151627e7eb27e8aff83e42cd72fda248372d"
+        },
+        {
+            "url": "https://cloud.google.com/blog/topics/threat-intelligence/spear-phish-ukrainian-entities",
+            "title": "Evacuation and Humanitarian Documents used to Spear Phish Ukrainian Entities | Mandiant | Google Cloud Blog",
+            "publisher": "Google Cloud Blog",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T13:53:31.158007+00:00",
+            "sha256_hash": "ae788a096a567b51b55bdb0714f1dce83e2fa07ade738189f1dd29911ae5bc42"
+        },
+        {
+            "url": "https://cloud.google.com/blog/topics/threat-intelligence/prc-nexus-espionage-targets-diplomats",
+            "title": "PRC-Nexus Espionage Campaign Hijacks Web Traffic to Target Diplomats | Google Cloud Blog",
+            "publisher": "Google Cloud Blog",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T13:54:34.512445+00:00",
+            "sha256_hash": "a69b124c94a94f1d16d5a32618a53c819e63a35932497f194218bbd178169fda"
+        },
+        {
+            "url": "https://abnormal.ai/blog/2026-attack-landscape-business-as-usual-risk",
+            "title": "The 2026 Attack Landscape: Why “Business as Usual” Is Your Biggest Risk | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T13:57:50.007263+00:00",
+            "sha256_hash": "046f5a9d2a9387e17c205cd63f5f08386cbe9440dcb3d826ab40bb2026f4817b"
+        },
+        {
+            "url": "https://abnormal.ai/blog/help-desk-payroll-diversion",
+            "title": "Pay Day Piracy: How Attackers Talk Their Way Into Your Payroll System | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T14:00:05.360134+00:00",
+            "sha256_hash": "f9e2ac721258fd38c49e1bc67982187f2811590e9bc6805a75552058e884c488"
+        },
+        {
+            "url": "https://www.ic3.gov/PSA/2025/PSA251125",
+            "title": "Internet Crime Complaint Center (IC3) | Account Takeover Fraud via Impersonation of Financial Institution Support",
+            "publisher": "Not specified",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-03T14:01:17.075738+00:00",
+            "sha256_hash": "f4d1ed12286b739c272bdbc11d685b994ad6a3c653ffb95e1e5b9a7f3c84148b"
         }
     ]
 }
