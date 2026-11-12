@@ -651,7 +651,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0065",
+            "excluded_id": "EXC-0066",
             "campaign_name": "Fake Encrypted Secure Message Phishing",
             "publisher": "Abnormal Security",
             "information_website": "https://abnormal.ai/threat-intelligence/digest/fake-encrypted-secure-message-spoofed-in-credential-phishing-attack",

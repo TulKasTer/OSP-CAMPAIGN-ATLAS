@@ -1,2 +1,7 @@
 secrets/
 data/raw/*.pdf
+db.sqlite3
+*.sqlite3
+.env
+__pycache__/
+.venv
