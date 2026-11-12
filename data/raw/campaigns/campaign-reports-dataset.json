@@ -200,7 +200,7 @@
         },
         {
             "url": "https://abnormal.ai/blog/most-interesting-email-attacks",
-            "title": "The Most Interesting Email Attacks We&#x27;ve Caught in 2024 (So Far) | Abnormal AI",
+            "title": "The Most Interesting Email Attacks We've Caught in 2024 (So Far) | Abnormal AI",
             "publisher": "Abnormal AI",
             "author": "Not specified",
             "published_date": "Not specified",
@@ -215,15 +215,6 @@
             "published_date": "Not specified",
             "retrieved_at_utc": "2026-11-03T05:51:48.204224+00:00",
             "sha256_hash": "36fbb58c80a0c9f77442c41ec95b543d64ddbddd222abe33d03a9c9ab8e8f753"
-        },
-        {
-            "url": "https://abnormal.ai/blog/vendor-email-compromise-attack-case-study",
-            "title": "Thread Hijacked: Breaking Down a Real Vendor Email Compromise Attack | Abnormal AI",
-            "publisher": "Abnormal AI",
-            "author": "Not specified",
-            "published_date": "Not specified",
-            "retrieved_at_utc": "2026-11-03T05:53:52.219647+00:00",
-            "sha256_hash": "31197b9a72933791f6910c93a63fff3ce52e6b627a68458173fbcaa45c82140c"
         },
         {
             "url": "https://abnormal.ai/threat-intelligence/digest/attacker-uses-compromised-vendor-account-to-hijack-conversation-and-attempt-payment-fraud",
@@ -269,15 +260,6 @@
             "published_date": "Not specified",
             "retrieved_at_utc": "2026-11-03T06:10:03.455366+00:00",
             "sha256_hash": "3c2afa7fc0b6cb0ec60b5c73b5f8b966cccb0c48ff18fd705790115efa0fc9c7"
-        },
-        {
-            "url": "https://www.proofpoint.com/us/blog/threat-insight/security-brief-french-bec-threat-actor-targets-property-payments",
-            "title": "Security Brief: French BEC Threat Actor Targets Property Payments | Proofpoint US",
-            "publisher": "Proofpoint",
-            "author": "Not specified",
-            "published_date": "2025-04-23T11:03:18-07:00",
-            "retrieved_at_utc": "2026-11-03T06:11:24.386649+00:00",
-            "sha256_hash": "f5c756cd5886aa0e3e7e69001e3f1e81fd7518ee5933f468a56a3f2251845712"
         },
         {
             "url": "https://www.proofpoint.com/uk/blog/security-awareness-training/us-federal-psat-threat-intel-case-study",
@@ -361,15 +343,6 @@
             "sha256_hash": "5cd1f2773500e0d8a4d2cfc7d20f607e177c62114854775a7bfae64de64245f5"
         },
         {
-            "url": "https://abnormal.ai/blog/vendor-email-compromise-attack-case-study",
-            "title": "Thread Hijacked: Breaking Down a Real Vendor Email Compromise Attack | Abnormal AI",
-            "publisher": "Abnormal AI",
-            "author": "Not specified",
-            "published_date": "Not specified",
-            "retrieved_at_utc": "2026-11-03T12:40:13.528924+00:00",
-            "sha256_hash": "b3db14665a744918baf945ca65e184b0d456285e9c995314bbd420b0a03dfddd"
-        },
-        {
             "url": "https://www.proofpoint.com/us/blog/threat-insight/hallucinating-credibility-china-aligned-ta419-impersonates-its-way-us-ai-policy",
             "title": "Hallucinating Credibility: China-Aligned TA419 Impersonates its Way into US AI Policy Circles | Proofpoint US",
             "publisher": "Proofpoint",
@@ -380,7 +353,7 @@
         },
         {
             "url": "https://www.proofpoint.com/us/blog/threat-insight/dont-fear-repo-unkdeaddrop-phishing-campaign-targets-developers-steal",
-            "title": "Don&#039;t Fear the Repo: UNK_DeadDrop Phishing Campaign Targets Developers to Steal Cryptocurrency | Proofpoint US",
+            "title": "Don't Fear the Repo: UNK_DeadDrop Phishing Campaign Targets Developers to Steal Cryptocurrency | Proofpoint US",
             "publisher": "Proofpoint",
             "author": "Not specified",
             "published_date": "2026-06-05T08:11:53-07:00",
@@ -728,6 +701,150 @@
             "published_date": "Not specified",
             "retrieved_at_utc": "2026-11-03T14:01:17.075738+00:00",
             "sha256_hash": "f4d1ed12286b739c272bdbc11d685b994ad6a3c653ffb95e1e5b9a7f3c84148b"
-        }
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/vendor-impersonation-bec-attack-uses-modified-legitimate-invoice-to-solicit-fraudulent-payment",
+            "title": "Vendor Impersonation BEC Attack Uses Modified Legitimate Invoice to Solicit Fraudulent Payment | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T13:55:14.678259+00:00",
+            "sha256_hash": "018808815aa7ac17448450b24170121becb0209d54873a7770db827951c57708"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/vendor-impersonation-used-to-siphon-invoice-payments",
+            "title": "Vendor Impersonation Used to Siphon Invoice Payments | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T13:56:46.963341+00:00",
+            "sha256_hash": "6b651c701d689552383f9ba0c7c2c4beed5009fbc57cf6764a7a17b853299459"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/executive-impersonation-bec-customer-payment-records",
+            "title": "Executive Impersonation BEC Attack Targets Customer Payment Records | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T14:44:31.806985+00:00",
+            "sha256_hash": "7587dfb2da699cae72dfd761506e6627636c169e7fd02e80ea10b18c568ca149"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/ai-generated-payroll-redirect-bec",
+            "title": "AI-Generated Payroll Redirect Targeting HR Personnel | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T14:44:32.254722+00:00",
+            "sha256_hash": "556587d732085e7b5b7ac324cf2f6046e17559163f860ac4d882aafc96518f4a"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/executive-impersonated-in-payroll-diversion-scheme",
+            "title": "Executive Impersonated in Payroll Diversion Scheme | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T14:44:32.791121+00:00",
+            "sha256_hash": "29f7e886edf31ab6c7f45991972be79a5015086b0143ee34f63ac6ee13a7ac63"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/attacker-uses-lookalike-domain-to-attempt-receipt-of-621-000-invoice",
+            "title": "Attacker Uses Lookalike Domain to Attempt Receipt of $621,000 Invoice | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T14:44:33.444911+00:00",
+            "sha256_hash": "eacabe8a16e327da84265ea8c3ee6f99e50eeb1992c03e1f632178b42d22f8d2"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/executive-impersonated-in-linkedin-overdue-payment-request",
+            "title": "Executive Impersonated in LinkedIn Overdue Payment Request | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T14:44:33.961876+00:00",
+            "sha256_hash": "0cc9bac97cb47fdea9ecbb793c8446ddd8c4ad84ce70c9430f2c696f3c60ccac"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/sophisticated-attacker-impersonates-a-company-admin-and-utilizes-microsoft-branded-qr-code-in-attempted-credential-phishing",
+            "title": "Sophisticated Attacker Impersonates a Company Admin and Utilizes Microsoft-Branded QR Code in Attempted Credential Phishing | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T14:44:35.057829+00:00",
+            "sha256_hash": "11ae8825854454bb5b7997cd839c08111fde2302ff9e7f42424e8a318ddcbbcf"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/sophisticated-credential-theft-attempt-features-a-compromised-domain-and-fake-landing-page",
+            "title": "Sophisticated Credential Theft Attempt Features a Compromised Domain and Fake Landing Page | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T14:44:35.769127+00:00",
+            "sha256_hash": "d17e54dce1ebf758791799a801bdffedef312a377cd904992ff3cc27eac3ab27"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/executive-targeted-in-attack-posing-as-fake-financial-documents-distributed-via-sharepoint",
+            "title": "Executive Targeted in Attack Posing as Fake Financial Documents Distributed via SharePoint | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T14:44:36.507152+00:00",
+            "sha256_hash": "16bb6a3642c33c62e4f0c2aa482e1dafb9d1bedfbd4acc7146b75e76e912f7dd"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/fake-encrypted-secure-message-spoofed-in-credential-phishing-attack",
+            "title": "Fake Encrypted Secure Message Spoofed in Credential Phishing Attack | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T14:44:37.045172+00:00",
+            "sha256_hash": "640084cb64dce9927bb0a0155e5b08e19798c6f844b5a2b4696def90a3590c0e"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/attacker-follows-up-on-unpaid-132-000-invoice-using-compromised-vendor-account",
+            "title": "Attacker Follows Up On Unpaid $132,000 Invoice Using Compromised Vendor Account | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T14:44:38.064167+00:00",
+            "sha256_hash": "284ddc8bc6490f7e6da4cb53170ed03b7b4bef4839083f55a79ac8920c22211a"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/email-poses-as-an-incoming-ach-payment-with-html-attachment-leading-to-branded-credential-phishing-page",
+            "title": "Email Poses as an Incoming ACH Payment with HTML Attachment Leading to Branded Credential Phishing Page | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T14:44:38.716071+00:00",
+            "sha256_hash": "ac88073c277ac47de9f90d527d85d48580b248efbba9a462a356dbd1c039e92a"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/executive-impersonation-used-to-steal-aging-reports",
+            "title": "Executive Impersonation Used to Steal Aging Reports | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T14:44:39.292904+00:00",
+            "sha256_hash": "374c4b64487c7f6d5f6416ae167900f311248c43b3bd76ff39e52b35c64937f8"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/bec-attack-requests-new-payment-methods-for-outstanding-invoices-in-attempted-payment-fraud",
+            "title": "BEC Attack Requests New Payment Methods for Outstanding Invoices in Attempted Payment Fraud | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T14:44:39.770790+00:00",
+            "sha256_hash": "b449140ff5e4b74f98c5c4ba90ee164a7d56c2907f8b7dcd497d382afbc5558b"
+        },
+        {
+            "url": "https://abnormal.ai/threat-intelligence/digest/attempted-payment-fraud-using-lookalike-domain-and-real-invoices-targets-manufacturing-company",
+            "title": "Attempted Payment Fraud Using Lookalike Domain and Real Invoices Targets Manufacturing Company | Threat Intelligence | Abnormal AI",
+            "publisher": "Abnormal AI",
+            "author": "Not specified",
+            "published_date": "Not specified",
+            "retrieved_at_utc": "2026-11-12T14:44:40.673041+00:00",
+            "sha256_hash": "216cdaaae54e676f7a23d9739795df7f4bc5a31a751321558f1d957bfa33d8d8"
+        },
     ]
 }

@@ -34,7 +34,7 @@
             "impact": "Direct financial loss for affected individuals and organizations due to diverted salary payments",
             "information_website": "https://www.microsoft.com/en-us/security/blog/2026/04/09/investigating-storm-2755-payroll-pirate-attacks-targeting-canadian-employees/",
             "coding_date": "2026-10-20T08:28:00Z",
-            "coder": "Human Coded",
+            "coder": "Human coded",
             "license": "All rights reserved (research / fair-use citation only) - © Microsoft 2026",
             "note_on_ambiguity": "Licensing details were extracted from the footer of the Microsoft Threat Intelligence blog, which states © Microsoft 2026.",
             "agreement_rate": "N/A"
@@ -412,6 +412,2237 @@
             "coder": "Human coded",
             "license": "All rights reserved (research / fair-use citation only) - © 2026 Proofpoint. All rights reserved.",
             "note_on_ambiguity": "The source document is a actor profile excluded under Rule #3. This specific campaign is presented as an illustrative case within the report because it contains sufficient details and targeting evidence to be coded under Decision Rule #8. Display-name spoofing was coded because the screenshot shows the sender pretending to be Kevin McDonnell but using a freemail address (kmcdonnell61@gmail.com) rather than a spoofed corporate domain. Persuasion principles were marked as 'Not specified in the report' to reflect that the report does not provide sufficient information to determine which persuasion principles were used in this campaign. Licensing details were extracted from the Proofpoint License Terms page, which states © 2026 Proofpoint. All rights reserved.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0012",
+            "campaign_name": "Multistage AiTM phishing and BEC campaign abusing SharePoint",
+            "publisher": "Microsoft Threat Intelligence",
+            "publisher_type": "Vendor",
+            "publication_date": "2026-01-21",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (AiTM, Compromised third-party vendor)",
+            "targeting_evidence": "The report explicitly states the campaign was 'targeting multiple organizations in the energy sector' and leveraged phishing emails sent from a trusted organization's compromised email address.",
+            "outcome": "Successful (funds/data/credentials/access obtained)",
+            "target": "Organziations in the energy sector",
+            "channels": "Corporate email > Fake login / credential-collection page",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Adversary-in-the-middle (AiTM)",
+                "Compromised third-party vendor account",
+                "Compromised legitimate account (ATO)",
+                "Mailbox rule manipulation",
+                "Malicious link / redirect"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "Trusted organization (vendor) / Internal contacts",
+                "role_victim": "Employees in the energy sector"
+            },
+            "request": "Click a SharePoint URL and authenticate at a credential prompt to shared document (e.g., 'NEW PROPOSAL - NDA').",
+            "pretext": "The recipiente received an email mimicking legitimate SharePoint document-sharing workflows, appearing to share a new proposal or NDA from a trusted vendor.",
+            "persuasion_principles": [
+                "Not specified in the report"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Compromise of various user accounts, large-scale intra-organizational and external phishing, and follow-on BEC activity.",
+            "information_website": "https://www.microsoft.com/en-us/security/blog/2026/01/21/multistage-aitm-phishing-bec-campaign-abusing-sharepoint/",
+            "coding_date": "2026-11-07T14:04:00",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © Microsoft 2026",
+            "note_on_ambiguity": "The exact persuasion principle is not explicitly specified beyond mimicking normal business workflows. The initial attack vector leveraged a compromised third-party vendor account and AiTM infrastructure, leading to the Hybrid classification. Licensing details were extracted from the footer of the Microsoft Threat Intelligence blog, which states © Microsoft 2026.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0013",
+            "campaign_name": "Gift card BEC campaign using fake reply chains",
+            "publisher": "Microsoft Threat Intelligence",
+            "publisher_type": "Vendor",
+            "publication_date": "2021-05-06",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure BEC (Impersonation + Fraud)",
+            "targeting_evidence": "The attacker targeted specific organizations using typo-squatted domains customized for over 120 different organizations. The emails were addressed to employees who directly worked with the impersonated executive, using the executive's real name.",
+            "outcome": "Not specified in the report",
+            "target": "Organizations in consumer goods, manufacturing, agriculture, real estate, professional services, and the education sector (K-12)",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Typosquatting / lookalike domain",
+                "Fake reply-chain / thread hijacking"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "Executive / K-12 Teacher",
+                "role_victim": "Executive Assistant / Organization employee"
+            },
+            "request": "Purchase physical gift cards and reply to the email with the gift card codes.",
+            "pretext": "The impersonated executive wants to reward the team with gift cards for their hard work during the pandemic, or the impersonated teacher is sick and unable to leave the house to purchase a gift card.",
+            "persuasion_principles": [
+                "Authority"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.microsoft.com/en-us/security/blog/2021/05/06/business-email-compromise-campaign-targets-wide-range-of-orgs-with-gift-card-scam/",
+            "coding_date": "2026-11-07T14:26:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © Microsoft 2026",
+            "note_on_ambiguity": "The report provides two distinct pretexts used in the same campaign (a corporate executive variant and a K-12 teacher variant); both were recorded. Licensing details were extrapolated from the standard Microsoft Threat Intelligence blog footer.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0014",
+            "campaign_name": "Storm-2372 device code phishing campaign",
+            "publisher": "Microsoft Threat Intelligence",
+            "publisher_type": "Vendor",
+            "publication_date": "2025-02-13",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "Storm-2372 targeted specific sectors and potential victims using third-party messaging services, falsely posing as a prominent person relevant to the target to develop rapport before sending subsequent phishing invitations.",
+            "outcome": "Successful (funds/data/credentials/access obtained)",
+            "target": "Government, NGOs, IT services and technology, defense, telecommunications, health, higher education, and energy sectors across multiple regions.",
+            "channels": "Messaging app > Corporate email",
+            "channel_transition": "Email > Messaging app",
+            "tactics": [
+                "Compromised legitimate account (ATO)",
+                "Other (specify) - Device code phishing / Token theft"
+            ],
+            "roles": {
+                "role_attacker": "Storm-2372 (Midnight Blizzard sub-cluster)",
+                "role_impersonated": "Prominent person relevant to the target",
+                "role_victim": "Employees in targeted organizations"
+            },
+            "request": "Click a Microsoft Teams meeting invitation link and enter a threat actor-generated device code into the legitimate Microsoft device code authentication page.",
+            "pretext": "The attacker poses as a prominent individual to build rapport via messaging apps (WhatsApp, Signal), eventually sending an invitation to a supposed online event or meeting.",
+            "persuasion_principles": [
+                "Authority",
+                "Liking"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Theft of authentication tokens (access and refresh), lateral movement via intra-organizational phishing, and email harvesting via Microsoft Graph API.",
+            "information_website": "https://www.microsoft.com/en-us/security/blog/2025/02/13/storm-2372-conducts-device-code-phishing-campaign/",
+            "coding_date": "2026-11-07T14:47:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © Microsoft 2026",
+            "note_on_ambiguity": "Device code phishing was coded as an 'Other (specify)' tactic. The channel transition explicitly flows from third-party messaging apps (where rapport is built) to email (where the lure is delivered); therefore 'Messaging app > Email' is recorded via 'Other (specify)'. 'Email > Messaging app' is on the schema list but flows backwards to this case. Licensing details were extrapolated from the standard Microsoft Threat Intelligence blog footer.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0015",
+            "campaign_name": "Storm-0539 Service Desk smishing campaign",
+            "publisher": "Microsoft Threat Intelligence",
+            "publisher_type": "Vendor",
+            "publication_date": "2024-05-01",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The attacker conducts reconnaissance using employee directories and schedules to target specific employees' personal and work mobile phones.",
+            "outcome": "Not specified in the report",
+            "target": "Employees at targeted organizations (retailers, luxury brands, and fast-food restaurants)",
+            "channels": "SMS / Text message",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Malicious link / redirect",
+                "Other (specify) - Smishing (SMS Phishing)"
+            ],
+            "roles": {
+                "role_attacker": "Storm-0539",
+                "role_impersonated": "Service Desk / IT Support",
+                "role_victim": "Employees"
+            },
+            "request": "Click the provided link to review an open incident request or ticket.",
+            "pretext": "A new IT incident request or ticket has been opened for the user and requires their immediate review.",
+            "persuasion_principles": [
+                "Authority"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Account infiltration leading to lateral movement, compromise of cloud/identity services, and ultimate theft of gift cards.",
+            "information_website": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/final/en-us/microsoft-brand/documents/Cyber_Signals_Issue_7_May_2024.pdf",
+            "coding_date": "2026-11-07T15:20:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2024 Microsoft Corporation. All rights reserved.",
+            "note_on_ambiguity": "The specific pretext, request, and impersonated role were extracted directly from the screenshot of the text messages provided in the report. Smishing was coded as an 'Other' tactic.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0016",
+            "campaign_name": "Multi-stage AiTM phishing and BEC campaign targeting banking sector",
+            "publisher": "Microsoft Threat Intelligence",
+            "publisher_type": "Vendor",
+            "publication_date": "2023-06-08",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (AiTM, Compromised third-party vendor)",
+            "targeting_evidence": "The report explicitly states the attack was 'against banking and financial services organizations' and that the attacker used 'a unique seven-digit code as the subject... unique for every target organization' to track them. The initial vector abused existing relationships by sending the phishing email from a compromised trusted vendor.",
+            "outcome": "Successful (funds/data/credentials/access obtained)",
+            "target": "Banking and financial services organizations",
+            "channels": "Corporate email > Intermediary page (Canva) > Fake login / credential-collection page",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Adversary-in-the-middle (AiTM)",
+                "Compromised third-party vendor account",
+                "Malicious link / redirect",
+                "Compromised legitimate account (ATO)",
+                "Mailbox rule manipulation"
+            ],
+            "roles": {
+                "role_attacker": "Storm-1167",
+                "role_impersonated": "Trusted vendor",
+                "role_victim": "Employees at banking and financial services organizations"
+            },
+            "request": "Click a link in the email to view or download a fax document, which leads to a fake OneDrive document preview on Canva, and subsequently enter credentials and MFA into a spoofed Microsoft sign-in page.",
+            "pretext": "The victim is receiving a fax document from a trusted vendor they do business with.",
+            "persuasion_principles": [
+                "Not specified in the report"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Account takeover, session cookie theft, unauthorized MFA modification, lateral movement, and a secondary large-scale phishing campaign (BEC).",
+            "information_website": "https://www.microsoft.com/en-us/security/blog/2023/06/08/detecting-and-mitigating-a-multi-stage-aitm-phishing-and-bec-campaign/",
+            "coding_date": "2026-11-07T16:19:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © Microsoft 2026",
+            "note_on_ambiguity": "The attack begins with vendor email compromise but utilizes an AiTM phishing kit (indirect proxy) to capture session cookies and bypass MFA before moving to the secondary BEC phase, resulting in the Hybrid classification.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0017",
+            "campaign_name": "Hybrid Executive and Vendor Impersonation Invoice Fraud",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-05-19",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (Compromised legitimate account)",
+            "targeting_evidence": "The threat actors specifically exploited the identities of several real individuals linked to their targets, matching executives with vendors they actually do business with.",
+            "outcome": "Not specified in the report",
+            "target": "Unspecified organizations (recipients linked to the impersonated executives and vendors)",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Compromised legitimate account (ATO)",
+                "Typosquatting / lookalike domain",
+                "Fake reply-chain / thread hijacking",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "yungog007@gmail.com (Dakar, Senegal infrastructure)",
+                "role_impersonated": "Company executive and a vendor (e.g., Eversheds Sutherland)",
+                "role_victim": "Employees responsible for processing payments"
+            },
+            "request": "Process a payment for an overdue invoice of $78,010.00 by sending funds to the bank accounts listed in the attached PDF.",
+            "pretext": "The executive forwards a supposedly prior email conversation with a vendor, instructing the employee to immediately pay an attached overdue invoice.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Invoice payment cycle",
+            "impact": "Not specified in the report",
+            "information_website": "https://abnormal.ai/blog/hybrid-executive-vendor-impersonation-invoice-fraud",
+            "coding_date": "2026-11-07T09:37:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Abnormal AI, Inc. All rights reserved.",
+            "note_on_ambiguity": "The attack leverages an initial compromised mailbox (executive) to bypass security filters, then injects a fabricated thread from a typosquatted vendor domain into the email body, classifying it as a Hybrid Campaign.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0018",
+            "campaign_name": "$36 Million Vendor Email Compromise (VEC)",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-10-27",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure BEC (Impersonation + Fraud)",
+            "targeting_evidence": "The attacker targeted an enterprise in the commercial real estate sector that facilitates large-sum loans, and explicitly CC'd a second well-known real estate investment company to bolster credibility.",
+            "outcome": "Thwarted / Prevented",
+            "target": "Enterprise in the commercial real estate sector",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Typosquatting / lookalike domain",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "Senior Vice President & General Counsel (Trusted partner company) and a Real estate investment company",
+                "role_victim": "Employees at a commercial real estate enterprise"
+            },
+            "request": "Process a $36 million loan payoff using the falsified wiring instructions and fraudulent bank account details provided in the attached invoice.",
+            "pretext": "The sender provides a payoff letter and payment information for a specific loan (valid only through 10/21) and requests confirmation of receipt.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Invoice payment cycle",
+            "impact": "Not specified in the report",
+            "information_website": "https://abnormal.ai/blog/36-million-vendor-fraud",
+            "coding_date": "2026-11-07T09:44:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Abnormal AI, Inc. All rights reserved.",
+            "note_on_ambiguity": "The impact on the original recipient (a non-customer) is unknown, but the attack was intercepted and thwarted by Abnormal Security for the CC'd customer. The attack relied purely on typosquatted domains (.cam instead of .com) and a fraudulent invoice, hence Pure BEC.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0019",
+            "campaign_name": "Thread Hijacked Vendor Email Compromise (VEC) Attack",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2025-06-17",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure BEC (Impersonation + Fraud)",
+            "targeting_evidence": "The attacker hijacked an existing, legitimate email conversation between a specific project manager (T.B.) at an equipment rental organization and an employee (L.W.) at a contracting services company.",
+            "outcome": "Thwarted / Prevented",
+            "target": "Employees at a contracting services company",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Typosquatting / lookalike domain",
+                "Fake reply-chain / thread hijacking",
+                "Display - name spoofing"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "Project manager (T.B.) and Accounts receivable specialist (J.B.) at a construction equipment rental company",
+                "role_victim": "Employee (L.W.) at a contracting services company"
+            },
+            "request": "Acknowledge the transition to electronic payments and update banking details to pay overdue invoices.",
+            "pretext": "Due to an ongoing account reconciliation audit, the vendor's operating account has become inactive, requiring the customer to update banking details for electronic payment of supposedly overdue invoices.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Invoice payment cycle",
+            "impact": "Not specified in the report",
+            "information_website": "https://abnormal.ai/blog/vendor-email-compromise-attack-case-study",
+            "coding_date": "2026-11-07T09:55:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Abnormal AI, Inc. All rights reserved.",
+            "note_on_ambiguity": "The attack was intercepted by Abnormal Email Security operating in passive mode, allowing the target to temporarily engage but preventing final payment. The attack relied purely on typosquatting and thread hijacking, resulting in the Pure BEC classification.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0020",
+            "campaign_name": "Compromised Vendor Payment Fraud via Thread Hijacking",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2024-03-27",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (Compromised third-party vendor account)",
+            "targeting_evidence": "The attacker targeted a specific customer by hijacking an active, ongoing email thread between the customer and a compromised vendor regarding an invoice payment.",
+            "outcome": "Not specified in the report",
+            "target": "Customer of the compromised vendor",
+            "channels": "Corporate email",
+            "channel_transition": "Different email thread/domain",
+            "tactics": [
+                "Compromised third-party vendor account",
+                "Fake reply-chain / thread hijacking",
+                "Typosquatting / lookalike domain",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "Vendor",
+                "role_victim": "Customer employee handling invoice payments"
+            },
+            "request": "Process a nearly $900,000 fraudulent invoice using the alternate banking details provided in the attached Excel wire transfer sheet.",
+            "pretext": "The vendor's usual bank account cannot currently accept deposits, necessitating payment to an alternate account.",
+            "persuasion_principles": [
+                "Authority"
+            ],
+            "timing": "Invoice payment cycle",
+            "impact": "Not specified in the report",
+            "information_website": "https://abnormal.ai/blog/most-interesting-email-attacks",
+            "coding_date": "2026-11-07T10:04:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Abnormal AI, Inc. All rights reserved.",
+            "note_on_ambiguity": "The attack begins with a compromised vendor account to hijack the thread, but then transitions the impersonated senders and CC'd individuals to a look-alike domain to execute the fraud. This mix leads to the Hybrid classification.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0021",
+            "campaign_name": "Vendor Impersonation Attack using Salesforce Link",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2024-03-27",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (Compromised third-party vendor account)",
+            "targeting_evidence": "The threat actor deliberately compromised the account of the Director of Operations at a contracting and construction service to target their specific contacts with trusted business communications.",
+            "outcome": "Not specified in the report",
+            "target": "Business contacts of the compromised organization",
+            "channels": "Corporate email > Web browser (Salesforce URL)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Compromised third-party vendor account",
+                "Malicious link / redirect",
+                "Other (specify) - Abuse of legitimate cloud services (Salesforce free trial)"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "Director of Operations at a contracting and construction service",
+                "role_victim": "Business contact / Target recipient"
+            },
+            "request": "Click on the embedded Salesforce link to access purportedly shared documents, which auto-downloads a credential-stealing HTML file.",
+            "pretext": "The Director of Operations is sharing important documents with the target via a legitimate Salesforce link.",
+            "persuasion_principles": [
+                "Authority"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Theft of sensitive information, including login credentials.",
+            "information_website": "https://abnormal.ai/blog/most-interesting-email-attacks",
+            "coding_date": "2026-11-07T10:04:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Abnormal AI, Inc. All rights reserved.",
+            "note_on_ambiguity": "The attacker abuses a legitimate Salesforce free trial to generate the malicious link, but relies entirely on a compromised vendor email account (ATO) to deliver it successfully, resulting in a Hybrid classification.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0022",
+            "campaign_name": "Kimsuky Quishing campaign targeting think tank leader",
+            "publisher": "FBI IC3",
+            "publisher_type": "Government",
+            "publication_date": "2026-01-08",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The actor explicitly sent an email requesting insight from a specific think tank leader regarding recent developments on the Korean Peninsula.",
+            "outcome": "Not specified in the report",
+            "target": "Think tank leader with a nexus to North Korea",
+            "channels": "Corporate email > Mobile device",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Malicious link / redirect",
+                "Other (specify) - Quishing (QR Code Phishing)"
+            ],
+            "roles": {
+                "role_attacker": "Kimsuky (North Korean state-sponsored)",
+                "role_impersonated": "Foreign advisor",
+                "role_victim": "Think tank leader"
+            },
+            "request": "Scan the provided QR code to access and complete a questionnaire.",
+            "pretext": "A foreign advisor is requesting insight and expertise regarding recent developments on the Korean Peninsula.",
+            "persuasion_principles": [
+                "Authority"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.ic3.gov/CSA/2026/260108.pdf",
+            "coding_date": "2026-10-29T10:00:00Z",
+            "coder": "Human coded",
+            "license": "Public domain / government work",
+            "note_on_ambiguity": "The exact URL destination of the QR code was not detailed, only that it led to a questionnaire. Quishing was coded as an 'Other (specify)' tactic involving a transition to a mobile device.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0023",
+            "campaign_name": "Kimsuky Quishing campaign targeting senior fellow",
+            "publisher": "FBI IC3",
+            "publisher_type": "Government",
+            "publication_date": "2026-01-08",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The actor explicitly sent an email requesting input from a specific senior fellow at a think tank regarding North Korean human rights issues.",
+            "outcome": "Not specified in the report",
+            "target": "Senior fellow at a think tank with a nexus to North Korea",
+            "channels": "Corporate email > Mobile device",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Malicious link / redirect",
+                "Other (specify) - Quishing (QR Code Phishing)"
+            ],
+            "roles": {
+                "role_attacker": "Kimsuky (North Korean state-sponsored)",
+                "role_impersonated": "Embassy employee",
+                "role_victim": "Senior fellow at a think tank"
+            },
+            "request": "Scan the provided QR code to supposedly gain access to a secure drive.",
+            "pretext": "An embassy employee is requesting input and collaboration regarding North Korean human rights issues.",
+            "persuasion_principles": [
+                "Authority"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.ic3.gov/CSA/2026/260108.pdf",
+            "coding_date": "2026-10-29T10:00:00Z",
+            "coder": "Human coded",
+            "license": "Public domain / government work",
+            "note_on_ambiguity": "Quishing was coded as an 'Other' tactic involving a transition to a mobile device.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0024",
+            "campaign_name": "Kimsuky Quishing campaign spoofing think tank employee",
+            "publisher": "FBI IC3",
+            "publisher_type": "Government",
+            "publication_date": "2026-01-08",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The actor deliberately spoofed an internal or known think tank employee to target another individual.",
+            "outcome": "Not specified in the report",
+            "target": "Targeted individual (likely think tank personnel)",
+            "channels": "Corporate email > Mobile device",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Malicious link / redirect",
+                "Other (specify) - Quishing (QR Code Phishing)"
+            ],
+            "roles": {
+                "role_attacker": "Kimsuky (North Korean state-sponsored)",
+                "role_impersonated": "Think tank employee",
+                "role_victim": "Targeted individual"
+            },
+            "request": "Scan the provided QR code to access a destination controlled by Kimsuky infrastructure.",
+            "pretext": "Not specified in the report",
+            "persuasion_principles": [
+                "Not specified in the report"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.ic3.gov/CSA/2026/260108.pdf",
+            "coding_date": "2026-10-29T10:00:00Z",
+            "coder": "Human coded",
+            "license": "Public domain / government work",
+            "note_on_ambiguity": "The specific pretext used in the email was omitted by the source report.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0025",
+            "campaign_name": "Kimsuky Quishing fake conference registration campaign",
+            "publisher": "FBI IC3",
+            "publisher_type": "Government",
+            "publication_date": "2026-01-08",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The actor deliberately targeted a strategic advisory firm with an invitation to a non-existent conference.",
+            "outcome": "Not specified in the report",
+            "target": "Strategic advisory firm",
+            "channels": "Corporate email > Mobile device",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Fake login / credential-collection page",
+                "Other (specify) - Quishing (QR Code Phishing)"
+            ],
+            "roles": {
+                "role_attacker": "Kimsuky (North Korean state-sponsored)",
+                "role_impersonated": "Unspecified conference organizer",
+                "role_victim": "Employees at a strategic advisory firm"
+            },
+            "request": "Scan the QR code to access the registration landing page, click the register button, and input login credentials into a fake Google account login page.",
+            "pretext": "The recipient has been invited to register for an upcoming conference.",
+            "persuasion_principles": [
+                "Scarcity"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Not specified in the report",
+            "information_website": "https://www.ic3.gov/CSA/2026/260108.pdf",
+            "coding_date": "2026-10-29T10:00:00Z",
+            "coder": "Human coded",
+            "license": "Public domain / government work",
+            "note_on_ambiguity": "Quishing was coded as an 'Other' tactic involving a transition to a mobile device. The impersonated role was inferred as a conference organizer given the context of the invitation.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0026",
+            "campaign_name": "Compromised Vendor Account Hijacks Conversation to Attempt Payment Fraud",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2024-02-22",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (Compromised third-party vendor account)",
+            "targeting_evidence": "The attacker targeted a specific customer by hijacking an active, ongoing email thread between the customer and a vendor regarding invoice payments and banking details.",
+            "outcome": "Thwarted / Prevented",
+            "target": "Customer of the compromised vendor",
+            "channels": "Corporate email",
+            "channel_transition": "Different email thread/domain",
+            "tactics": [
+                "Compromised third-party vendor account",
+                "Fake reply-chain / thread hijacking",
+                "Typosquatting / lookalike domain",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "Vendor employee (Kang Chia Hau) at PLUSMY ADVANCE ENGINEERING",
+                "role_victim": "Customer employee handling invoice payments"
+            },
+            "request": "Process a nearly $1,000,000 (RM 4,221,344.43) advance payment to a new alternate bank account provided in the attached documents.",
+            "pretext": "The vendor's usual May Bank account is temporarily on Post No Debit (PND) status and cannot accept deposits, necessitating payment to an alternate account.",
+            "persuasion_principles": [
+                "Urgency",
+                "Liking"
+            ],
+            "timing": "Invoice payment cycle",
+            "impact": "Not specified in the report",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/attacker-uses-compromised-vendor-account-to-hijack-conversation-and-attempt-payment-fraud",
+            "coding_date": "2026-11-07T11:51:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only)",
+            "note_on_ambiguity": "The attack begins with a compromised vendor account to access the legitimate thread, but the fraudulent request is actually executed from a newly created look-alike domain (plusmy-com-my.cc), classifying it as a Hybrid Campaign. The report identifies 'urgency and familiarity' as the manipulative tactics used.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0027",
+            "campaign_name": "Law-firm invoice fraud with fabricated email chain",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2025-12-09",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure BEC (Impersonation + Fraud)",
+            "targeting_evidence": "The threat actor specifically targeted the relationship between a company and its legal counsel, impersonating the global law firm Baker McKenzie and referencing specific unpaid invoice details.",
+            "outcome": "Not specified in the report",
+            "target": "Clients of the impersonated law firm",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Typosquatting / lookalike domain",
+                "Fake reply-chain / thread hijacking",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "Michael Michalandos, Managing Partner, Debt Recovery and Resolution at Baker & McKenzie LLP",
+                "role_victim": "Target employee processing payments (Accounts Receivable)"
+            },
+            "request": "Process payment for outstanding invoice #117360, issued in July 2024.",
+            "pretext": "Despite several prior reminders, the July 2024 invoice remains outstanding and the Managing Partner is following up to ensure prompt payment.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Invoice payment cycle",
+            "impact": "Not specified in the report",
+            "information_website": "https://abnormal.ai/blog/security-superlatives-2025-2",
+            "coding_date": "2026-11-07T11:54:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Abnormal AI, Inc. All rights reserved.",
+            "note_on_ambiguity": "The attacker registered a lookalike domain (bakermckenzieslaw.com) two days prior and used a fabricated email thread, but the report does not indicate an initial account compromise, leading to a Pure BEC classification.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0028",
+            "campaign_name": "File-Sharing Phishing targeting Public High School Faculty",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2024-12-11",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The attacker explicitly targeted faculty members at a public high school, leveraging a 'Staff Payroll Update' document lure reinforced by an image of a classroom environment.",
+            "outcome": "Not specified in the report",
+            "target": "Faculty members at a public high school",
+            "channels": "Corporate email > File-hosting service (Google Docs) > Fake login page",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Malicious link / redirect",
+                "Fake login / credential-collection page",
+                "Other (specify) - Abuse of legitimate cloud services (Google Docs and Google Apps Script)"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "Internal administrative or HR entity (Implied by 'Staff Payroll Update')",
+                "role_victim": "Faculty members at a public high school"
+            },
+            "request": "Click the 'REVIEW DOCUMENT' link inside the shared Google Doc to verify an update in pay, which redirects to a fake Microsoft 365 sign-in page.",
+            "pretext": "A Staff Payroll Update document has been shared for the faculty member's personal use to verify an update in pay.",
+            "persuasion_principles": [
+                "Authority"
+            ],
+            "timing": "Payroll cycle",
+            "impact": "Theft of login credentials for use in launching additional attacks.",
+            "information_website": "https://abnormal.ai/blog/emerging-email-threats",
+            "coding_date": "2026-11-07T12:02:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Abnormal AI, Inc. All rights reserved.",
+            "note_on_ambiguity": "The attack uses a legitimate Google Drive email to deliver a link to a Google Doc, which then contains the malicious link to a Google Apps Script page. As no other initial vector is needed, it is Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0029",
+            "campaign_name": "AI-Generated Business Email Compromise via Thread Hijacking",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2024-12-11",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (Compromised legitimate account)",
+            "targeting_evidence": "The attacker targeted the accounts payable team by compromising the account of the Director of Business Development at a renewable energy manufacturer and hijacking an existing thread discussing a purchase order.",
+            "outcome": "Not specified in the report",
+            "target": "Accounts payable team at a customer/partner organization",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Compromised legitimate account (ATO)",
+                "Fake reply-chain / thread hijacking",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "Director of Business Development at a renewable energy manufacturer",
+                "role_victim": "Accounts Payable (AP) team employee"
+            },
+            "request": "Confirm receipt of the revised invoice and ensure a payment of over $230,000 is sent to a new Bank of America account.",
+            "pretext": "The company has experienced difficulties processing check payments recently, so the recipient must urgently process the revised invoice and wire funds to a new bank account to facilitate timely processing.",
+            "persuasion_principles": [
+                "Urgency"
+            ],
+            "timing": "Invoice payment cycle",
+            "impact": "Potential financial loss of over $230,000.",
+            "information_website": "https://abnormal.ai/blog/emerging-email-threats",
+            "coding_date": "2026-11-07T12:02:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Abnormal AI, Inc. All rights reserved.",
+            "note_on_ambiguity": "The report suggests Generative AI (like FraudGPT) was likely used to craft the well-written request. The attack relies entirely on an initial account compromise (ATO) to hijack a live thread and deliver the fraudulent invoice, resulting in a Hybrid classification.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0030",
+            "campaign_name": "Multi-Stage QR Code Phishing via Website Form Inquiry",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2026-01-21",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure BEC (Impersonation + Fraud)",
+            "targeting_evidence": "The threat actor deliberately targeted an Account Representative by first submitting an information request via the targeted organization's website, generating a real thread to exploit.",
+            "outcome": "Not specified in the report",
+            "target": "Account Representative (Production Enhancement)",
+            "channels": "Webform > Corporate email > Mobile device (QR Scan) > Fake login page",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Typosquatting / lookalike domain",
+                "QR code (Quishing)",
+                "Fake login / credential-collection page"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "Vendor-side representative / Sales Manager (Jolly Joseph)",
+                "role_victim": "Account Representative at the targeted organization"
+            },
+            "request": "Scan the provided QR code using a mobile phone camera to review the Request for Quote (RFQ) specifications and finalize details.",
+            "pretext": "The sender is eager to move forward with a business relationship before the end of Q4 and needs the recipient to prioritize reviewing the attached RFQ.",
+            "persuasion_principles": [
+                "Urgency"
+            ],
+            "timing": "End-of-quarter (Q4)",
+            "impact": "Theft of login credentials.",
+            "information_website": "https://abnormal.ai/blog/threat-forecast-top-cyberattacks",
+            "coding_date": "2026-11-07T12:12:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Abnormal AI, Inc. All rights reserved.",
+            "note_on_ambiguity": "The attacker interacts directly without compromising an account first (relying on a lookalike domain and display name), resulting in a Pure BEC classification.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0031",
+            "campaign_name": "Thread-Spoofed Vendor Impersonation (ZoomInfo)",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2026-01-21",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (Compromised legitimate account)",
+            "targeting_evidence": "The attacker targeted an employee by impersonating their CEO (P.Z.) and fabricating a detailed email thread referencing their specific relationship with the business intelligence platform ZoomInfo.",
+            "outcome": "Not specified in the report",
+            "target": "Employee with payment processing capabilities",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Compromised legitimate account (ATO)",
+                "Fake reply-chain / thread hijacking",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "Internal CEO (P.Z.) and Accounting at ZoomInfo",
+                "role_victim": "Employee capable of executing ACH payments"
+            },
+            "request": "Process a nearly $50,000 ACH payment for an outstanding ZoomInfo invoice (#9F3ERQKJ) attached to the email.",
+            "pretext": "The CEO forwarded an outstanding final bill for six user licenses from ZoomInfo, asking the employee to ensure prompt payment to avoid service interruptions.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Invoice payment cycle",
+            "impact": "Potential financial loss of nearly $50,000.",
+            "information_website": "https://abnormal.ai/blog/threat-forecast-top-cyberattacks",
+            "coding_date": "2026-11-07T12:12:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Abnormal AI, Inc. All rights reserved.",
+            "note_on_ambiguity": "The attack leverages an initial compromised legitimate address (ATO) to deliver a fabricated email thread mimicking a vendor, classifying it as a Hybrid Campaign.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0032",
+            "campaign_name": "AI-Generated Payroll Fraud",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2026-01-21",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure BEC (Impersonation + Fraud)",
+            "targeting_evidence": "The attacker researched the target organization to specifically identify and impersonate a Senior Vice President (M.P.), and directly targeted the internal payroll team to manipulate wage routing.",
+            "outcome": "Not specified in the report",
+            "target": "Payroll team / HR",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Display - name spoofing"
+            ],
+            "roles": {
+                "role_attacker": "Unspecified threat actor",
+                "role_impersonated": "Senior Vice President (M.P.)",
+                "role_victim": "Payroll or HR employee"
+            },
+            "request": "Provide a Direct Deposit Authorization Form via email attachment to facilitate updating the executive's direct deposit information.",
+            "pretext": "The Senior Vice President has recently changed banks and needs the payroll department's assistance to update their direct deposit details before the next cycle.",
+            "persuasion_principles": [
+                "Authority"
+            ],
+            "timing": "Payroll cycle",
+            "impact": "Redirection of the executive's wages to an attacker-controlled bank account.",
+            "information_website": "https://abnormal.ai/blog/threat-forecast-top-cyberattacks",
+            "coding_date": "2026-11-07T12:12:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Abnormal AI, Inc. All rights reserved.",
+            "note_on_ambiguity": "The attack relies solely on display-name spoofing from an unrelated email address to manipulate the victim, with no evidence of an initial compromised account, making it Pure BEC.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0033",
+            "campaign_name": "Midnight Hedgehog Payment Fraud (Multilingual CEO Impersonation)",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2023-02-16",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Campaign profile / Modus Operandi",
+            "attack_classification": "Pure BEC (Impersonation + Fraud)",
+            "targeting_evidence": "The threat group thoroughly researches their target's responsibilities and reporting relationship to the CEO, exclusively targeting finance managers or executives responsible for making payments.",
+            "outcome": "Not specified in the report",
+            "target": "Finance managers and payment processing executives",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Display - name spoofing",
+                "Typosquatting / lookalike domain"
+            ],
+            "roles": {
+                "role_attacker": "Midnight Hedgehog threat group (Nigeria, UK, US, Canada network)",
+                "role_impersonated": "Internal CEO",
+                "role_victim": "Finance manager or payment executive"
+            },
+            "request": "Process an urgent payment (ranging from €16,000 to €42,000) to a company in England and provide the required bank details to initiate the transfer.",
+            "pretext": "The CEO urgently needs to pay a foreign vendor and requests the company's current bank balance and processing limits to authorize the transaction.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Financial loss ranging from $17,000 to $45,000 per successful attack.",
+            "information_website": "https://abnormal.ai/blog/midnight-hedgehog-mandarin-capybara-multilingual-executive-impersonation",
+            "coding_date": "2026-11-07T12:40:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Abnormal AI, Inc. All rights reserved.",
+            "note_on_ambiguity": "The group relies purely on spoofed sender information (free webmail and lookalike domains) with automated translation tools to execute the fraud without compromising internal accounts, making it a Pure BEC attack.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0034",
+            "campaign_name": "Mandarin Capybara Payroll Diversion (Multilingual Executive Impersonation)",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2023-02-16",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Campaign profile / Modus Operandi",
+            "attack_classification": "Pure BEC (Impersonation + Fraud)",
+            "targeting_evidence": "The threat group targets human resources and payroll employees worldwide, deliberately impersonating executives within the same organization.",
+            "outcome": "Not specified in the report",
+            "target": "Human resources and payroll employees",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Display - name spoofing"
+            ],
+            "roles": {
+                "role_attacker": "Mandarin Capybara threat group",
+                "role_impersonated": "Internal Executive",
+                "role_victim": "Human resources or payroll employee"
+            },
+            "request": "Update the executive's direct deposit payroll information to a new bank account provided by the attacker.",
+            "pretext": "The executive has recently changed bank accounts and needs HR to process the update so that the funds are routed to the new primary account before the next payday.",
+            "persuasion_principles": [
+                "Authority"
+            ],
+            "timing": "Payroll cycle",
+            "impact": "Diversion of the executive's wages to attacker-controlled fintech accounts.",
+            "information_website": "https://abnormal.ai/blog/midnight-hedgehog-mandarin-capybara-multilingual-executive-impersonation",
+            "coding_date": "2026-11-07T12:40:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Abnormal AI, Inc. All rights reserved.",
+            "note_on_ambiguity": "The group consistently utilizes free webmail accounts (Gmail) and simply updates the display name to spoof the executive. With no account compromise involved, it is classified as a Pure BEC attack.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0035",
+            "campaign_name": "Firebrick Ostrich Third-Party Reconnaissance BEC",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2023-02-01",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Campaign profile / Modus Operandi",
+            "attack_classification": "Pure BEC (Impersonation + Fraud)",
+            "targeting_evidence": "The threat group uses OSINT to discover relationships between specific vendors and their US-based customers, deliberately targeting the customer's accounts payable distribution lists using BCC to initiate contact.",
+            "outcome": "Not specified in the report",
+            "target": "Accounts Payable teams at US-based organizations",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Typosquatting / lookalike domain",
+                "Display - name spoofing",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Firebrick Ostrich threat group",
+                "role_impersonated": "Vendor's accounts receivable specialist and vendor executives (e.g., CFO)",
+                "role_victim": "Accounts Payable (AP) employee / Distribution list"
+            },
+            "request": "Update the vendor's bank account information on file to ensure future ACH and wire transfer payments are routed to a new, attacker-controlled account, and report any open invoices.",
+            "pretext": "The vendor is temporarily unable to process mailed check payments, and the accounting team cannot access their server to review open accounts, necessitating the customer to provide a list of open invoices and update their banking details for electronic payment.",
+            "persuasion_principles": [
+                "Authority",
+                "Social Proof"
+            ],
+            "timing": "Invoice payment cycle",
+            "impact": "Redirection of invoice payments to fraudulent accounts.",
+            "information_website": "https://abnormal.ai/blog/firebrick-ostrich-third-party-reconnaissance-attacks",
+            "coding_date": "2026-11-07T12:43:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Abnormal AI, Inc. All rights reserved.",
+            "note_on_ambiguity": "The attacker relies purely on open-source intelligence and lookalike domains without needing to compromise any accounts (ATO), thus classifying it as a Pure BEC attack. They use CC'd secondary fake personas to manufacture social proof.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0036",
+            "campaign_name": "Cobalt Terrapin Dual Impersonation Invoice Fraud",
+            "publisher": "Abnormal",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-10-04",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Campaign profile / Modus Operandi",
+            "attack_classification": "Pure BEC (Impersonation + Fraud)",
+            "targeting_evidence": "The threat group targets central accounts payable distribution lists (e.g., ap@company.com) of specific organizations, deliberately spoofing the display name of that organization's CEO or CFO.",
+            "outcome": "Not specified in the report",
+            "target": "Accounts Payable teams / Distribution lists",
+            "channels": "Corporate email",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Display - name spoofing",
+                "Typosquatting / lookalike domain",
+                "Fake reply-chain / thread hijacking",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Cobalt Terrapin threat group",
+                "role_impersonated": "Internal Executive (CEO/CFO) AND External Vendor (e.g., LinkedIn Finance Team)",
+                "role_victim": "Accounts Payable (AP) employee / Distribution list"
+            },
+            "request": "Process payment for the attached invoice using the provided ACH electronic funds transfer instructions.",
+            "pretext": "The CEO/CFO is forwarding a legitimate-looking invoice thread from a vendor (like LinkedIn), noting that the vendor has made improvements to their billing experience and now only accepts electronic funds via ACH transfer.",
+            "persuasion_principles": [
+                "Authority"
+            ],
+            "timing": "Invoice payment cycle",
+            "impact": "Redirection of corporate funds to fraudulent accounts.",
+            "information_website": "https://abnormal.ai/blog/cobalt-terrapin-invoice-fraud",
+            "coding_date": "2026-11-07T12:57:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - © 2026 Abnormal AI, Inc. All rights reserved.",
+            "note_on_ambiguity": "The group uses a unique hybrid strategy: they spoof the display name of an internal executive sending the email, while fabricating an email thread in the body using a lookalike domain for an external vendor. Since no account was actually compromised, this remains a Pure BEC attack.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0037",
+            "campaign_name": "TA419 AI Policy Advisory Committee Credential Phishing",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2026-10-01",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor specifically targeted AI policy experts at US think tanks, universities, and law firms using tailored conversational lures about joining an AI Policy Advisory Committee.",
+            "outcome": "Not specified in the report",
+            "target": "AI policy experts at US think tanks, universities, and law firms",
+            "channels": "Corporate email > Web browser (AitM phishing page)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Display - name spoofing",
+                "Malicious link / redirect",
+                "Fake login / credential-collection page",
+                "AitM / session hijacking",
+                "Evasion / cloaking (Cloudflare Turnstile check)"
+            ],
+            "roles": {
+                "role_attacker": "TA419 (China-aligned threat actor)",
+                "role_impersonated": "Lynne Edwards Parker (former White House OSTP official) and Heidi Crebo-Rediker (prominent economist)",
+                "role_victim": "AI policy expert"
+            },
+            "request": "Respond to a benign conversational email, and subsequently click a shortened URL to review shared documents on a fake OneDrive platform.",
+            "pretext": "The sender is inviting the recipient to join a fictitious 'AI Policy Advisory Committee' or to contribute to a Senate Committee on Foreign Relations report on AI export controls and supply chains.",
+            "persuasion_principles": [
+                "Authority",
+                "Liking"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Theft of Microsoft 365 credentials and session cookies via an Adversary-in-the-Middle (AitM) attack.",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/hallucinating-credibility-china-aligned-ta419-impersonates-its-way-us-ai-policy",
+            "coding_date": "2026-11-07T13:05:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only)",
+            "note_on_ambiguity": "The attack uses external attacker-controlled email addresses mimicking real individuals (e.g., leparker@mail.com) to deliver AitM links without compromising internal accounts, classifying it as Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0038",
+            "campaign_name": "TA419 Anthropic Claude Military Integration Credential Phishing",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2026-10-01",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The attacker deliberately targeted a single AI policy analyst at a US think tank, using a highly specific lure referencing ongoing defense debates regarding Anthropic's Claude models.",
+            "outcome": "Not specified in the report",
+            "target": "AI policy analyst at a US think tank",
+            "channels": "Corporate email > Web browser (AitM phishing page)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Display - name spoofing",
+                "Malicious link / redirect",
+                "Fake login / credential-collection page",
+                "AitM / session hijacking"
+            ],
+            "roles": {
+                "role_attacker": "TA419 (China-aligned threat actor)",
+                "role_impersonated": "Senior employee of the AI company Anthropic",
+                "role_victim": "AI policy analyst at a US think tank"
+            },
+            "request": "Review the provided link to share thoughts and feedback regarding the military integration of Claude.",
+            "pretext": "A senior Anthropic employee is requesting feedback from the policy analyst on the debate over US military use of Anthropic's Claude AI models.",
+            "persuasion_principles": [
+                "Authority"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Theft of Microsoft 365 credentials and session cookies via an AitM credential phishing chain.",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/hallucinating-credibility-china-aligned-ta419-impersonates-its-way-us-ai-policy",
+            "coding_date": "2026-11-07T13:05:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only)",
+            "note_on_ambiguity": "Similar to the other TA419 campaign, the actor leverages spoofed identities to send malicious URLs directly to targets. The targeted nature of the payload delivery classifies it as Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0039",
+            "campaign_name": "UNK_DeadDrop Developer Recruitment & Code Review Phishing",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2026-06-08",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Campaign profile / Modus Operandi",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor deliberately targeted software developers ('Full-Stack Engineer', 'Agent Lead Developer') across almost 100 organizations in technology, cryptocurrency, and finance sectors by crafting tailored recruitment and coding assessments.",
+            "outcome": "Not specified in the report",
+            "target": "Software developers and engineers",
+            "channels": "Corporate email > GitHub (Code repository) > IDE (Visual Studio Code)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Display - name spoofing",
+                "Malicious link / redirect",
+                "Other (specify) - Malicious code repository (GitHub) and trojanized IDE extension (VSIX)"
+            ],
+            "roles": {
+                "role_attacker": "UNK_DeadDrop (North Korea-aligned threat actor)",
+                "role_impersonated": "Recruiters or peers from real organizations (e.g., Ondo Finance, Empower Pharmacy)",
+                "role_victim": "Software developer candidate or code reviewer"
+            },
+            "request": "Clone the provided GitHub repository and open it in an IDE (like VS Code or Cursor) to complete a take-home coding assignment or peer code review.",
+            "pretext": "The sender is reaching out with a potential job opportunity and requires the recipient to complete a technical assessment or review an open-source project (like a cryptocurrency platform or Foundry testing vault) as part of the evaluation.",
+            "persuasion_principles": [
+                "Liking",
+                "Authority"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Silent execution of cross-platform malware (Overlord) leading to exfiltration of API tokens, browser wallet extensions, decrypted credentials, and desktop wallets.",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/dont-fear-repo-unkdeaddrop-phishing-campaign-targets-developers-steal",
+            "coding_date": "2026-11-07T13:06:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only)",
+            "note_on_ambiguity": "The attacker relies on attacker-owned sender domains to impersonate legitimate companies. Because there is no ATO involved in the email delivery phase, it is classified as Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0040",
+            "campaign_name": "Star Blizzard WhatsApp Web Session Hijacking via Quishing",
+            "publisher": "Microsoft",
+            "publisher_type": "Vendor",
+            "publication_date": "2025-01-16",
+            "case_source_type": "Single campaign",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor deliberately targeted government officials, diplomats, defense policy researchers, and NGOs providing assistance to Ukraine.",
+            "outcome": "Not specified in the report",
+            "target": "Government, diplomacy, and defense policy professionals",
+            "channels": "Corporate email > Web browser (Fake WhatsApp Web portal)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Display - name spoofing",
+                "Other (specify) - Quishing (QR Code Phishing)",
+                "Other (specify) - Conversation starter / Intentional broken QR code to solicit reply",
+                "Other (specify) - WhatsApp Web session hijacking (Linked device QR code)"
+            ],
+            "roles": {
+                "role_attacker": "Star Blizzard (Russian threat actor)",
+                "role_impersonated": "US government official",
+                "role_victim": "Government or diplomacy professional / Defense policy researcher"
+            },
+            "request": "Respond to the initial email regarding a broken QR code, then click the follow-up link and scan a new QR code to allegedly join a WhatsApp support group.",
+            "pretext": "A purported US government official is inviting the recipient to join a WhatsApp group focused on non-governmental initiatives aimed at supporting Ukrainian NGOs. The initial email contains an intentionally broken QR code to solicit a reply before providing the actual malicious link.",
+            "persuasion_principles": [
+                "Authority",
+                "Liking"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Unauthorized access to the target's WhatsApp account messages and data exfiltration capabilities via the WhatsApp Web interface.",
+            "information_website": "https://www.microsoft.com/en-us/security/blog/2025/01/16/new-star-blizzard-spear-phishing-campaign-targets-whatsapp-accounts/",
+            "coding_date": "2026-11-07T13:21:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only)",
+            "note_on_ambiguity": "The attack uses external spoofed emails impersonating US officials to deliver an AitM/session hijacking payload aimed at WhatsApp Web rather than enterprise credentials. Classified as Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0041",
+            "campaign_name": "Midnight Blizzard RDP Configuration Spear-Phishing",
+            "publisher": "Microsoft Threat Intelligence",
+            "publisher_type": "Vendor",
+            "publication_date": "2024-10-29",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (Compromised legitimate account (ATO))",
+            "targeting_evidence": "The report explicitly states the spear-phishing emails were 'highly targeted' and directed at individuals in government, academia, defense, non-governmental organizations, and other sectors in specific regions (UK, Europe, Australia, Japan).",
+            "outcome": "Not specified in the report",
+            "target": "Government, academia, defense, and non-governmental organizations",
+            "channels": "Corporate email with malicious RDP attachment",
+            "channel_transition": "None (single channel throughout)",
+            "tactics": [
+                "Compromised legitimate account (ATO)",
+                "Display - name spoofing",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Midnight Blizzard (Russian threat actor)",
+                "role_impersonated": "Microsoft employees",
+                "role_victim": "Individuals in government, academia, defense, and non-governmental organizations"
+            },
+            "request": "Open the attached Remote Desktop Protocol (.RDP) configuration file.",
+            "pretext": "The emails utilized social engineering lures relating to Microsoft, Amazon Web Services (AWS), and the concept of Zero Trust.",
+            "persuasion_principles": [
+                "Authority"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Established a bidirectional RDP connection to an actor-controlled server, exposing local device resources (files, peripherals, credentials, web authentication) and enabling potential malware installation.",
+            "information_website": "https://www.microsoft.com/en-us/security/blog/2024/10/29/midnight-blizzard-conducts-large-scale-spear-phishing-campaign-using-rdp-files/",
+            "coding_date": "2026-11-11T15:57:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Microsoft 2024",
+            "note_on_ambiguity": "Despite the 'large-scale' description, the report confirms the campaign was 'highly targeted' at explicit sectors, passing the targeting evidence rule. The emails were sent from legitimate organizations' compromised addresses (ATO), classifying this as a Hybrid campaign.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0042",
+            "campaign_name": "Void Blizzard European Defense Summit Quishing (AitM)",
+            "publisher": "Microsoft Threat Intelligence",
+            "publisher_type": "Vendor",
+            "publication_date": "2025-05-27",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor specifically targeted over 20 NGO sector organizations in Europe and the United States using a highly tailored lure about a relevant regional defense event.",
+            "outcome": "Not specified in the report",
+            "target": "NGOs in Europe and the United States",
+            "channels": "Corporate email > Malicious PDF attachment > Web browser (AitM phishing page via QR code)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Display - name spoofing",
+                "Malicious attachment",
+                "Other (specify) - QR code (Quishing)",
+                "Typosquatting / lookalike domain",
+                "Fake login / credential-collection page",
+                "Adversary-in-the-middle (AiTM)"
+            ],
+            "roles": {
+                "role_attacker": "Void Blizzard (Russia-affiliated threat actor)",
+                "role_impersonated": "Organizer of the European Defense and Security Summit",
+                "role_victim": "Employees at targeted NGOs"
+            },
+            "request": "Open the attached PDF and scan the embedded QR code to view a fake invitation to the European Defense and Security Summit, which redirects to a spoofed Microsoft Entra login page.",
+            "pretext": "The sender is inviting the recipient to attend the European Defense and Security Summit, requiring them to access the details via a secure link provided as a QR code in the attached PDF.",
+            "persuasion_principles": [
+                "Authority",
+                "Scarcity"
+            ],
+            "timing": "Other (specify) - European Defense and Security Summit timeframe",
+            "impact": "Theft of Microsoft Entra authentication credentials and session cookies, leading to unauthorized access to Exchange Online, Microsoft Graph, and Microsoft Teams for bulk data exfiltration.",
+            "information_website": "https://www.microsoft.com/en-us/security/blog/2025/05/27/new-russia-affiliated-actor-void-blizzard-targets-critical-sectors-for-espionage/",
+            "coding_date": "2026-11-11T15:47:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Microsoft 2025",
+            "note_on_ambiguity": "The attacker spoofed a summit organizer and utilized an external typosquatted domain (micsrosoftonline[.]com) and Evilginx to conduct AitM credential theft without relying on a prior compromised internal account, keeping this strictly Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0043",
+            "campaign_name": "BadBlood (TA453 Medical Research Credential Phishing)",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2021-03-30",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor specifically targeted less than 25 senior professionals specializing in genetics, neurology, and oncology research at various medical research organizations located in the US and Israel.",
+            "outcome": "Not specified in the report",
+            "target": "Senior medical professionals (genetics, neurology, oncology) in the US and Israel",
+            "channels": "Corporate email > Web browser (Fake credential-collection page)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Display - name spoofing",
+                "Malicious link / redirect",
+                "Fake login / credential-collection page",
+                "Lookalike domains"
+            ],
+            "roles": {
+                "role_attacker": "TA453 / CHARMING KITTEN (Iranian-nexus threat actor)",
+                "role_impersonated": "Prominent Israeli physicist",
+                "role_victim": "Senior medical research personnel"
+            },
+            "request": "Click the provided link to view a shared OneDrive document regarding Israeli nuclear weapons.",
+            "pretext": "A prominent Israeli physicist is emailing the recipient to share a document titled 'Nuclear weapons at a glance: Israel'.",
+            "persuasion_principles": [
+                "Authority",
+                "Curiosity (Other - specify)"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Harvesting of user credentials via a forged Microsoft login page for potential espionage or further phishing operations.",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/badblood-ta453-targets-us-and-israeli-medical-research-personnel-credential",
+            "coding_date": "2026-11-11T17:23:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Proofpoint 2026",
+            "note_on_ambiguity": "The attacker used an actor-controlled Gmail account to spoof the display name/identity of the physicist, delivering a link to a credential harvesting site without relying on ATO or AiTM, classifying it as Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0044",
+            "campaign_name": "TA453 ISW Fake Podcast Invite (BlackSmith Malware)",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2024-08-20",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor specifically targeted a prominent Jewish leader, contacting them across both their organizational and personal email addresses.",
+            "outcome": "Not specified in the report",
+            "target": "A prominent Jewish figure / Religious leader",
+            "channels": "Corporate email > Web browser (DocSend URL) > Text file > Web browser (Google Drive URL) > ZIP Archive > Malicious LNK > Executable Payload",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Display - name spoofing",
+                "Typosquatting / lookalike domain",
+                "Malicious link / redirect",
+                "Malicious attachment",
+                "Other (specify) - Benign conversational lure to establish trust before payload delivery"
+            ],
+            "roles": {
+                "role_attacker": "TA453 (Iranian threat actor)",
+                "role_impersonated": "Jennifer Cafarella (Research Director, Institute for the Study of War - ISW)",
+                "role_victim": "Prominent Jewish leader"
+            },
+            "request": "Read the provided contract form and podcast session plan by accessing the password-protected URL.",
+            "pretext": "The recipient is being invited to be a guest on an ISW podcast called 'Exploring Jewish Life in the Muslim World'. After the initial conversational exchange, the attacker sends a password-protected link to what is supposedly the podcast planning documents.",
+            "persuasion_principles": [
+                "Authority",
+                "Consistency"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Execution of the BlackSmith malware toolset and deployment of the AnvilEcho PowerShell trojan for continuous intelligence gathering and data exfiltration.",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/best-laid-plans-ta453-targets-religious-figure-fake-podcast-invite-delivering",
+            "coding_date": "2026-11-11T17:19:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Proofpoint 2026",
+            "note_on_ambiguity": "The attacker registered a lookalike domain (understandingthewar[.]org) to send the spoofed emails without compromising a legitimate internal account, classifying this strictly as Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0045",
+            "campaign_name": "TA450 Israeli Manufacturing Salary Lure (AteraAgent)",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2024-03-21",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (Compromised legitimate account (ATO))",
+            "targeting_evidence": "The campaign explicitly targeted Israeli employees at large multinational organizations with a focus on global manufacturing, technology, and information security companies.",
+            "outcome": "Not specified in the report",
+            "target": "Israeli employees at multinational manufacturing, tech, and InfoSec companies",
+            "channels": "Corporate email > Malicious PDF attachment > Web browser (File-sharing site) > ZIP Archive > MSI Payload",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Compromised legitimate account (ATO)",
+                "Malicious attachment",
+                "Malicious link / redirect"
+            ],
+            "roles": {
+                "role_attacker": "TA450 / MuddyWater (Iran-aligned threat actor)",
+                "role_impersonated": "Internal/External HR or Payroll entity (via hijacked 'salary' mailbox)",
+                "role_victim": "Israeli employees"
+            },
+            "request": "Open the attached PDF and click the embedded link to download a ZIP archive from a file-sharing site, purportedly to receive the latest pay slip.",
+            "pretext": "The recipient receives a Hebrew-language email from a compromised '.il' account with a pay-related subject (e.g., 'Pay slip for the month 02/2024'). The attached PDF contains a brief message indicating that their salary slip must now be accessed through a new software link.",
+            "persuasion_principles": [
+                "Authority",
+                "Curiosity (Other - specify)"
+            ],
+            "timing": "Payroll cycle",
+            "impact": "Installation of AteraAgent, a remote administration software abused by the threat actor for persistent access and potential espionage.",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/security-brief-ta450-uses-embedded-links-pdf-attachments-latest-campaign",
+            "coding_date": "2026-11-11T17:34:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Proofpoint 2026",
+            "note_on_ambiguity": "The attacker explicitly utilized a compromised .IL sender account that matched the lure content (e.g., salary@<compromisedorg>.co.il) to send the initial email, categorizing this as a Hybrid ATO campaign.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0046",
+            "campaign_name": "TA397 Turkish Defense Sector Madagascar Lure",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2024-12-17",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (Compromised legitimate account (ATO))",
+            "targeting_evidence": "The report explicitly states that on November 18, 2024, TA397 targeted a defense sector organization in Turkey.",
+            "outcome": "Not specified in the report",
+            "target": "Defense sector organization in Turkey",
+            "channels": "Corporate email > Malicious attachment (RAR Archive) > LNK file > Alternate Data Stream (ADS) PowerShell > Command Prompt > Web browser (curl download) > MSI Payload",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Compromised legitimate account (ATO)",
+                "Malicious attachment",
+                "Other (specify) - Execution via NTFS Alternate Data Streams (ADS)"
+            ],
+            "roles": {
+                "role_attacker": "TA397 / Bitter (South Asian government-nexus APT)",
+                "role_impersonated": "Government organization (via hijacked account) / World Bank (decoy content)",
+                "role_victim": "Defense sector organization in Turkey"
+            },
+            "request": "Open the attached RAR archive and click on the LNK file disguised as a PDF document about public investments.",
+            "pretext": "An email sent from a compromised government account delivers a lure regarding a World Bank public initiative for infrastructure development in Madagascar (PUBLIC INVESTMENTS PROJECTS 2025 MADAGASCAR).",
+            "persuasion_principles": [
+                "Authority"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Execution of PowerShell commands to create persistent scheduled tasks and the eventual manual deployment of espionage RATs (WmRAT and MiyaRAT) for intelligence collection.",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/hidden-plain-sight-ta397s-new-attack-chain-delivers-espionage-rats",
+            "coding_date": "2026-11-12T00:31:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Proofpoint 2026",
+            "note_on_ambiguity": "The initial spearphishing email originated from a compromised government email account to deliver the RAR payload, mandating the classification as a Hybrid Campaign utilizing Account Takeover (ATO).",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0047",
+            "campaign_name": "TA427 Japanese Embassy ClickFix Campaign",
+            "publisher": "Proofpoint",
+            "publisher_type": "Vendor",
+            "publication_date": "2025-04-17",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The report explicitly states TA427 targeted individuals in fewer than five organizations in the think tank sector working on North Korean affairs.",
+            "outcome": "Not specified in the report",
+            "target": "Individuals in the think tank sector working on North Korean affairs",
+            "channels": "Corporate email > Web browser (Fake secure drive landing page) > Pop-up alert (ClickFix) > PowerShell / Terminal > VBS/Batch scripts > Executable Payload (QuasarRAT)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Display - name spoofing",
+                "Malicious link / redirect",
+                "Other (specify) - ClickFix (Fake error / manual command execution)"
+            ],
+            "roles": {
+                "role_attacker": "TA427 / Kimsuky (North Korean threat actor)",
+                "role_impersonated": "Yasuyuki Ebata, Second secretary, Japanese Embassy in the United States / Ambassador Shigeo Yamada",
+                "role_victim": "Think tank employees"
+            },
+            "request": "Visit the provided secure drive link, click 'Register' on the pop-up, and manually copy and paste the provided code (PowerShell command) into the terminal to view the questionnaire.",
+            "pretext": "A purported Japanese diplomat initiates contact to arrange a meeting with Ambassador Shigeo Yamada. After building trust, the attacker sends a follow-up email with a link to a 'secure drive' to access a preparatory questionnaire regarding the nuclear crisis in Northeast Asia.",
+            "persuasion_principles": [
+                "Authority",
+                "Liking"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Execution of malicious PowerShell commands leading to the installation of QuasarRAT for remote access.",
+            "information_website": "https://www.proofpoint.com/us/blog/threat-insight/around-world-90-days-state-sponsored-actors-try-clickfix",
+            "coding_date": "2026-11-12T00:42:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Proofpoint 2026",
+            "note_on_ambiguity": "The attacker utilized a proton.me email address to spoof the sender identity (Display-name spoofing) rather than compromising a legitimate internal account, which classifies the attack strictly as Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0048",
+            "campaign_name": "Storm-1865 Booking.com Hospitality ClickFix",
+            "publisher": "Microsoft Threat Intelligence",
+            "publisher_type": "Vendor",
+            "publication_date": "2025-03-13",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor specifically identifies and targets individuals in hospitality organizations globally (North America, Europe, Asia, Oceania) that are most likely to work with Booking.com.",
+            "outcome": "Not specified in the report",
+            "target": "Individuals working in hospitality organizations",
+            "channels": "Corporate email > Web browser (Fake Booking.com landing page) > Pop-up alert (ClickFix) > Windows Run / mshta.exe > Executable Payload",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Display - name spoofing",
+                "Malicious link / redirect",
+                "Other (specify) - ClickFix (Fake CAPTCHA / manual command execution via clipboard)"
+            ],
+            "roles": {
+                "role_attacker": "Storm-1865 (Financially motivated threat actor)",
+                "role_impersonated": "Booking.com / Prospective hotel guests",
+                "role_victim": "Hospitality sector employees"
+            },
+            "request": "Click the link to view a guest request or review, then verify identity using a fake CAPTCHA by manually copying and executing a PowerShell command from the clipboard via the Windows Run prompt.",
+            "pretext": "The sender impersonates Booking.com or a prospective guest, sending emails regarding negative guest reviews, online promotions, or requests from prospective guests to create urgency and compel the target to click the link.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Other (specify) - Leading up to the busiest travel days (December)",
+            "impact": "Delivery of various commodity malware families (including XWorm, Lumma stealer, VenomRAT, AsyncRAT, Danabot, NetSupport RAT) capable of credential theft and financial fraud.",
+            "information_website": "https://www.microsoft.com/en-us/security/blog/2025/03/13/phishing-campaign-impersonates-booking-com-delivers-a-suite-of-credential-stealing-malware/",
+            "coding_date": "2026-11-12T05:06:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Microsoft 2025",
+            "note_on_ambiguity": "The attacker relies on external spoofed emails to direct the user to a fake CAPTCHA page that uses the ClickFix technique. As it does not require a prior vector (such as an ATO or AiTM proxy) before the impersonation, it is classified as Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0049",
+            "campaign_name": "UNC2589 SBU Evacuation Plan Lure",
+            "publisher": "Mandiant",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-07-20",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The campaign targeted Ukrainian entities in late February 2022 using highly relevant public safety and evacuation themes following the Russian invasion.",
+            "outcome": "Not specified in the report",
+            "target": "Ukrainian entities",
+            "channels": "Corporate email > Password-protected ZIP Archive > Text file (password) > SFX RAR > Executable Payload (Remote Utilities)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Display - name spoofing",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "UNC2589 (Russian-aligned cyber espionage group)",
+                "role_impersonated": "Ukrainian SBU (Security Service of Ukraine)",
+                "role_victim": "Ukrainian entities"
+            },
+            "request": "Open the attached password-protected archives using the provided password to view an urgent SBU-approved electronic evacuation plan.",
+            "pretext": "The email masquerades as an urgent, official communication from the Security Service of Ukraine (SBU), providing a supposed electronic evacuation plan amid the Russian invasion.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Immediate aftermath of the Russian invasion of Ukraine (late February 2022)",
+            "impact": "Installation of Remote Utilities (rutserv.exe), enabling the attacker to download/upload files, remotely execute commands, and set persistence.",
+            "information_website": "https://cloud.google.com/blog/topics/threat-intelligence/spear-phish-ukrainian-entities",
+            "coding_date": "2026-11-12T05:45:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Mandiant 2022",
+            "note_on_ambiguity": "The attackers spoofed the SBU email address (e.g., email@ssu.gov.ua) without leveraging a compromised SBU account, classifying it as Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0050",
+            "campaign_name": "UNC2589 Wage Arrears ATO Campaign",
+            "publisher": "Mandiant",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-07-20",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (Compromised legitimate account (ATO))",
+            "targeting_evidence": "The attacker explicitly used a compromised legitimate account from a related organization to target specific Ukrainian entities on March 27, 2022.",
+            "outcome": "Not specified in the report",
+            "target": "Ukrainian entities",
+            "channels": "Corporate email > Malicious XLS attachment > Malicious macro > Go downloader > Executable Payload (GRIMPLANT and GRAPHSTEEL)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Compromised legitimate account (ATO)",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "UNC2589 (Russian-aligned cyber espionage group)",
+                "role_impersonated": "Related organization (via hijacked account)",
+                "role_victim": "Ukrainian entities"
+            },
+            "request": "Open the attached Excel document regarding wage arrears and enable macros.",
+            "pretext": "An email is sent from a compromised account of a related organization discussing 'Wage arrears' (Заборгованість по зарплаті), enticing the victim to open the attached spreadsheet.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Infection with GRIMPLANT (backdoor) and GRAPHSTEEL (infostealer) for extensive system surveying and credential theft.",
+            "information_website": "https://cloud.google.com/blog/topics/threat-intelligence/spear-phish-ukrainian-entities",
+            "coding_date": "2026-11-12T05:45:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Mandiant 2022",
+            "note_on_ambiguity": "The campaign utilized a compromised legitimate account from a related organization to send the phishing emails, classifying it directly as a Hybrid ATO Campaign.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0051",
+            "campaign_name": "UNC1151 Artillery Shelling Lure",
+            "publisher": "Mandiant",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-07-20",
+            "case_source_type": "Illustrative case within aggregate report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "UNC1151 targeted Ukrainian entities in early March 2022 with a highly specific public safety lure about artillery shelling.",
+            "outcome": "Not specified in the report",
+            "target": "Ukrainian entities",
+            "channels": "Corporate email > ZIP Archive > CHM file > VBS launcher > Malicious .NET payload (MICROBACKDOOR)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Malicious attachment",
+                "Display - name spoofing"
+            ],
+            "roles": {
+                "role_attacker": "UNC1151 (Belarus-aligned cyber espionage group)",
+                "role_impersonated": "Ukrainian Government / Public Safety Authority",
+                "role_victim": "Ukrainian entities"
+            },
+            "request": "Open the attached ZIP and CHM files to read survival instructions regarding artillery shelling.",
+            "pretext": "The email delivers a document containing supposed official government instructions and graphics on how to survive and react during artillery shelling by volley fire systems.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Early March 2022 (during the initial phase of the Russian invasion)",
+            "impact": "Deployment of the MICROBACKDOOR payload, granting the attackers capabilities to manipulate files, execute commands, and take screenshots.",
+            "information_website": "https://cloud.google.com/blog/topics/threat-intelligence/spear-phish-ukrainian-entities",
+            "coding_date": "2026-11-12T05:45:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Mandiant 2022",
+            "note_on_ambiguity": "There is no mention of a compromised account being used to send this specific lure, so it defaults to Pure Spear Phishing based on the highly targeted, context-specific lure.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0052",
+            "campaign_name": "UNC6384 Captive Portal Hijack (SOGU.SEC)",
+            "publisher": "Google Threat Intelligence Group (Mandiant)",
+            "publisher_type": "Vendor",
+            "publication_date": "2025-08-25",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (Adversary-in-the-Middle (AiTM) proxies)",
+            "targeting_evidence": "The report explicitly states that the campaign targeted diplomats in Southeast Asia and other entities globally.",
+            "outcome": "Not specified in the report",
+            "target": "Diplomats in Southeast Asia",
+            "channels": "Network Edge Device (AitM) > Web browser (Captive portal redirect) > Executable Payload (STATICPLUGIN Downloader) > MSI Package > In-memory DLL execution (CANONSTAGER / SOGU.SEC)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Malicious link / redirect",
+                "Other (specify) - Captive portal hijack via compromised edge devices (AitM)"
+            ],
+            "roles": {
+                "role_attacker": "UNC6384 / TEMP.Hex / Mustang Panda (PRC-nexus cyber espionage group)",
+                "role_impersonated": "Adobe (Software update prompt)",
+                "role_victim": "Diplomats in Southeast Asia"
+            },
+            "request": "Click 'Install Missing Plugins...' on the injected captive portal landing page and manually execute the downloaded 'AdobePlugins.exe' file.",
+            "pretext": "The target's web traffic is hijacked during a routine captive portal check. They are redirected to a spoofed webpage mimicking a legitimate Adobe software update site, which prompts them to download a missing plugin required to display media.",
+            "persuasion_principles": [
+                "Authority",
+                "Other (specify) - Technical deception / System prompt"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "In-memory deployment of the SOGU.SEC backdoor (PlugX variant) for cyber espionage, data collection, and remote command execution.",
+            "information_website": "https://cloud.google.com/blog/topics/threat-intelligence/prc-nexus-espionage-targets-diplomats",
+            "coding_date": "2026-11-12T05:51:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Google Threat Intelligence Group 2025",
+            "note_on_ambiguity": "The campaign relied on an Adversary-in-the-Middle (AitM) attack via compromised edge devices to hijack captive portal traffic and present the social engineering lure, firmly classifying it as a Hybrid AiTM Campaign.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0053",
+            "campaign_name": "Vendor Impersonation Modified Invoice BEC",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-12-30",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The attacker targeted a specific company by impersonating an employee of a third-party manufacturer that had previously done business with the target, utilizing prior knowledge of their business relationship.",
+            "outcome": "Not specified in the report",
+            "target": "Unspecified company (targeted via its accounts payable/finance department)",
+            "channels": "Corporate email > PDF Attachment (Modified Invoice)",
+            "channel_transition": "Single step",
+            "tactics": [
+                "Typosquatting / lookalike domain",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Financially motivated threat actor",
+                "role_impersonated": "Employee at a third-party manufacturer (vendor/supplier)",
+                "role_victim": "Target company employee (finance/accounts payable)"
+            },
+            "request": "Process the attached invoice and remit the nearly $40,000 overdue payment to the new banking information located at the bottom of the invoice.",
+            "pretext": "The sender impersonates a known third-party vendor inquiring about the status of an overdue payment as they round up their accounting books for the year. They attach a PDF replica of a legitimate invoice modified with the attacker's banking information and explicitly urge the victim to note the new banking details.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "End of year ('rounding up our accounting books for the year')",
+            "impact": "Financial loss of nearly $40,000 due to fraudulent wire transfer if the targeted employee complies.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/vendor-impersonation-bec-attack-uses-modified-legitimate-invoice-to-solicit-fraudulent-payment",
+            "coding_date": "2026-11-12T06:37:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2022",
+            "note_on_ambiguity": "The attacker registered a look-alike domain slightly differing from the vendor's actual domain rather than compromising a legitimate account, classifying this strictly as Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0054",
+            "campaign_name": "Vendor Impersonation Bank Update BEC",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-06-21",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The attacker targeted a specific customer of a known vendor, utilizing prior knowledge of the existing business relationship and outstanding payments.",
+            "outcome": "Not specified in the report",
+            "target": "Unspecified customer company (targeted via its accounts payable/finance department)",
+            "channels": "Corporate email > Document Attachment (Letter)",
+            "channel_transition": "Single step",
+            "tactics": [
+                "Typosquatting / lookalike domain",
+                "Other (specify) - Purely text-based social engineering without traditional IOCs"
+            ],
+            "roles": {
+                "role_attacker": "Financially motivated threat actor",
+                "role_impersonated": "Known vendor / supplier",
+                "role_victim": "Target customer employee (finance/accounts payable)"
+            },
+            "request": "Update internal records to reflect the new banking information provided in the attached letter and confirm the update.",
+            "pretext": "The sender impersonates a known vendor to inform the target that they have transitioned their banking operations from Bank of America to Chase Bank. They warn that the old account will be permanently closed within 10 days and ask the recipient to update their records according to the attached letter.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Approaching bank account closure date ('permanently closed as of 06/27/22')",
+            "impact": "Potential financial loss in the thousands of dollars by siphoning future invoice payments to an attacker-controlled account.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/vendor-impersonation-used-to-siphon-invoice-payments",
+            "coding_date": "2026-11-12T07:51:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2022",
+            "note_on_ambiguity": "The attacker utilized a lookalike domain with a single-character difference rather than a compromised legitimate account, placing this campaign firmly in the Pure Spear Phishing classification.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0055",
+            "campaign_name": "VIP Impersonation Accounts Receivable Phishing",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2024-12-27",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (Compromised legitimate account (ATO))",
+            "targeting_evidence": "The attacker specifically targeted an employee in an accounts payable/finance role to solicit sensitive internal financial data.",
+            "outcome": "Not specified in the report",
+            "target": "Accounts Payable / Finance Employee",
+            "channels": "Corporate email > Dropbox Hosted Link > Web browser (Spoofed Microsoft Sign-in Page)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Compromised legitimate account (ATO)",
+                "Display - name spoofing",
+                "Malicious link / redirect"
+            ],
+            "roles": {
+                "role_attacker": "Financially motivated threat actor",
+                "role_impersonated": "C-suite Executive (e.g., CEO, CFO)",
+                "role_victim": "Accounts Payable Employee"
+            },
+            "request": "Compile and send the most recent Accounts Receivable (A/R) data, including client contact names, emails, invoice numbers, and due dates in Excel format, and/or click a link to a Dropbox page leading to a fake Microsoft login.",
+            "pretext": "The sender, masquerading as a high-level executive (VIP), emails the accounts payable department urgently requesting a review of recent A/R data and vendor statements in Excel format.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Potential exposure of sensitive customer financial records and credential theft via a spoofed Microsoft login portal.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/executive-impersonation-bec-customer-payment-records",
+            "coding_date": "2026-11-12T08:04:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2024",
+            "note_on_ambiguity": "The email passed SPF, DKIM, and DMARC checks, indicating the likely use of a compromised legitimate account (ATO). There is a slight contradiction in the original report claiming 'no links' in Step 1, but Steps 3 and 4 explicitly demonstrate a link-based credential harvesting chain.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0056",
+            "campaign_name": "AI-Generated Payroll Diversion BEC",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2026-01-28",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The attacker targeted HR personnel / payroll departments specifically to manipulate employee banking information workflows.",
+            "outcome": "Not specified in the report",
+            "target": "HR personnel / Payroll department",
+            "channels": "Corporate email",
+            "channel_transition": "Single step",
+            "tactics": [
+                "Display - name spoofing",
+                "Other (specify) - Purely text-based social engineering using AI-generated content"
+            ],
+            "roles": {
+                "role_attacker": "Financially motivated threat actor",
+                "role_impersonated": "Employee / Executive",
+                "role_victim": "HR / Payroll Personnel"
+            },
+            "request": "Reply with a Direct Deposit Authorization Form via email attachment to facilitate a change in banking details.",
+            "pretext": "The sender, impersonating an employee or executive, emails HR using AI-generated text claiming they recently changed banks. They request a Direct Deposit Authorization Form to update their payroll details and ask for confirmation on when the new details will take effect.",
+            "persuasion_principles": [
+                "Authority",
+                "Liking"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Redirection of legitimate employee salary payments to an attacker-controlled bank account.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/ai-generated-payroll-redirect-bec",
+            "coding_date": "2026-11-12T08:12:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2026",
+            "note_on_ambiguity": "The attack was purely text-based and utilized AI-generated content to enhance credibility. The email originated from a domain passing authentication checks but without indicators of a compromised internal account, pointing to Display Name spoofing via an external legitimate service, thus classified as Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0057",
+            "campaign_name": "Executive Impersonation Payroll Diversion",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-06-28",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actors specifically mapped the organization to target the payroll administrator (employees most likely to deal with payroll) while impersonating a highly-paid executive.",
+            "outcome": "Not specified in the report",
+            "target": "Payroll Administrator",
+            "channels": "Corporate email",
+            "channel_transition": "Single step",
+            "tactics": [
+                "Display - name spoofing",
+                "Other (specify) - Purely text-based social engineering"
+            ],
+            "roles": {
+                "role_attacker": "Financially motivated threat actor",
+                "role_impersonated": "Executive",
+                "role_victim": "Payroll Administrator"
+            },
+            "request": "Update the direct deposit details on file to a new bank account in time for the current pay date.",
+            "pretext": "The attacker, masquerading as a company executive, sends a brief text-based email to the payroll administrator stating they recently changed their bank account and urgently asks if their direct deposit details can be updated for the current pay cycle.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Approaching current pay date",
+            "impact": "Financial loss potentially in the tens of thousands of dollars due to the diversion of an executive's salary to an attacker-controlled bank account.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/executive-impersonated-in-payroll-diversion-scheme",
+            "coding_date": "2026-11-12T15:17:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2022",
+            "note_on_ambiguity": "The email originates from a valid external address (e.g., @usa.com) passing SPF checks and relies entirely on Display Name spoofing rather than a compromised internal account, placing this campaign firmly in the Pure Spear Phishing category.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0058",
+            "campaign_name": "Byron Epp Large Invoice Diversion",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2023-07-27",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The attacker compromised a vendor account to conduct reconnaissance, identifying a specific pending $621,000 invoice, and subsequently targeted the specific customer employee responsible for the payment.",
+            "outcome": "Not specified in the report",
+            "target": "Target company employee (finance/accounts payable)",
+            "channels": "Corporate email > PDF Attachment (Legitimate Invoice)",
+            "channel_transition": "Single step",
+            "tactics": [
+                "Typosquatting / lookalike domain",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Financially motivated threat actor",
+                "role_impersonated": "Alicia Baez (Controller at vendor Byron Epp)",
+                "role_victim": "Target customer employee"
+            },
+            "request": "Process a payment update for the attached $621,000 invoice.",
+            "pretext": "The sender impersonates a controller from a known vendor using a lookalike domain. They copy and paste a legitimate, previously stolen email thread regarding a $621,000 invoice for 'Delivery and Installation for the Four-Fold Doors' and attach the original legitimate invoice, urgently requesting a payment update.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Potential financial loss of $621,000 via fraudulent wire transfer diversion.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/attacker-uses-lookalike-domain-to-attempt-receipt-of-621-000-invoice",
+            "coding_date": "2026-11-12T08:24:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2023",
+            "note_on_ambiguity": "While the attacker initially compromised a vendor account to steal the legitimate invoice and email thread, the actual phishing email was sent from a newly registered lookalike domain (e.g., @byronep.com) rather than the compromised account itself, leading to a Pure Spear Phishing classification.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0059",
+            "campaign_name": "LinkedIn Overdue Invoice Executive Spoof",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-06-29",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The attacker targeted an employee capable of processing financial transactions by orchestrating a dual-impersonation lure (vendor and internal executive) to force an ACH payment.",
+            "outcome": "Not specified in the report",
+            "target": "Target employee (Accounts Payable / Finance)",
+            "channels": "Corporate email > Document Attachment (Fake Invoice)",
+            "channel_transition": "Single step",
+            "tactics": [
+                "Typosquatting / lookalike domain",
+                "Display - name spoofing"
+            ],
+            "roles": {
+                "role_attacker": "Financially motivated threat actor",
+                "role_impersonated": "Internal Executive AND David Hoffman (LinkedIn Collections)",
+                "role_victim": "Target employee (Accounts Payable)"
+            },
+            "request": "Set up an ACH payment today using the bank details provided on the attached fake LinkedIn invoice.",
+            "pretext": "The attacker uses a two-phased deception: they forward a fake overdue invoice supposedly from LinkedIn Collections (sent from a registered lookalike domain) and prepend a message from an impersonated internal executive urgently demanding the target to set up an ACH payment for it today.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Financial loss of hundreds or potentially thousands of dollars via fraudulent ACH transfer.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/executive-impersonated-in-linkedin-overdue-payment-request",
+            "coding_date": "2026-11-12T08:28:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2022",
+            "note_on_ambiguity": "While the report explicitly claims there is no 'malicious payload in the form of links or attachments', the email body explicitly says 'attached invoice', indicating a non-malicious PDF/document invoice was attached containing the attacker's bank details. The use of external registered domains for both impersonations classifies this as Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0060",
+            "campaign_name": "Relay Tracking System Credential Phishing",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2024-04-05",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The attacker targeted an employee within a specific company, impersonating their internal IT administration and mimicking the target's specific corporate login page to harvest credentials.",
+            "outcome": "Not specified in the report",
+            "target": "Target company employee",
+            "channels": "Corporate email > Malicious Link > Web browser (Spoofed Corporate Login Page)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Display - name spoofing",
+                "Malicious link / redirect"
+            ],
+            "roles": {
+                "role_attacker": "Financially/Data motivated threat actor",
+                "role_impersonated": "Internal IT Administrator ('Relay Tracking System')",
+                "role_victim": "Target company employee"
+            },
+            "request": "Click the 'Recover messages' link and enter login credentials on the subsequent page after pressing a fake authentication verification button.",
+            "pretext": "The sender masquerades as a 'Relay Tracking System' indicating that two incoming domain messages have been restricted due to a server error. The victim is instructed to click a link to recover the messages, which leads to a page with a fabricated 'press and hold' security check before presenting a spoofed corporate login portal.",
+            "persuasion_principles": [
+                "Authority",
+                "Other (specify) - Technical deception (Fake human-verification process)"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Theft of corporate login credentials, potentially leading to unauthorized network access.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/attacker-impersonates-company-admin-in-clever-credential-phishing-attempt",
+            "coding_date": "2026-11-12T08:32:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2024",
+            "note_on_ambiguity": "The attacker spoofed the Display Name ('Relay Tracking System') and used an external domain ('mxlx.com') rather than compromising the actual internal IT domain, placing this campaign firmly in the Pure Spear Phishing category.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0061",
+            "campaign_name": "System Coordinator Quishing Credential Phishing",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2023-09-15",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor specifically targeted a company employee by impersonating their internal systems administration to exploit organizational compliance protocols.",
+            "outcome": "Not specified in the report",
+            "target": "Target company employee",
+            "channels": "Corporate email > Image Attachment (PNG with QR code) > Mobile device camera > Web browser (Spoofed Microsoft landing page)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Display - name spoofing",
+                "Malicious attachment",
+                "Other (specify) - Quishing (QR code Phishing)"
+            ],
+            "roles": {
+                "role_attacker": "Financially/Data motivated threat actor",
+                "role_impersonated": "System Coordinator / Internal IT Admin",
+                "role_victim": "Target company employee"
+            },
+            "request": "Scan the provided QR code with a phone camera to access a fake Microsoft landing page and authenticate to review security requirements.",
+            "pretext": "The sender, masquerading as a 'System Coordinator', sends a brief notification warning that permits must be approved immediately to avoid service interruption. The email contains a PNG attachment formatted as a Microsoft Security Authentication notice, instructing the recipient to quickly scan the QR code to review security requirements within two days.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Potential theft of corporate credentials leading to unauthorized network or account access.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/sophisticated-attacker-impersonates-a-company-admin-and-utilizes-microsoft-branded-qr-code-in-attempted-credential-phishing",
+            "coding_date": "2026-11-12T08:38:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2023",
+            "note_on_ambiguity": "The attacker spoofed an external sending domain and used a backup 'onmicrosoft.com' reply-to address to simulate legitimacy. Since they did not compromise the actual internal IT network to send the email, this is classified as Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0062",
+            "campaign_name": "Compromised Domain Expired Password Phishing",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2023-10-20",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (Compromised legitimate account (ATO))",
+            "targeting_evidence": "The threat actor targeted a company employee by impersonating their internal IT password administration system.",
+            "outcome": "Not specified in the report",
+            "target": "Target company employee",
+            "channels": "Corporate email > Malicious Link > Web browser (Spoofed Google Workspace login page)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Compromised legitimate account (ATO)",
+                "Malicious link / redirect",
+                "Display - name spoofing"
+            ],
+            "roles": {
+                "role_attacker": "Financially/Data motivated threat actor",
+                "role_impersonated": "Internal IT System / Password Administrator",
+                "role_victim": "Target company employee"
+            },
+            "request": "Click the 'Keep Current Password' link and enter credentials on the spoofed Google landing page to prevent automatic logout and password reset.",
+            "pretext": "The sender, masquerading as an internal server notification system from a compromised domain, warns the recipient that their email password has expired. The email creates urgency by stating the system will automatically log them out and generate a new password in 48 hours unless they click a link to keep their current password.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Theft of corporate credentials through a spoofed Google landing page.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/sophisticated-credential-theft-attempt-features-a-compromised-domain-and-fake-landing-page",
+            "coding_date": "2026-11-12T08:44:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2023",
+            "note_on_ambiguity": "The attacker explicitly compromised a legitimate domain ('support@superseguro.cl') to send the initial email in order to bypass traditional security checks, firmly classifying this as a Hybrid ATO Campaign.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0063",
+            "campaign_name": "Homographic Spoofing SharePoint Credential Phishing",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-12-06",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The attacker targeted a company executive using a highly contextual lure involving consolidated financial statements, impersonating their internal accounting department.",
+            "outcome": "Not specified in the report",
+            "target": "Company Executive",
+            "channels": "Corporate email > HTML Attachment > Web browser (Spoofed Microsoft login page)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Display - name spoofing",
+                "Malicious attachment",
+                "Other (specify) - Homographic evasion (Cyrillic and Armenian character substitution)"
+            ],
+            "roles": {
+                "role_attacker": "Financially/Data motivated threat actor",
+                "role_impersonated": "Internal Accounting Department ('accounting')",
+                "role_victim": "Company Executive"
+            },
+            "request": "Open the attached HTML file and enter Microsoft account credentials to access the shared SharePoint financial documents.",
+            "pretext": "The sender impersonates an internal accounting account and shares a SharePoint link via an HTML attachment, requesting the executive to review the August financial statements and consolidated financials for the six months ending August 30, 2022. The email text uses Cyrillic and Armenian characters to bypass security filters.",
+            "persuasion_principles": [
+                "Authority",
+                "Liking"
+            ],
+            "timing": "Monthly/Periodic financial reporting cycle (September/October following the end of August)",
+            "impact": "Theft of executive corporate credentials, potentially enabling lateral movement, data theft, or BEC attacks against coworkers and customers.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/executive-targeted-in-attack-posing-as-fake-financial-documents-distributed-via-sharepoint",
+            "coding_date": "2026-11-12T08:48:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2022",
+            "note_on_ambiguity": "The email spoofed an internal domain but failed SPF checks and lacked a DMARC policy, indicating it was sent from external infrastructure using Domain Spoofing rather than a compromised internal account, thus classified as Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0064",
+            "campaign_name": "Two-Step Executive Pay Stub to Payroll Diversion",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-12-02",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The attacker targeted an employee with access to payroll systems by impersonating a specific company executive, leveraging authority to authorize a banking change.",
+            "outcome": "Not specified in the report",
+            "target": "Payroll / HR Employee",
+            "channels": "Corporate email",
+            "channel_transition": "Single step",
+            "tactics": [
+                "Display - name spoofing",
+                "Other (specify) - Purely text-based social engineering / Two-step BEC"
+            ],
+            "roles": {
+                "role_attacker": "Financially motivated threat actor",
+                "role_impersonated": "Company Executive",
+                "role_victim": "Payroll / HR Employee"
+            },
+            "request": "Provide copies of recent pay stubs and, in a follow-up request, update the executive's direct deposit banking information in time for the current pay date.",
+            "pretext": "The attacker initiates contact by impersonating an executive and asking for copies of their pay stubs from July to October. If the targeted employee replies, the attacker pivots, claiming they experienced a compromise at their former bank and urgently need to change their personal banking information for the current payroll cycle.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Approaching current pay date",
+            "impact": "Financial loss due to the diversion of an executive's salary to an attacker-controlled bank account.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/pay-stub-request-transitions-to-a-payroll-diversion-bec-attack",
+            "coding_date": "2026-11-12T09:02:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2022",
+            "note_on_ambiguity": "The attack relied solely on text-based social engineering and display name spoofing from a free webmail provider (Privatemail) without compromising an internal account, aligning with the Pure Spear Phishing classification.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0065",
+            "campaign_name": "Compromised Vendor Invoice Hijack BEC",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2023-07-26",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (Compromised legitimate account (ATO))",
+            "targeting_evidence": "The attacker compromised a vendor account to conduct reconnaissance, identifying and hijacking a specific existing email thread regarding an unpaid $132,000 invoice.",
+            "outcome": "Not specified in the report",
+            "target": "Target company employee (Accounts Payable / Finance)",
+            "channels": "Corporate email",
+            "channel_transition": "Single step",
+            "tactics": [
+                "Compromised legitimate account (ATO)",
+                "Typosquatting / lookalike domain"
+            ],
+            "roles": {
+                "role_attacker": "Financially motivated threat actor",
+                "role_impersonated": "Senior Account Manager at Vendor (pkoh-ac.com)",
+                "role_victim": "Target company employee (Accounts Payable)"
+            },
+            "request": "Process and reroute the payment for the past due $132,000 invoice.",
+            "pretext": "The attacker hijacks an existing, legitimate email thread regarding an unpaid invoice of $132,000 using a compromised vendor account. They seamlessly continue the conversation asking for a payment update, but covertly cc lookalike domains (e.g., plkoh-ac.com and plkoh-ach.com) to embed themselves in the communication loop and redirect the funds.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Follow-up on an aging, unpaid invoice",
+            "impact": "Potential financial loss of $132,000 via fraudulent wire transfer diversion.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/attacker-follows-up-on-unpaid-132-000-invoice-using-compromised-vendor-account",
+            "coding_date": "2026-11-12T16:15:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2023",
+            "note_on_ambiguity": "The attack originates from a compromised legitimate vendor account (ATO) to hijack the thread, but introduces lookalike domains in the CC field to maintain control of the diverted communication. This combination of tactics firmly places it in the Hybrid ATO classification.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0066",
+            "campaign_name": "Incoming ACH Payment HTML Attachment Phishing",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2023-01-25",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor hyper-personalized the attack by matching the attachment filename to the target's username and designing a spoofed login page containing the target company's specific background imagery and logo.",
+            "outcome": "Not specified in the report",
+            "target": "Target company employee",
+            "channels": "Corporate email > HTML Attachment > Web browser (Spoofed corporate login page)",
+            "channel_transition": "Multiple transitions",
+            "tactics": [
+                "Display - name spoofing",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Financially/Data motivated threat actor",
+                "role_impersonated": "Internal automated system (Spoofed display name containing the victim's domain)",
+                "role_victim": "Target company employee"
+            },
+            "request": "Open the attached HTML file and enter corporate credentials into the prefilled login prompt to view the payment confirmation.",
+            "pretext": "The sender impersonates an internal automated company system, notifying the target that a new ACH payment has been sent and funds will be available in two business days. The target is encouraged to open the attached HTML file, supposedly a confirmation of the payment, which redirects them to a fake, company-branded login page.",
+            "persuasion_principles": [
+                "Authority",
+                "Other (specify) - Greed/Curiosity (Incoming payment notification)"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Theft of corporate credentials, providing attackers full access to the victim's email account for data exfiltration or lateral attacks.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/email-poses-as-an-incoming-ach-payment-with-html-attachment-leading-to-branded-credential-phishing-page",
+            "coding_date": "2026-11-12T09:14:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2023",
+            "note_on_ambiguity": "The attacker sent the email from an external free webmail provider (Ziggo) but spoofed the Display Name to include the target's domain, attempting to simulate an internal system. Since the actual internal infrastructure was not compromised to send the email, this is Pure Spear Phishing.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0067",
+            "campaign_name": "CFO Impersonation Aging Report Theft",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2022-06-27",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor researched the organization's structure to specifically impersonate the CFO and target the exact employees who handle aging reports and outstanding invoices.",
+            "outcome": "Not specified in the report",
+            "target": "Target company employee (Finance / Accounts Receivable)",
+            "channels": "Corporate email",
+            "channel_transition": "Single step",
+            "tactics": [
+                "Display - name spoofing",
+                "Other (specify) - Purely text-based social engineering / Data theft lure"
+            ],
+            "roles": {
+                "role_attacker": "Financially motivated threat actor",
+                "role_impersonated": "CFO (Chief Financial Officer)",
+                "role_victim": "Target company employee (Finance)"
+            },
+            "request": "Email all outstanding payment information alongside customer contact emails.",
+            "pretext": "The sender, masquerading as the company's CFO, sends a brief, text-based email urgently requesting an aging report of all outstanding invoices and customer contact details.",
+            "persuasion_principles": [
+                "Authority",
+                "Urgency"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Exfiltration of sensitive customer financial records, enabling the attacker to launch highly convincing, subsequent BEC attacks against the company's customers to reroute their invoice payments.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/executive-impersonation-used-to-steal-aging-reports",
+            "coding_date": "2026-11-12T09:22:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2022",
+            "note_on_ambiguity": "The email originates from an unknown external address ('mailing@netsuites.online') rather than a compromised internal account, relying solely on display name spoofing and text-based deception. This aligns with the Pure Spear Phishing classification.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0068",
+            "campaign_name": "Duffy & Shanley Compromised Account Invoice BEC",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2023-08-23",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Hybrid Campaign - Targeting and impersonation necessary (Compromised legitimate account (ATO))",
+            "targeting_evidence": "The attacker hijacked a legitimate employee account (Duffy & Shanley) and targeted a partner/client company to alter existing payment arrangements for outstanding invoices.",
+            "outcome": "Not specified in the report",
+            "target": "Target company employee (Accounts Payable / Finance)",
+            "channels": "Corporate email > PDF Attachment (Fraudulent banking details)",
+            "channel_transition": "Single step",
+            "tactics": [
+                "Compromised legitimate account (ATO)",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Financially motivated threat actor",
+                "role_impersonated": "amaggiacomo@duffyshanley.com (Employee/Executive at Duffy & Shanley)",
+                "role_victim": "Target company employee (Accounts Payable)"
+            },
+            "request": "Process future payments for outstanding invoices via ACH transfer using the banking details provided in the attached PDF.",
+            "pretext": "Using a compromised legitimate account, the attacker emails the target stating that due to an ongoing COVID audit, physical checks are no longer a viable payment method. They request all outstanding invoice payments be made via ACH and provide a company-branded PDF containing the new, fraudulent banking details.",
+            "persuasion_principles": [
+                "Authority",
+                "Other (specify) - Reason / Justification (COVID audit)"
+            ],
+            "timing": "Not specified in the report (references an ongoing COVID audit)",
+            "impact": "Financial loss via fraudulent ACH wire transfer redirection.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/bec-attack-requests-new-payment-methods-for-outstanding-invoices-in-attempted-payment-fraud",
+            "coding_date": "2026-11-12T09:24:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2023",
+            "note_on_ambiguity": "The attacker explicitly compromised and sent emails from the legitimate internal account 'amaggiacomo@duffyshanley.com', firmly classifying this as a Hybrid ATO Campaign.",
+            "agreement_rate": "N/A"
+        },
+        {
+            "campaign_id": "CMP-0069",
+            "campaign_name": "Lookalike Domain Real Invoice Payment Fraud",
+            "publisher": "Abnormal Security",
+            "publisher_type": "Vendor",
+            "publication_date": "2023-05-04",
+            "case_source_type": "Standalone campaign report",
+            "campaign_specificity": "Single campaign",
+            "attack_classification": "Pure Spear Phishing (Targeted lure + Impersonation)",
+            "targeting_evidence": "The threat actor impersonated an existing vendor and utilized more than two dozen actual, legitimate invoices totaling nearly $360,000 to trick a manufacturing company into updating its banking information.",
+            "outcome": "Not specified in the report",
+            "target": "Manufacturing company employee (Accounts Payable / Finance)",
+            "channels": "Corporate email > Multiple PDF Attachments (Real Vendor Invoices)",
+            "channel_transition": "Single step",
+            "tactics": [
+                "Typosquatting / lookalike domain",
+                "Malicious attachment"
+            ],
+            "roles": {
+                "role_attacker": "Financially motivated threat actor",
+                "role_impersonated": "Existing Vendor / Supplier",
+                "role_victim": "Manufacturing company employee (Accounts Payable)"
+            },
+            "request": "Update the banking information on file for future payments and process upcoming remittances to the newly provided account details.",
+            "pretext": "The attacker impersonates a trusted vendor using a nearly identical lookalike domain (swapping .com for .org) and includes more than two dozen authentic invoices totaling nearly $360,000 as attachments to provide absolute legitimacy while requesting an update to their banking details.",
+            "persuasion_principles": [
+                "Authority",
+                "Social Proof (via authentic invoices)"
+            ],
+            "timing": "Not specified in the report",
+            "impact": "Potential financial loss of nearly $360,000 through the fraudulent modification of vendor banking details and subsequent erroneous wire transfers.",
+            "information_website": "https://abnormal.ai/threat-intelligence/digest/attempted-payment-fraud-using-lookalike-domain-and-real-invoices-targets-manufacturing-company",
+            "coding_date": "2026-11-12T16:30:00Z",
+            "coder": "Human coded",
+            "license": "All rights reserved (research / fair-use citation only) - Specify: Abnormal Security 2023",
+            "note_on_ambiguity": "The attacker registered a fresh lookalike domain ending in .org instead of .com and used authentic invoices rather than compromising the vendor's actual internal account, classifying this strictly as Pure Spear Phishing.",
             "agreement_rate": "N/A"
         }
     ]
