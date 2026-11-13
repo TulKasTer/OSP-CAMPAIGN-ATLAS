@@ -1,7 +1,63 @@
-secrets/
-data/raw/*.pdf
-db.sqlite3
-*.sqlite3
+# Environment files and secrets
 .env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*.crt
+
+# Python
 __pycache__/
-.venv
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Packaging and build artifacts
+build/
+dist/
+*.egg-info/
+
+# Local databases and generated application files
+*.sqlite3
+*.db
+staticfiles/
+media/
+
+# Raw source PDFs
+data/raw/**/*.pdf
+
+# Local model weights and checkpoints
+models/
+checkpoints/
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# IDE and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.log.bak
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Local Docker overrides
+docker-compose.override.yml

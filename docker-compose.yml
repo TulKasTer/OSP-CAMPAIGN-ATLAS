@@ -1,9 +1,83 @@
 services:
+  ollama:
+    profiles:
+      - llm
+    container_name: OSP-CAMPAIGN-ATLAS_OLLAMA
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    gpus: all
+    mem_limit: ${OLLAMA_MEM_LIMIT:-16g}
+    mem_reservation: ${OLLAMA_MEM_RESERVATION:-4g}
+    shm_size: ${OLLAMA_SHM_SIZE:-2g}
+    environment:
+      OLLAMA_KEEP_ALIVE: ${OLLAMA_KEEP_ALIVE:-10m}
+      OLLAMA_MAX_LOADED_MODELS: ${OLLAMA_MAX_LOADED_MODELS:-1}
+      OLLAMA_NUM_PARALLEL: ${OLLAMA_NUM_PARALLEL:-1}
+      OLLAMA_FLASH_ATTENTION: ${OLLAMA_FLASH_ATTENTION:-1}
+      OLLAMA_KV_CACHE_TYPE: ${OLLAMA_KV_CACHE_TYPE:-q8_0}
+      OLLAMA_GPU_OVERHEAD: ${OLLAMA_GPU_OVERHEAD:-536870912}
+
+  llm_api:
+    profiles:
+      - llm
+    depends_on:
+      - ollama
+    container_name: OSP-CAMPAIGN-ATLAS_LLM_API
+    image: ${LLM_API_IMAGE:-osp-campaign-atlas-llm-api}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /app
+    command: uv run uvicorn app.main:app --app-dir /app/src/llm-api --host 0.0.0.0 --port 5000
+    ports:
+      - "5000:5000"
+    environment:
+      LLM_API_HOST: ${LLM_API_HOST:-0.0.0.0}
+      LLM_API_PORT: ${LLM_API_PORT:-5000}
+      LLM_EVALUATOR: ${LLM_EVALUATOR:-LLM-API}
+      LLM_MODEL: ${LLM_MODEL:-ollama/qwen3.5:9b}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_API_BASE: ${LLM_API_BASE:-}
+      LLM_LOCAL_API_BASE: http://ollama:11434
+      LLM_TEMPERATURE: ${LLM_TEMPERATURE:-0.0}
+      LLM_GATES_TEMPERATURE: ${LLM_GATES_TEMPERATURE:-0.0}
+      LLM_CODING_TEMPERATURE: ${LLM_CODING_TEMPERATURE:-0.0}
+      LLM_TOP_P: ${LLM_TOP_P:-0.9}
+      LLM_TOP_K: ${LLM_TOP_K:-40}
+      LLM_MIN_P: ${LLM_MIN_P:-0.0}
+      LLM_REPEAT_PENALTY: ${LLM_REPEAT_PENALTY:-1.1}
+      LLM_PRESENCE_PENALTY: ${LLM_PRESENCE_PENALTY:-0.0}
+      LLM_FREQUENCY_PENALTY: ${LLM_FREQUENCY_PENALTY:-0.0}
+      LLM_MAX_TOKENS: ${LLM_MAX_TOKENS:-4096}
+      LLM_SEED: ${LLM_SEED:-42}
+      LLM_NUM_CTX: ${LLM_NUM_CTX:-16384}
+      LLM_NUM_GPU: ${LLM_NUM_GPU:--1}
+      LLM_MAIN_GPU: ${LLM_MAIN_GPU:-0}
+      LLM_NUM_THREAD: ${LLM_NUM_THREAD:-0}
+      LLM_NUM_BATCH: ${LLM_NUM_BATCH:-512}
+      LLM_USE_MMAP: ${LLM_USE_MMAP:-true}
+      LLM_USE_MLOCK: ${LLM_USE_MLOCK:-false}
+      LLM_LOW_VRAM: ${LLM_LOW_VRAM:-false}
+      LLM_KEEP_ALIVE: ${LLM_KEEP_ALIVE:-10m}
+      LLM_TIMEOUT_SECONDS: ${LLM_TIMEOUT_SECONDS:-180}
+      LLM_MAX_RETRIES: ${LLM_MAX_RETRIES:-3}
+    volumes:
+      - ./src:/app/src
+      - ./schemas:/app/schemas
+      - ./data:/app/data
+      - ./logs:/app/logs
+
   web:
+    profiles:
+      - web
     container_name: OSP-CAMPAIGN-ATLAS_WEB
     image: ${WEB_IMAGE:-osp-campaign-atlas-web}
     build:
       context: .
+      dockerfile: Dockerfile
     ports:
       - "8000:8000"
     environment:
@@ -15,4 +89,5 @@ services:
       - django_data:/app/database
 
 volumes:
+  ollama_models:
   django_data:
