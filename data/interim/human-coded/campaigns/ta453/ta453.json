@@ -52,7 +52,7 @@
             "channels": "Email",
             "channel_transition": "None (single channel throughout)",
             "tactics": [
-                "Malicious Link / redirect",
+                "Malicious link / redirect",
                 "Other (specify) - Multi-persona impersonation (MPI)",
                 "Other (specify) - Remote Template Injection"
             ],
@@ -91,7 +91,7 @@
             "channels": "Email",
             "channel_transition": "None (single channel throughout)",
             "tactics": [
-                "Malicious Link / redirect",
+                "Malicious link / redirect",
                 "Other (specify) - Multi-persona impersonation (MPI)",
                 "Other (specify) - Remote Template Injection"
             ],

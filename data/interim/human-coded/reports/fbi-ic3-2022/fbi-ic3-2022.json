@@ -12,8 +12,8 @@
     "financial_loss": "USD 2,742,354,049",
     "information_website": "https://www.ic3.gov/AnnualReport/Reports/2022_IC3Report.pdf",
     "coding_date": "2026-10-25T11:21:39Z",
-    "coder": "Human coder",
+    "coder": "Human coded",
     "license": "Public domain / government work",
-    "note_on_ambiguity": "Starting in 2022, the IC3 renamed the combined 'BEC/EAC' category to simply 'Business Email Compromise' (BEC). However, this broad category still functionally encompasses both organizational and personal email compromises. The report cites 21,832 complaints and over $2.7 billion in adjusted losses. It is still not possible to isolate the figures corresponding exclusively to Organizational Spear Phishing.",
+    "note_on_ambiguity": "Starting in 2022, the IC3 renamed the combined \u0027BEC/EAC\u0027 category to simply \u0027Business Email Compromise\u0027 (BEC). However, this broad category still functionally encompasses both organizational and personal email compromises. The report cites 21,832 complaints and over $2.7 billion in adjusted losses. It is still not possible to isolate the figures corresponding exclusively to Organizational Spear Phishing.",
     "agreement_rate": "N/A"
 }

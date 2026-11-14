@@ -12,8 +12,8 @@
     "financial_loss": "USD 2,770,151,146",
     "information_website": "https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf",
     "coding_date": "2026-10-25T11:30:16Z",
-    "coder": "Human coder",
+    "coder": "Human coded",
     "license": "Public domain / government work",
-    "note_on_ambiguity": "The report lists 21,442 complaints and $2,770,151,146 in losses under 'Business Email Compromise'. Consistent with the methodology established in recent years, this category is understood to encompass both organizational (BEC) and personal email compromise (EAC). It remains impossible to isolate the figures corresponding exclusively to Organizational Spear Phishing.",
+    "note_on_ambiguity": "The report lists 21,442 complaints and $2,770,151,146 in losses under \u0027Business Email Compromise\u0027. Consistent with the methodology established in recent years, this category is understood to encompass both organizational (BEC) and personal email compromise (EAC). It remains impossible to isolate the figures corresponding exclusively to Organizational Spear Phishing.",
     "agreement_rate": "N/A"
 }

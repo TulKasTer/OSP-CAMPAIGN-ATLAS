@@ -12,8 +12,8 @@
     "financial_loss": "USD 2,400,000,000",
     "information_website": "https://www.ic3.gov/AnnualReport/Reports/2021_IC3Report.pdf",
     "coding_date": "2026-10-25T11:16:18Z",
-    "coder": "Human coder",
+    "coder": "Human coded",
     "license": "Public domain / government work",
-    "note_on_ambiguity": "The report's narrative states there were 19,954 complaints and adjusted losses of nearly $2.4 billion for the combined category of BEC/EAC. The exact figure exclusively for Organizational Spear Phishing (BEC) cannot be isolated because of this grouping.",
+    "note_on_ambiguity": "The report\u0027s narrative states there were 19,954 complaints and adjusted losses of nearly $2.4 billion for the combined category of BEC/EAC. The exact figure exclusively for Organizational Spear Phishing (BEC) cannot be isolated because of this grouping.",
     "agreement_rate": "N/A"
 }

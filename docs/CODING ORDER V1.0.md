@@ -36,7 +36,7 @@ The proposed logical order reorganizes the variables according to the natural ev
 | 13 | 16 | Roles - Impersonated Role | Identifies the role impersonated by the attacker. | String - Open response |
 | 14 | 17 | Roles - Victim | Identifies the victim of the attack. | String - Open response |
 | 15 | 12 | Channels | The communication medium or technical vector used to execute the attack. | String - Open response |
-| 16 | 13 | Channel Transition | The path through which the attack is carried out across different media. | String - Open response |
+| 16 | 13 | Channel Transition | The path through which the attack is carried out across different media. | Dropdown |
 | 17 | 14 | Tactics | Specific social-engineering or technical techniques used to execute the attack, independent of the channel. | Multi-value (one per line) |
 | 18 | 19 | Pretext | The fabricated story or social-engineering lure used by the attacker to manipulate the victim. | String - Open response |
 | 19 | 18 | Request | The final action the attacker wants the victim to perform. | String - Open response |

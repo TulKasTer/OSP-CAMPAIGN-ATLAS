@@ -7,13 +7,13 @@
     "case_source_type": "Illustrative case within aggregate report",
     "campaign_specificity": "Single campaign",
     "attack_classification": "Pure BEC (Impersonation + Fraud)",
-    "targeting_evidence": "The actor used information stolen from ",
+    "targeting_evidence": "The actor used information stolen from previously compromised U.S. organizations (specifically in the produce and manufacturing industries) to impersonate those suppliers and target their real business partners and financial institutions.",
     "outcome": "Not specified in the report",
     "target": "Business partners and financial institutions of compromised U.S. organizations",
     "channels": "Corporate email",
     "channel_transition": "None (single channel throughout)",
     "tactics": [
-        "Typesquatting / lookalike domain"
+        "Typosquatting / lookalike domain"
     ],
     "roles": {
         "role_attacker": "TA4903",

@@ -47,7 +47,7 @@ Project location: `schemas\campaigns\campaign-human-coded-schema.json`
 Schema structure:
 ```
 {
-    "campaign_id": "REP-0000",
+    "campaign_id": "CMP-0000",
     "campaign_name": "",
     "publisher": "",
     "publisher_type": "",
@@ -89,7 +89,7 @@ Schema structure:
 > This schema was created to streamline the manual coding process for the first dataset. It can replace `campaign-schema.json` when coding is performed by humans and may be removed in the future once the project's final architecture is determined.
 
 ### Campaign schema
-The `Campaign schema` is a coding schema that allows human coders and/or LMMs to complete the coding row for a campaign extracted from a report.
+The `Campaign schema` is a coding schema that allows human coders and/or LLMs to complete the coding row for a campaign extracted from a report.
 
 - [x] Required
 - [x] Can be used by a human coder
@@ -142,7 +142,7 @@ Schema structure:
 ```
 
 ### Campaign sources dataset schema
-The `Campaign sources dataset schema` is a coding schema that allows human coders and/or LMMs to record the metadata of the web pages where the reports are located.
+The `Campaign sources dataset schema` is a coding schema that allows human coders and/or LLMs to record the metadata of the web pages where the reports are located.
 
 - [x] Required
 - [x] Can be used by a human coder
@@ -174,7 +174,7 @@ Schema structure:
 > This schema was created to record the metadata of the sources from which the reports were obtained. If these data have already been coded by the primary coder, subsequent coders should not code them again.
 
 ### Campaigns dataset schema
-The `Campaigns dataset schema` is a coding schema that allows human coders and/or LMMs to combine the individual codings for each campaign into a single file, creating a dataset.
+The `Campaigns dataset schema` is a coding schema that allows human coders and/or LLMs to combine the individual codings for each campaign into a single file, creating a dataset.
 
 - [x] Required
 - [x] Can be used by a human coder
@@ -230,7 +230,7 @@ Schema structure:
 ```
 
 ### Exclusion log schema
-The `Exclusion log schema` is a coding schema that allows human coders and/or LMMs to record campaigns or reports that were excluded, together with the reason for their exclusion.
+The `Exclusion log schema` is a coding schema that allows human coders and/or LLMs to record campaigns or reports that were excluded, together with the reason for their exclusion.
 
 - [x] Required
 - [x] Can be used by a human coder
@@ -294,7 +294,7 @@ Schema structure:
     "financial_loss": "",
     "information_website": "",
     "coding_date": "",
-    "coder": "human coded",
+    "coder": "Human coded",
     "license": "",
     "note_on_ambiguity": "",
     "agreement_rate": "N/A"
@@ -304,7 +304,7 @@ Schema structure:
 > This schema was created to streamline the manual coding process for the first dataset. It does not replace `report-schema.json`; it is a template with default values for human coding.
 
 ### Report schema
-The `Report schema` is the general schema for coding report data. It can be used by human coders and/or LMMs.
+The `Report schema` is the general schema for coding report data. It can be used by human coders and/or LLMs.
 
 - [x] Required
 - [x] Can be used by a human coder

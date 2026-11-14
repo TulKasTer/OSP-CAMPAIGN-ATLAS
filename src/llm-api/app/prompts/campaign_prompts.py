@@ -74,7 +74,7 @@ Allowed values (use exact strings; for Other use `"Other (specify) - <detail>"`)
 - `"Typosquatting / lookalike domain"`
 - `"Homoglyph domain spoofing"`
 - `"Fake reply-chain / thread hijacking"`
-- `"Reply-To header manipulation"`
+- `"Reply-To manipulation"`
 - `"Message encoding / obfuscation"`
 - `"Compromised legitimate account (ATO)"`
 - `"Mailbox rule manipulation"`

@@ -136,7 +136,7 @@
             "publisher": "Proofpoint",
             "information_website": "https://www.proofpoint.com/us/blog/threat-insight/small-and-medium-business-APT-phishing-landscape-in-2023",
             "rule_triggered": "Rule #1",
-            "exclusion_reason": "The campaign's objective was merely to solicit a politically themed video conference call. It falls out of scope as it does not induce the victim to transfer funds, disclose credentials/data, or execute a payload (the strict definition of OSP).",
+            "exclusion_reason": "The campaign\u0027s objective was merely to solicit a politically themed video conference call. It falls out of scope as it does not induce the victim to transfer funds, disclose credentials/data, or execute a payload (the strict definition of OSP).",
             "exclusion_date": "2026-10-23T06:52:09Z",
             "evaluator": "JFBV"
         },
@@ -156,7 +156,7 @@
             "publisher": "Mandiant",
             "information_website": "https://cloud.google.com/blog/topics/threat-intelligence/financially-motivated-threat-actor-breeze-comet-targets-brazil",
             "rule_triggered": "Rule #3",
-            "exclusion_reason": "The report provides a generalized landscape of BREEZE COMET's tactics, malware suite, and infrastructure across 2024-2026. It lacks a specific illustrative case with sufficient details (e.g., channel, role, pretext) to isolate a single organizational spear phishing incident.",
+            "exclusion_reason": "The report provides a generalized landscape of BREEZE COMET\u0027s tactics, malware suite, and infrastructure across 2024-2026. It lacks a specific illustrative case with sufficient details (e.g., channel, role, pretext) to isolate a single organizational spear phishing incident.",
             "exclusion_date": "2026-10-23T07:00:00Z",
             "evaluator": "JFBV"
         },
@@ -166,62 +166,32 @@
             "publisher": "Microsoft Threat Intelligence",
             "information_website": "https://www.microsoft.com/en-us/security/blog/2024/05/15/threat-actors-misusing-quick-assist-in-social-engineering-attacks-leading-to-ransomware/",
             "rule_triggered": "Rule #3",
-            "exclusion_reason": "The report presents generalized trends of Storm-1811's TTPs (using Quick Assist, vishing, and Microsoft Teams). It lacks a specific illustrative case with sufficient details (such as a specific target demographic, organization, or role) to isolate a single organizational spear phishing incident.",
+            "exclusion_reason": "The report presents generalized trends of Storm-1811\u0027s TTPs (using Quick Assist, vishing, and Microsoft Teams). It lacks a specific illustrative case with sufficient details (such as a specific target demographic, organization, or role) to isolate a single organizational spear phishing incident.",
             "exclusion_date": "2026-11-07T15:01:00Z",
             "evaluator": "JFBV"
         },
         {
             "excluded_id": "EXC-0018",
-            "campaign_name": "Threat actors misusing Quick Assist in social engineering attacks leading to ransomware (General Trends)",
+            "campaign_name": "Email threat landscape: Q2 2026 trends and insights (General Trends)",
             "publisher": "Microsoft Threat Intelligence",
-            "information_website": "https://www.microsoft.com/en-us/security/blog/2024/05/15/threat-actors-misusing-quick-assist-in-social-engineering-attacks-leading-to-ransomware/",
+            "information_website": "https://www.microsoft.com/en-us/security/blog/2026/07/23/email-threat-landscape-q2-2026-trends-and-insights/",
             "rule_triggered": "Rule #3",
-            "exclusion_reason": "The report presents generalized trends of Storm-1811's TTPs (using Quick Assist, vishing, and Microsoft Teams). It lacks a specific illustrative case with sufficient details (such as a specific target demographic, organization, or role) to isolate a single organizational spear phishing incident.",
-            "exclusion_date": "2026-11-07T15:01:00Z",
+            "exclusion_reason": "The report is a generalized landscape and statistical analysis of email threat volume (QR codes, CAPTCHAs, BEC) during Q2 2026. It lacks a specific illustrative case with sufficient details to isolate a single, distinguishable organizational spear phishing incident (no specific roles, target organization, or pretext sequence).",
+            "exclusion_date": "2026-11-07T16:22:00Z",
             "evaluator": "JFBV"
         },
         {
             "excluded_id": "EXC-0019",
-            "campaign_name": "Email threat landscape: Q2 2026 trends and insights (General Trends)",
-            "publisher": "Microsoft Threat Intelligence",
-            "information_website": "https://www.microsoft.com/en-us/security/blog/2026/07/23/email-threat-landscape-q2-2026-trends-and-insights/",
-            "rule_triggered": "Rule #3",
-            "exclusion_reason": "The report is a generalized landscape and statistical analysis of email threat volume (QR codes, CAPTCHAs, BEC) during Q2 2026. It lacks a specific illustrative case with sufficient details to isolate a single, distinguishable organizational spear phishing incident (no specific roles, target organization, or pretext sequence).",
-            "exclusion_date": "2026-11-07T16:22:00Z",
-            "evaluator": "JFBV"
-        },
-        {
-            "excluded_id": "EXC-0020",
-            "campaign_name": "Email threat landscape: Q2 2026 trends and insights (General Trends)",
-            "publisher": "Microsoft Threat Intelligence",
-            "information_website": "https://www.microsoft.com/en-us/security/blog/2026/07/23/email-threat-landscape-q2-2026-trends-and-insights/",
-            "rule_triggered": "Rule #3",
-            "exclusion_reason": "The report is a generalized landscape and statistical analysis of email threat volume (QR codes, CAPTCHAs, BEC) during Q2 2026. It lacks a specific illustrative case with sufficient details to isolate a single, distinguishable organizational spear phishing incident (no specific roles, target organization, or pretext sequence).",
-            "exclusion_date": "2026-11-07T16:22:00Z",
-            "evaluator": "JFBV"
-        },
-        {
-            "excluded_id": "EXC-0021",
-            "campaign_name": "Email threat landscape: Q2 2026 trends and insights (General Trends)",
-            "publisher": "Microsoft Threat Intelligence",
-            "information_website": "https://www.microsoft.com/en-us/security/blog/2026/07/23/email-threat-landscape-q2-2026-trends-and-insights/",
-            "rule_triggered": "Rule #3",
-            "exclusion_reason": "The report is a generalized landscape and statistical analysis of email threat volume (QR codes, CAPTCHAs, BEC) during Q2 2026. It lacks a specific illustrative case with sufficient details to isolate a single, distinguishable organizational spear phishing incident (no specific roles, target organization, or pretext sequence).",
-            "exclusion_date": "2026-11-07T16:22:00Z",
-            "evaluator": "JFBV"
-        },
-        {
-            "excluded_id": "EXC-0022",
             "campaign_name": "Automated BEC campaign scales aging report and payroll diversion lures",
             "publisher": "Microsoft Threat Intelligence",
             "information_website": "https://www.microsoft.com/en-us/security/blog/2026/07/23/email-threat-landscape-q2-2026-trends-and-insights/",
             "rule_triggered": "Rule #1",
-            "exclusion_reason": "The campaign targeted more than 67,000 users across 42,000 organizations in under three hours using automated Python scripts and Amazon SES bulk delivery. It addressed generic role-based mailboxes (e.g., 'ar', 'hr', 'payroll'), demonstrating mass and opportunistic delivery with no explicit evidence of deliberate target selection.",
+            "exclusion_reason": "The campaign targeted more than 67,000 users across 42,000 organizations in under three hours using automated Python scripts and Amazon SES bulk delivery. It addressed generic role-based mailboxes (e.g., \u0027ar\u0027, \u0027hr\u0027, \u0027payroll\u0027), demonstrating mass and opportunistic delivery with no explicit evidence of deliberate target selection.",
             "exclusion_date": "2026-11-07T16:35:00Z",
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0023",
+            "excluded_id": "EXC-0020",
             "campaign_name": "Staff update campaign with nested EML file and calendar invitation leads to BAT file dropper",
             "publisher": "Microsoft Threat Intelligence",
             "information_website": "https://www.microsoft.com/en-us/security/blog/2026/07/23/email-threat-landscape-q2-2026-trends-and-insights/",
@@ -231,9 +201,9 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0024",
+            "excluded_id": "EXC-0021",
             "campaign_name": "Payroll Pirates: Strange New Tides in Business Email Compromise (General Trends)",
-            "publisher": "Arctic Wolf Labs",
+            "publisher": "Other (specify) - Arctic Wolf Labs",
             "information_website": "https://arcticwolf.com/resources/blog/payroll-pirates-strange-new-tides-in-business-email-compromise/",
             "rule_triggered": "Rule #3",
             "exclusion_reason": "The report is a generalized landscape and technical analysis of a widespread AiTM phishing campaign (Storm-2755) affecting multiple sectors. It lacks a specific illustrative case with sufficient details to isolate a single, distinguishable organizational spear phishing incident.",
@@ -241,8 +211,8 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0025",
-            "campaign_name": "Abnormal Security Enhances Detection of Business Email Compromise (Product Press Release)",
+            "excluded_id": "EXC-0022",
+            "campaign_name": "Abnormal Enhances Detection of Business Email Compromise (Product Press Release)",
             "publisher": "Abnormal",
             "information_website": "https://abnormal.ai/newsroom/press-releases/enhanced-detection-business-email-compromise-cloud-security",
             "rule_triggered": "Rule #3",
@@ -251,17 +221,17 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0026",
+            "excluded_id": "EXC-0023",
             "campaign_name": "Vendor Impersonator Uses Fake Invoice Notification In Credential Theft Attempt",
             "publisher": "Abnormal",
             "information_website": "https://abnormal.ai/es/threat-intelligence/digest/vendor-impersonator-uses-fake-invoice-notification-in-credential-theft-attempt",
             "rule_triggered": "Rule #1",
-            "exclusion_reason": "The report explicitly states the email lacked recipient information in the 'To' field, which is indicative of a mass phishing attack. There is no explicit evidence of deliberate target selection against a specific organization or role.",
+            "exclusion_reason": "The report explicitly states the email lacked recipient information in the \u0027To\u0027 field, which is indicative of a mass phishing attack. There is no explicit evidence of deliberate target selection against a specific organization or role.",
             "exclusion_date": "2026-11-07T11:42:00Z",
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0027",
+            "excluded_id": "EXC-0024",
             "campaign_name": "DKIM replay + OAuth app-name abuse turns a Google alert into the lure",
             "publisher": "Abnormal",
             "information_website": "https://abnormal.ai/blog/security-superlatives-2025-2",
@@ -271,7 +241,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0028",
+            "excluded_id": "EXC-0025",
             "campaign_name": "Flask-based Docusign kit with dynamic branding and verification challenges",
             "publisher": "Abnormal",
             "information_website": "https://abnormal.ai/blog/security-superlatives-2025-2",
@@ -281,7 +251,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0029",
+            "excluded_id": "EXC-0026",
             "campaign_name": "Fake Teams invite leading to malicious OAuth consent and persistent access",
             "publisher": "Abnormal",
             "information_website": "https://abnormal.ai/blog/security-superlatives-2025-2",
@@ -291,7 +261,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0030",
+            "excluded_id": "EXC-0027",
             "campaign_name": "Cryptocurrency Fraud Impersonating Ledger",
             "publisher": "Abnormal",
             "information_website": "https://abnormal.ai/blog/emerging-email-threats",
@@ -301,7 +271,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0031",
+            "excluded_id": "EXC-0028",
             "campaign_name": "Use Case: BEC - Executive Impersonation (General Trends)",
             "publisher": "Abnormal",
             "information_website": "https://abnormal.ai/blog/emerging-email-threats",
@@ -311,7 +281,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0032",
+            "excluded_id": "EXC-0029",
             "campaign_name": "Massive BEC Campaign Targeting U.S. Government Agencies (General Trends)",
             "publisher": "Proofpoint",
             "information_website": "https://www.proofpoint.com/uk/blog/security-awareness-training/us-federal-psat-threat-intel-case-study",
@@ -321,17 +291,17 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0033",
+            "excluded_id": "EXC-0030",
             "campaign_name": "TA584 Initial Access Broker Mass Campaigns (2025)",
             "publisher": "Proofpoint",
             "information_website": "https://www.proofpoint.com/us/blog/threat-insight/cant-stop-wont-stop-ta584-innovates-initial-access",
             "rule_triggered": "Rule #1",
-            "exclusion_reason": "The report details generalized trends of TA584, an initial access broker, explicitly stating that 'The actor appears to be opportunistic and doesn’t target specific verticals', sending between a few thousand to nearly 200,000 messages per campaign. These mass/opportunistic blasts lack deliberate target selection against a specific organization and violate the criteria for Organizational Spear Phishing.",
+            "exclusion_reason": "The report details generalized trends of TA584, an initial access broker, explicitly stating that \u0027The actor appears to be opportunistic and doesn’t target specific verticals\u0027, sending between a few thousand to nearly 200,000 messages per campaign. These mass/opportunistic blasts lack deliberate target selection against a specific organization and violate the criteria for Organizational Spear Phishing.",
             "exclusion_date": "2026-11-07T12:28:00Z",
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0034",
+            "excluded_id": "EXC-0031",
             "campaign_name": "FBI IC3 Business Email Compromise: The $55 Billion Scam (Macro Statistic Report)",
             "publisher": "FBI IC3",
             "information_website": "https://www.ic3.gov/PSA/2024/PSA240911",
@@ -341,7 +311,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0035",
+            "excluded_id": "EXC-0032",
             "campaign_name": "Lilac Wolverine Mass Gift Card Attacks",
             "publisher": "Abnormal",
             "information_website": "https://abnormal.ai/blog/lilac-wolverine-gift-card-attacks",
@@ -351,47 +321,47 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0036",
+            "excluded_id": "EXC-0033",
             "campaign_name": "Crimson Kingsnake Blind Third-Party Impersonation",
             "publisher": "Abnormal",
             "information_website": "https://abnormal.ai/blog/crimson-kingsnake-bec-group-attacks",
             "rule_triggered": "Rule #1",
-            "exclusion_reason": "The report explicitly states that the group executes 'blind third-party impersonation' attacks, blasting spoofed law firm invoices to organizations without direct insight or prior confirmation of an existing vendor-customer relationship. This opportunistic, 'spray-and-pray' methodology violates the deliberate target selection requirement for Organizational Spear Phishing.",
+            "exclusion_reason": "The report explicitly states that the group executes \u0027blind third-party impersonation\u0027 attacks, blasting spoofed law firm invoices to organizations without direct insight or prior confirmation of an existing vendor-customer relationship. This opportunistic, \u0027spray-and-pray\u0027 methodology violates the deliberate target selection requirement for Organizational Spear Phishing.",
             "exclusion_date": "2026-11-07T12:53:00Z",
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0037",
+            "excluded_id": "EXC-0034",
             "campaign_name": "Back to School: BEC Group Targets Teachers with Payroll Diversion Attacks (General Trends)",
             "publisher": "Abnormal",
             "information_website": "https://abnormal.ai/blog/bec-group-targets-teachers-payroll-diversion-attacks",
-            "rule_triggered": "Rule #1",
+            "rule_triggered": "Rule #3",
             "exclusion_reason": "The report does not contain enough information to be coded.",
             "exclusion_date": "2026-11-07T12:53:00Z",
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0038",
+            "excluded_id": "EXC-0035",
             "campaign_name": "Microsoft OAuth App Impersonation (Tycoon AiTM Mass Phishing)",
             "publisher": "Proofpoint",
             "information_website": "https://www.proofpoint.com/us/blog/threat-insight/microsoft-oauth-app-impersonation-campaign-leads-mfa-phishing",
             "rule_triggered": "Rule #1",
-            "exclusion_reason": "The report details generalized credential phishing campaigns using fake Microsoft OAuth applications and the Tycoon AiTM kit. It explicitly states the campaigns 'typically include thousands of messages and impact hundreds of customers.' This broad, high-volume delivery constitutes an opportunistic mass attack, lacking the deliberate target selection required for Organizational Spear Phishing.",
+            "exclusion_reason": "The report details generalized credential phishing campaigns using fake Microsoft OAuth applications and the Tycoon AiTM kit. It explicitly states the campaigns \u0027typically include thousands of messages and impact hundreds of customers.\u0027 This broad, high-volume delivery constitutes an opportunistic mass attack, lacking the deliberate target selection required for Organizational Spear Phishing.",
             "exclusion_date": "2026-11-07T13:06:00Z",
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0039",
+            "excluded_id": "EXC-0036",
             "campaign_name": "TA422 APT28 High-Volume Exploitation (General Threat Actor Profile)",
             "publisher": "Proofpoint",
             "information_website": "https://www.proofpoint.com/us/blog/threat-insight/ta422s-dedicated-exploitation-loop-same-week-after-week",
-            "rule_triggered": "Rule #1 / Rule #3",
-            "exclusion_reason": "The report is a macro-level threat actor profile detailing aggregated TTPs (e.g., exploiting CVE-2023-23397 and CVE-2023-38831) over several months. It highlights mass-exploitation behaviors, such as sending over 10,000 daily emails with generic 'Test Meeting' or 'Windows Update' lures, which constitutes an opportunistic mass attack rather than a specific, isolated Organizational Spear Phishing (OSP) case.",
+            "rule_triggered": "Rule #1",
+            "exclusion_reason": "The report is a macro-level threat actor profile detailing aggregated TTPs (e.g., exploiting CVE-2023-23397 and CVE-2023-38831) over several months. It highlights mass-exploitation behaviors, such as sending over 10,000 daily emails with generic \u0027Test Meeting\u0027 or \u0027Windows Update\u0027 lures, which constitutes an opportunistic mass attack rather than a specific, isolated Organizational Spear Phishing (OSP) case.",
             "exclusion_date": "2026-11-07T13:08:00Z",
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0040",
+            "excluded_id": "EXC-0037",
             "campaign_name": "2026 Vulnerability Exploitation in the Wild (Macro Trend Report)",
             "publisher": "Proofpoint",
             "information_website": "https://www.proofpoint.com/us/blog/threat-insight/more-cves-same-playbook-2026-vulnerability-exploitation-wild",
@@ -401,7 +371,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0041",
+            "excluded_id": "EXC-0038",
             "campaign_name": "Device Code Phishing / TA4903 EvilTokens Usage",
             "publisher": "Proofpoint",
             "information_website": "https://www.proofpoint.com/us/blog/threat-insight/device-code-phishing-evolution-identity-takeover",
@@ -411,17 +381,17 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0042",
-            "campaign_name": "Star Blizzard RedFlick Technique & 2026 Large-Scale Phishing Campaigns",
+            "excluded_id": "EXC-0039",
+            "campaign_name": "Star Blizzard RedFlick Technique \u0026 2026 Large-Scale Phishing Campaigns",
             "publisher": "Microsoft Threat Intelligence",
             "information_website": "https://www.microsoft.com/en-us/security/blog/2026/09/29/star-blizzard-refines-phishing-and-malware-delivery-with-the-redflick-technique/",
             "rule_triggered": "Rule #1",
-            "exclusion_reason": "The report provides a macro-level analysis of Star Blizzard's tactics throughout 2026, highlighting a significant shift toward larger-scale phishing campaigns (ranging from tens to hundreds of messages per campaign) utilizing compromised websites and automated mass-mailing frameworks. This widespread, high-volume operational model lacks the precise, isolated target selection against a specific individual or organization required for Organizational Spear Phishing.",
+            "exclusion_reason": "The report provides a macro-level analysis of Star Blizzard\u0027s tactics throughout 2026, highlighting a significant shift toward larger-scale phishing campaigns (ranging from tens to hundreds of messages per campaign) utilizing compromised websites and automated mass-mailing frameworks. This widespread, high-volume operational model lacks the precise, isolated target selection against a specific individual or organization required for Organizational Spear Phishing.",
             "exclusion_date": "2026-11-07T13:22:00Z",
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0043",
+            "excluded_id": "EXC-0040",
             "campaign_name": "CaptiveCrunch / Storm-2945 Captive Portal Malware Delivery",
             "publisher": "Microsoft Threat Intelligence",
             "information_website": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
@@ -431,9 +401,9 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0044",
+            "excluded_id": "EXC-0041",
             "campaign_name": "Microsoft Teams IT Support Impersonation (General TTP Report)",
-            "publisher": "Microsoft",
+            "publisher": "Microsoft Threat Intelligence",
             "information_website": "https://www.microsoft.com/en-us/security/blog/2026/09/02/impersonating-it-support-threat-actors-turn-remote-session-into-enterprise-wide-access/",
             "rule_triggered": "Rule #1",
             "exclusion_reason": "The report provides a detailed technical analysis of an intrusion chain leveraging Microsoft Teams external collaboration and remote support tools (like Quick Assist). However, it lacks any explicit evidence of target selection (no named organizations, targeted sectors, or distinct geographic regions are mentioned), making it a generalized TTP profile rather than a codifiable, isolated Organizational Spear Phishing campaign.",
@@ -441,7 +411,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0045",
+            "excluded_id": "EXC-0042",
             "campaign_name": "Signed malware RMM backdoor (TrustConnect PTY LTD)",
             "publisher": "Microsoft Threat Intelligence",
             "information_website": "https://www.microsoft.com/en-us/security/blog/2026/03/03/signed-malware-impersonating-workplace-apps-deploys-rmm-backdoors/",
@@ -451,18 +421,18 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0046",
+            "excluded_id": "EXC-0043",
             "campaign_name": "UNC3753 / Luna Moth US Law Firms Vishing (General TTP Report)",
             "publisher": "Mandiant",
             "information_website": "https://cloud.google.com/blog/topics/threat-intelligence/targeted-campaign-us-law-firms",
             "rule_triggered": "Rule #3",
-            "exclusion_reason": "The report aggregates TTPs across multiple incident response engagements over a five-month period (January-May 2026), documenting broad variations in tools (AnyDesk, Bomgar, Zoho, Teams, physical access) and attack vectors. Rather than detailing a single, isolable campaign sequence, it provides a generalized threat actor profile of UNC3753's operations, violating the single campaign specificity rule.",
+            "exclusion_reason": "The report aggregates TTPs across multiple incident response engagements over a five-month period (January-May 2026), documenting broad variations in tools (AnyDesk, Bomgar, Zoho, Teams, physical access) and attack vectors. Rather than detailing a single, isolable campaign sequence, it provides a generalized threat actor profile of UNC3753\u0027s operations, violating the single campaign specificity rule.",
             "exclusion_date": "2026-11-11T16:40:00Z",
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0047",
-            "campaign_name": "UNC6293 & UNC7005 (ICE RELIC) Phishing Operations",
+            "excluded_id": "EXC-0044",
+            "campaign_name": "UNC6293 \u0026 UNC7005 (ICE RELIC) Phishing Operations",
             "publisher": "Mandiant",
             "information_website": "https://cloud.google.com/blog/topics/threat-intelligence/distinct-clusters-target-individuals-of-interest-to-russia",
             "rule_triggered": "Rule #3",
@@ -471,7 +441,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0048",
+            "excluded_id": "EXC-0045",
             "campaign_name": "Threats to the Defense Industrial Base (Macro Trend Report)",
             "publisher": "Mandiant",
             "information_website": "https://cloud.google.com/blog/topics/threat-intelligence/threats-to-defense-industrial-base",
@@ -481,7 +451,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0049",
+            "excluded_id": "EXC-0046",
             "campaign_name": "UNC6040 / ShinyHunters Salesforce Vishing (General TTP Report)",
             "publisher": "Mandiant",
             "information_website": "https://cloud.google.com/blog/topics/threat-intelligence/voice-phishing-data-extortion",
@@ -491,8 +461,8 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0050",
-            "campaign_name": "UNC3944 / Scattered Spider Smishing & Ransomware (General TTP Report)",
+            "excluded_id": "EXC-0047",
+            "campaign_name": "UNC3944 / Scattered Spider Smishing \u0026 Ransomware (General TTP Report)",
             "publisher": "Mandiant",
             "information_website": "https://cloud.google.com/blog/topics/threat-intelligence/unc3944-sms-phishing-sim-swapping-ransomware",
             "rule_triggered": "Rule #3",
@@ -501,17 +471,17 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0051",
+            "excluded_id": "EXC-0048",
             "campaign_name": "TA4922 (Chinese Crime Group) Malware Campaigns (General TTP Report)",
             "publisher": "Proofpoint",
             "information_website": "https://www.proofpoint.com/us/blog/threat-insight/ta4922-suspected-chinese-crime-group-going-global",
-            "rule_triggered": "Rule #1 / Rule #3",
-            "exclusion_reason": "The report presents an aggregated threat actor profile detailing TA4922's use of multiple malware families (Atlas RAT, RomulusLoader, SilentRunLoader) across numerous regions (Japan, Germany, UK). It explicitly describes campaigns ranging from 'a few hundred to a few thousand' emails, indicating regional mass-phishing (spray-and-pray) rather than deliberate, isolated target selection against a specific organization. It lacks a single, codifiable OSP campaign sequence.",
+            "rule_triggered": "Rule #1",
+            "exclusion_reason": "The report presents an aggregated threat actor profile detailing TA4922\u0027s use of multiple malware families (Atlas RAT, RomulusLoader, SilentRunLoader) across numerous regions (Japan, Germany, UK). It explicitly describes campaigns ranging from \u0027a few hundred to a few thousand\u0027 emails, indicating regional mass-phishing (spray-and-pray) rather than deliberate, isolated target selection against a specific organization. It lacks a single, codifiable OSP campaign sequence.",
             "exclusion_date": "2026-11-11T17:15:00Z",
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0052",
+            "excluded_id": "EXC-0049",
             "campaign_name": "TA397 / Bitter Espionage Campaigns (Macro Trend Report)",
             "publisher": "Proofpoint",
             "information_website": "https://www.proofpoint.com/us/blog/threat-insight/bitter-end-unraveling-eight-years-espionage-antics-part-one",
@@ -521,7 +491,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0053",
+            "excluded_id": "EXC-0050",
             "campaign_name": "Around the World in 90 Days: State-Sponsored Actors Try ClickFix (Macro Trend Report)",
             "publisher": "Proofpoint",
             "information_website": "https://www.proofpoint.com/us/blog/threat-insight/around-world-90-days-state-sponsored-actors-try-clickfix",
@@ -531,7 +501,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0054",
+            "excluded_id": "EXC-0051",
             "campaign_name": "APTs Targeting Journalists (Macro Trend Report)",
             "publisher": "Proofpoint",
             "information_website": "https://www.proofpoint.com/us/blog/threat-insight/above-fold-and-your-inbox-tracing-state-aligned-activity-targeting-journalists",
@@ -541,8 +511,8 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0055",
-            "campaign_name": "UNK_pyreq2323 & UNK_OutFlareAZ OAuth Client ID Spoofing",
+            "excluded_id": "EXC-0052",
+            "campaign_name": "UNK_pyreq2323 \u0026 UNK_OutFlareAZ OAuth Client ID Spoofing",
             "publisher": "Proofpoint",
             "information_website": "https://www.proofpoint.com/us/blog/threat-insight/oauth-client-id-spoofing-why-fake-client-ids-are-gaining-traction-stealthy",
             "rule_triggered": "Rule #1",
@@ -551,17 +521,17 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0056",
+            "excluded_id": "EXC-0053",
             "campaign_name": "2026 Tax Season Scam Campaigns (General TTP Report)",
             "publisher": "Proofpoint",
             "information_website": "https://www.proofpoint.com/us/blog/threat-insight/security-brief-tax-scams-aim-steal-funds-taxpayers",
             "rule_triggered": "Rule #1",
-            "exclusion_reason": "The report highlights various financially motivated phishing campaigns (impersonating the IRS, TA4922, TA2730, and BEC W-2 fraud). It explicitly states that these are high-volume, opportunistic attacks aimed at the general public during tax season (with volumes reaching 'tens of thousands' of messages), failing the deliberate target selection requirement necessary for Organizational Spear Phishing.",
+            "exclusion_reason": "The report highlights various financially motivated phishing campaigns (impersonating the IRS, TA4922, TA2730, and BEC W-2 fraud). It explicitly states that these are high-volume, opportunistic attacks aimed at the general public during tax season (with volumes reaching \u0027tens of thousands\u0027 of messages), failing the deliberate target selection requirement necessary for Organizational Spear Phishing.",
             "exclusion_date": "2026-11-12T11:47:00Z",
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0057",
+            "excluded_id": "EXC-0054",
             "campaign_name": "Storm-2561 Fake VPN SEO Poisoning",
             "publisher": "Microsoft Threat Intelligence",
             "information_website": "https://www.microsoft.com/en-us/security/blog/2026/03/12/storm-2561-uses-seo-poisoning-to-distribute-fake-vpn-clients-for-credential-theft/",
@@ -571,7 +541,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0058",
+            "excluded_id": "EXC-0055",
             "campaign_name": "Storm-0978 Financial and Espionage Motives (Macro Trend Report)",
             "publisher": "Microsoft Threat Intelligence",
             "information_website": "https://www.microsoft.com/en-us/security/blog/2023/07/11/storm-0978-attacks-reveal-financial-and-espionage-motives/",
@@ -581,7 +551,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0059",
+            "excluded_id": "EXC-0056",
             "campaign_name": "OAuth Applications Misuse for Financial Attacks (Macro Trend Report)",
             "publisher": "Microsoft Threat Intelligence",
             "information_website": "https://www.microsoft.com/en-us/security/blog/2023/12/12/threat-actors-misuse-oauth-applications-to-automate-financially-driven-attacks/",
@@ -591,7 +561,7 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0060",
+            "excluded_id": "EXC-0057",
             "campaign_name": "2025 Tax Season Phishing Campaigns (Macro Trend Report)",
             "publisher": "Microsoft Threat Intelligence",
             "information_website": "https://www.microsoft.com/en-us/security/blog/2025/04/03/threat-actors-leverage-tax-season-to-deploy-tax-themed-phishing-campaigns/",
@@ -601,17 +571,17 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0061",
+            "excluded_id": "EXC-0058",
             "campaign_name": "APT42 Threat Actor Profile (Macro Trend Report)",
             "publisher": "Mandiant",
             "information_website": "https://cloud.google.com/blog/topics/threat-intelligence/apt42-charms-cons-compromises",
             "rule_triggered": "Rule #3",
-            "exclusion_reason": "The document is a comprehensive threat actor profile detailing APT42's history, targeting patterns, and general operations (credential harvesting, surveillance, malware deployment) since 2015. It aggregates over 30 operations into broad categories rather than isolating a single, codifiable Organizational Spear Phishing campaign sequence with a specific pretext, discrete impersonation roles, and clear channel transitions.",
+            "exclusion_reason": "The document is a comprehensive threat actor profile detailing APT42\u0027s history, targeting patterns, and general operations (credential harvesting, surveillance, malware deployment) since 2015. It aggregates over 30 operations into broad categories rather than isolating a single, codifiable Organizational Spear Phishing campaign sequence with a specific pretext, discrete impersonation roles, and clear channel transitions.",
             "exclusion_date": "2026-11-12T12:37:00Z",
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0062",
+            "excluded_id": "EXC-0059",
             "campaign_name": "Evacuation and Humanitarian Documents Spear Phishing (General Trends)",
             "publisher": "Mandiant",
             "information_website": "https://cloud.google.com/blog/topics/threat-intelligence/spear-phish-ukrainian-entities",
@@ -621,9 +591,9 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0063",
+            "excluded_id": "EXC-0060",
             "campaign_name": "The 2026 Attack Landscape (Macro Trend Report)",
-            "publisher": "Abnormal Security",
+            "publisher": "Abnormal",
             "information_website": "https://abnormal.ai/blog/2026-attack-landscape-business-as-usual-risk",
             "rule_triggered": "Rule #3",
             "exclusion_reason": "The report presents a generalized macro-level statistical analysis of the 2026 attack landscape based on 800,000 incidents across 4,600 organizations. It details broad trends in BEC, VEC, RFQ fraud, and file-sharing phishing without isolating a single, codifiable Organizational Spear Phishing campaign sequence with specific dates, targets, distinct roles, and a unified pretext.",
@@ -631,35 +601,34 @@
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0064",
+            "excluded_id": "EXC-0061",
             "campaign_name": "Help Desk Payroll Diversion (Conceptual / Marketing Report)",
-            "publisher": "Abnormal Security",
+            "publisher": "Abnormal",
             "information_website": "https://abnormal.ai/blog/help-desk-payroll-diversion",
-            "rule_triggered": "Rule #3",
-            "exclusion_reason": "The document is a generalized conceptual overview and product marketing piece demonstrating how payroll diversion attacks occur via help desk social engineering. It outlines a hypothetical attack playbook mapped to the MITRE ATT&CK framework to showcase product capabilities, rather than isolating a single, codifiable Organizational Spear Phishing campaign sequence with a specific target, distinct impersonation roles, and a unified pretext.",
+            "rule_triggered": "Rule #2",
+            "exclusion_reason": "The document is a generalized conceptual overview and product marketing piece demonstrating how payroll diversion attacks occur via help desk social engineering. It outlines a hypothetical attack playbook mapped to the MITRE ATT\u0026CK framework to showcase product capabilities, rather than isolating a single, codifiable Organizational Spear Phishing campaign sequence with a specific target, distinct impersonation roles, and a unified pretext.",
             "exclusion_date": "2026-11-12T13:00:00Z",
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0065",
+            "excluded_id": "EXC-0062",
             "campaign_name": "IC3 PSA Account Takeover Fraud (Macro Trend Report)",
             "publisher": "FBI IC3",
             "information_website": "https://www.ic3.gov/PSA/2025/PSA251125",
             "rule_triggered": "Rule #3",
-            "exclusion_reason": "The document is a general Public Service Announcement (PSA) warning about Account Takeover (ATO) fraud trends via financial institution impersonation. It aggregates statistics (over 5,100 complaints) and explicitly states that cybercriminals target 'individuals, businesses, and organizations of varied sizes and across sectors', indicating opportunistic, spray-and-pray attacks rather than a specific, codifiable Organizational Spear Phishing campaign.",
+            "exclusion_reason": "The document is a general Public Service Announcement (PSA) warning about Account Takeover (ATO) fraud trends via financial institution impersonation. It aggregates statistics (over 5,100 complaints) and explicitly states that cybercriminals target \u0027individuals, businesses, and organizations of varied sizes and across sectors\u0027, indicating opportunistic, spray-and-pray attacks rather than a specific, codifiable Organizational Spear Phishing campaign.",
             "exclusion_date": "2026-11-12T06:10:00Z",
             "evaluator": "JFBV"
         },
         {
-            "excluded_id": "EXC-0066",
+            "excluded_id": "EXC-0063",
             "campaign_name": "Fake Encrypted Secure Message Phishing",
-            "publisher": "Abnormal Security",
+            "publisher": "Abnormal",
             "information_website": "https://abnormal.ai/threat-intelligence/digest/fake-encrypted-secure-message-spoofed-in-credential-phishing-attack",
             "rule_triggered": "Rule #1",
-            "exclusion_reason": "The report describes a generic credential phishing attack using a fake 'secure message' template. It lacks evidence of deliberate target selection (such as profiling a specific organization, sector, or corporate role), indicating an opportunistic, spray-and-pray operation rather than a highly targeted Organizational Spear Phishing campaign.",
+            "exclusion_reason": "The report describes a generic credential phishing attack using a fake \u0027secure message\u0027 template. It lacks evidence of deliberate target selection (such as profiling a specific organization, sector, or corporate role), indicating an opportunistic, spray-and-pray operation rather than a highly targeted Organizational Spear Phishing campaign.",
             "exclusion_date": "2026-11-12T15:56:00Z",
             "evaluator": "JFBV"
         }
-
     ]
 }

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Atlas | Campaigns</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #172033;
+            margin: 0;
+        }
+
+        header {
+            background: #172033;
+            color: white;
+            padding: 1rem 5vw;
+        }
+
+        nav {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            margin: 2rem auto;
+            max-width: 1400px;
+            padding: 0 1rem;
+        }
+
+        h1 {
+            margin-bottom: .35rem;
+        }
+
+        .intro {
+            color: #64748b;
+        }
+
+        .toolbar {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: .75rem;
+            justify-content: space-between;
+            margin: 1.5rem 0;
+        }
+
+        .filters {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: .6rem;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+        }
+
+        .filter-field {
+            display: flex;
+            flex-direction: column;
+            gap: .35rem;
+        }
+
+        input, button, .button {
+            border: 1px solid #cbd5e1;
+            border-radius: .4rem;
+            font: inherit;
+            padding: .6rem .8rem;
+        }
+
+        input, select {
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        input {
+            min-width: min(25rem, 70vw);
+        }
+
+        select {
+            background: white;
+            padding: .6rem .5rem;
+        }
+
+        button, .button {
+            background: #2563eb;
+            border-color: #2563eb;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .button.secondary {
+            background: white;
+            color: #2563eb;
+        }
+
+        .table-container {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: .6rem;
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border-bottom: 1px solid #e2e8f0;
+            padding: .85rem;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #eef2ff;
+            white-space: nowrap;
+        }
+
+        tbody tr:hover {
+            background: #f8fafc;
+        }
+
+        tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .actions {
+            white-space: nowrap;
+        }
+
+        .details {
+            margin-top: .75rem;
+        }
+
+        .details summary {
+            color: #2563eb;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .details-panel {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: .45rem;
+            display: grid;
+            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+            margin-top: .75rem;
+            padding: 1rem;
+            white-space: normal;
+        }
+
+        .detail-item {
+            overflow-wrap: anywhere;
+        }
+
+        .detail-item strong {
+            color: #475569;
+            display: block;
+            font-size: .8rem;
+            margin-bottom: .2rem;
+            text-transform: uppercase;
+        }
+
+        .detail-wide {
+            grid-column: 1 / -1;
+        }
+
+        @media (max-width: 700px) {
+            th, td {
+                padding: .65rem;
+            }
+        }
+
+        .empty {
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <strong>OSP Campaign Atlas</strong>
+            <ul>
+                <li><a href="{% url 'campaigns' %}">Campaigns</a></li>
+                <li><a href="{% url 'admin:index' %}">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Campaigns</h1>
+        <p class="intro">Browse and filter the campaigns collected in the OSP Campaign Atlas.</p>
+
+        <div class="toolbar">
+            <span>{{ campaigns|length }} result{{ campaigns|length|pluralize }}</span>
+        </div>
+
+        <form id="filters-form" class="filters" method="get">
+            <div class="filter-field">
+                <label for="filter-search">Search</label>
+                <input id="filter-search" name="q" type="search"
+                       value="{{ query }}" placeholder="ID, name, or publisher">
+                
+            </div>
+            <div class="filter-field">
+                <label for="publisher">Publisher</label>
+                <select id="publisher" name="publisher">
+                    <option value="">All publishers</option>
+                    {% for option in publishers %}
+                        <option value="{{ option }}"
+                            {% if option == selected_publisher %}selected{% endif %}>
+                            {{ option }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="filter-field">
+                <label for="publisher-type">Publisher type</label>
+                <select id="publisher-type" name="publisher_type">
+                    <option value="">All publisher types</option>
+                    {% for option in publisher_types %}
+                        <option value="{{ option }}"
+                            {% if option == selected_publisher_type %}selected{% endif %}>
+                            {{ option }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="filter-field">
+                <label for="outcome">Outcome</label>
+                <select id="outcome" name="outcome">
+                    <option value="">All outcomes</option>
+                    {% for option in outcomes %}
+                        <option value="{{ option }}"
+                            {% if option == selected_outcome %}selected{% endif %}>
+                            {{ option }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="filter-field">
+                <label for="campaign-specificity">Campaign specificity</label>
+                <select id="campaign-specificity" name="campaign_specificity">
+                    <option value="">All specificities</option>
+                    {% for option in campaign_specificities %}
+                        <option value="{{ option }}"
+                            {% if option == selected_campaign_specificity %}selected{% endif %}>
+                            {{ option }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="filter-field">
+                <label for="case-source-type">Case source type</label>
+                <select id="case-source-type" name="case_source_type">
+                    <option value="">All source types</option>
+                    {% for option in case_source_types %}
+                        <option value="{{ option }}"
+                            {% if option == selected_case_source_type %}selected{% endif %}>
+                            {{ option }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="filter-field">
+                <label for="attack-classification">Attack classification</label>
+                <select id="attack-classification" name="attack_classification">
+                    <option value="">All classifications</option>
+                    {% for option in attack_classifications %}
+                        <option value="{{ option }}"
+                            {% if option == selected_attack_classification %}selected{% endif %}>
+                            {{ option }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="filter-field">
+                <label for="channel-transition">Channel transition</label>
+                <select id="channel-transition" name="channel_transition">
+                    <option value="">All transitions</option>
+                    {% for option in channel_transitions %}
+                        <option value="{{ option }}"
+                            {% if option == selected_channel_transition %}selected{% endif %}>
+                            {{ option }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="filter-field">
+                <label for="timing">Timing</label>
+                <select id="timing" name="timing">
+                    <option value="">All timings</option>
+                    {% for option in timings %}
+                        <option value="{{ option }}"
+                            {% if option == selected_timing %}selected{% endif %}>
+                            {{ option }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="filter-field">
+                <label for="coder">Coder</label>
+                <select id="coder" name="coder">
+                    <option value="">All coders</option>
+                    {% for option in coders %}
+                        <option value="{{ option }}"
+                            {% if option == selected_coder %}selected{% endif %}>
+                            {{ option }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="filter-field">
+                <label for="publication-date-from">Publication date from</label>
+                <input id="publication-date-from" name="publication_date_from"
+                       type="date" value="{{ publication_date_from }}">
+            </div>
+            <div class="filter-field">
+                <label for="publication-date-to">Publication date to</label>
+                <input id="publication-date-to" name="publication_date_to"
+                       type="date" value="{{ publication_date_to }}">
+            </div>
+            <div class="filter-field">
+                <span>&nbsp;</span>
+                <button type="submit">Apply filters</button>
+            </div>
+            <div class="filter-field">
+                <span>&nbsp;</span>
+                <a class="button secondary" href="{% url 'campaigns' %}">
+                    Clear filters
+                </a>
+            </div>
+        </form>
+
+        <div class="table-container">
+            {% if campaigns %}
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Campaign ID</th>
+                            <th>Campaign name</th>
+                            <th>Publisher</th>
+                            <th>Publisher type</th>
+                            <th>Publication date</th>
+                            <th>Outcome</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for campaign in campaigns %}
+                            <tr>
+                                <td>{{ campaign.campaign_id }}</td>
+                                <td>{{ campaign.campaign_name }}</td>
+                                <td>{{ campaign.publisher }}</td>
+                                <td>{{ campaign.publisher_type }}</td>
+                                <td>{{ campaign.publication_date }}</td>
+                                <td>{{ campaign.outcome }}</td>
+                                <td class="actions">
+                                    {% if campaign.information_website %}
+                                        <a class="button" href="{{ campaign.information_website }}"
+                                           target="_blank" rel="noopener">
+                                            Source
+                                        </a>
+                                    {% endif %}
+                                    <details class="details">
+                                        <summary>View details</summary>
+                                        <div class="details-panel">
+                                            <div class="detail-item">
+                                                <strong>Case source type</strong>
+                                                {{ campaign.case_source_type }}
+                                            </div>
+                                            <div class="detail-item">
+                                                <strong>Campaign specificity</strong>
+                                                {{ campaign.campaign_specificity }}
+                                            </div>
+                                            <div class="detail-item">
+                                                <strong>Attack classification</strong>
+                                                {{ campaign.attack_classification }}
+                                            </div>
+                                            <div class="detail-item">
+                                                <strong>Channel transition</strong>
+                                                {{ campaign.channel_transition }}
+                                            </div>
+                                            <div class="detail-item">
+                                                <strong>Timing</strong>
+                                                {{ campaign.timing }}
+                                            </div>
+                                            <div class="detail-item">
+                                                <strong>Coder</strong>
+                                                {{ campaign.coder }}
+                                            </div>
+                                            <div class="detail-item detail-wide">
+                                                <strong>Targeting evidence</strong>
+                                                {{ campaign.targeting_evidence }}
+                                            </div>
+                                            <div class="detail-item">
+                                                <strong>Target</strong>
+                                                {{ campaign.target }}
+                                            </div>
+                                            <div class="detail-item">
+                                                <strong>Channels</strong>
+                                                {{ campaign.channels }}
+                                            </div>
+                                            <div class="detail-item">
+                                                <strong>Tactics</strong>
+                                                {{ campaign.tactics }}
+                                            </div>
+                                            <div class="detail-item">
+                                                <strong>Roles</strong>
+                                                Attacker: {{ campaign.role_attacker }}<br>
+                                                Impersonated: {{ campaign.role_impersonated }}<br>
+                                                Victim: {{ campaign.role_victim }}
+                                            </div>
+                                            <div class="detail-item detail-wide">
+                                                <strong>Request</strong>
+                                                {{ campaign.request }}
+                                            </div>
+                                            <div class="detail-item detail-wide">
+                                                <strong>Pretext</strong>
+                                                {{ campaign.pretext }}
+                                            </div>
+                                            <div class="detail-item detail-wide">
+                                                <strong>Persuasion principles</strong>
+                                                {{ campaign.persuasion_principles }}
+                                            </div>
+                                            <div class="detail-item detail-wide">
+                                                <strong>Impact</strong>
+                                                {{ campaign.impact }}
+                                            </div>
+                                            <div class="detail-item">
+                                                <strong>Coding date</strong>
+                                                {{ campaign.coding_date }}
+                                            </div>
+                                            <div class="detail-item">
+                                                <strong>Agreement rate</strong>
+                                                {{ campaign.agreement_rate }}
+                                            </div>
+                                            {% if campaign.note_on_ambiguity %}
+                                                <div class="detail-item detail-wide">
+                                                    <strong>Note on ambiguity</strong>
+                                                    {{ campaign.note_on_ambiguity }}
+                                                </div>
+                                            {% endif %}
+                                        </div>
+                                    </details>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <p class="empty">No campaigns match your search.</p>
+            {% endif %}
+        </div>
+    </main>
+    <script>
+        const filtersForm = document.getElementById("filters-form");
+        const searchInput = document.getElementById("filter-search");
+        const filterControls = filtersForm.querySelectorAll(
+            "select, input[type='date']"
+        );
+        let searchTimer;
+
+        filterControls.forEach((control) => {
+            control.addEventListener("change", () => filtersForm.requestSubmit());
+        });
+
+        searchInput.addEventListener("input", () => {
+            clearTimeout(searchTimer);
+            searchTimer = setTimeout(
+                () => filtersForm.requestSubmit(),
+                500
+            );
+        });
+    </script>
+</body>
+</html>
